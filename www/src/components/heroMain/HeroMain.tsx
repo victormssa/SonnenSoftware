@@ -51,7 +51,7 @@ const HeroMain = () => {
                 <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4">
                   <Link
                     className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] transition-all duration-150"
-                    style={{ backgroundImage: `url(${storeImage})` }}
+                    style={{ backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/storeImage.jpg)` }}
                     href="/pt-br/sobre-sites"
                   >
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
@@ -84,7 +84,7 @@ const HeroMain = () => {
                     </div>
                   </Link>
                   
-                  <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(${appImage})`}} href='/pt-br/sobre-sites'>
+                  <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/appImage.jpg)`}} href='/pt-br/sobre-sites'>
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <PiAppWindowFill size='1.5em'/>
@@ -116,7 +116,7 @@ const HeroMain = () => {
                   </div>
                   </Link>
                   
-                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter  hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url(${optimizationImage})`}} href='/pt-br/sobre-sites'>
+                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter  hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url($https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/optimizationImage.jpg)`}} href='/pt-br/sobre-sites'>
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <FaWrench size='1.5em'/>
@@ -147,7 +147,7 @@ const HeroMain = () => {
                   </span>
                   </div>
                   </Link>
-                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url(${solutionImage})`}} href='/pt-br/sobre-sites'>
+                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/solutionImage.jpg)`}} href='/pt-br/sobre-sites'>
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <BsBagPlusFill size='1.5em'/>
