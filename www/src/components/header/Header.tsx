@@ -27,10 +27,6 @@ const Navigation = () => {
       : "dark:text-white text-black";
   };
 
-  const logoDM = () => {
-    return darkMode ? "flex" : "flex";
-  };
-
   const [darkMode, setDarkMode] = useState(() => {
     const isDarkMode = document.cookie.includes("darkMode=true");
     return isDarkMode || false;
@@ -68,7 +64,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             <Link href="/pt-br" className="flex items-center justify-between">
               <Image
-                className={`w-40 h-auto ${logoDM()}`}
+                className={`w-40 h-auto`}
                 src={darkMode ? headerLogoBlack : headerLogoWhite}
                 alt=""
               />
