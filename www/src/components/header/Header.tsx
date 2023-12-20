@@ -27,35 +27,6 @@ const Navigation = () => {
       : "dark:text-white text-black";
   };
 
-  const [darkMode, setDarkMode] = useState(() => {
-    const isDarkMode = document.cookie.includes("darkMode=true");
-    return isDarkMode || false;
-  });
-
-  const handleDarkModeToggle = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-
-    if (newDarkMode) {
-      document.cookie = "darkMode=true; path=/";
-    } else {
-      document.cookie = "darkMode=false; path=/";
-    }
-  };
-
-  useEffect(() => {
-    if (!document.cookie.includes("darkMode")) {
-      document.cookie = "darkMode=true; path=/";
-    }
-  }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
 
   return (
     <nav className="fixed w-full shadow dark:bg-[#101010] z-10">
@@ -65,7 +36,7 @@ const Navigation = () => {
             <Link href="/pt-br" className="flex items-center justify-between">
               <Image
                 className={`w-40 h-auto`}
-                src={darkMode ? headerLogoBlack : headerLogoWhite}
+                src={ headerLogoWhite}
                 alt=""
               />
             </Link>
@@ -73,24 +44,9 @@ const Navigation = () => {
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
               <div
-                className={`md:hidden lg:hidden ${
-                  darkMode
-                    ? "h-[2rem] pr-[1rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
-                    : " h-[2rem] pr-[1rem] bg-gray-300 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
-                }`}
+                className={`md:hidden lg:hidden h-[2rem] pr-[1rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full`}
               >
-                <button
-                  className={` h-[1.75rem] bg-gray-100 dark:bg-gray-800 duration-700 px-2  rounded-3xl ${
-                    darkMode ? "h-[1.75rem] translate-x-4 bg-gray-600 " : ""
-                  }`}
-                  onClick={handleDarkModeToggle}
-                >
-                  {darkMode ? (
-                    <FiMoon className="text-red-500 w-4" />
-                  ) : (
-                    <FiSun className="text-red-500 w-4 " />
-                  )}
-                </button>
+                
                   </div>
               <button
                 onClick={toggleMenu}
@@ -176,24 +132,12 @@ const Navigation = () => {
                 PT-BR
               </span>
               <div
-                className={`md:hidden lg:hidden ${
-                  darkMode
-                    ? "hidden lg:block ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
-                    : "hidden lg:blockhidden lg:block ml-10 w-20 bg-gray-300 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
-                }`}
+                className={`md:hidden lg:hidden 
+                 
+                    ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full
+                   
+                `}
               >
-                <button
-                  className={`bg-gray-100 dark:bg-gray-800 duration-700 px-2 py-[0.8rem] rounded-3xl ${
-                    darkMode ? "translate-x-4 bg-gray-600" : ""
-                  }`}
-                  onClick={handleDarkModeToggle}
-                >
-                  {darkMode ? (
-                    <FiMoon className="text-red-500 w-10" />
-                  ) : (
-                    <FiSun className="text-red-500 w-10" />
-                  )}
-                </button>
               </div>
               <Link
                 href="/pt-br/login"
