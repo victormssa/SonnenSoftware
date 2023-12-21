@@ -88,7 +88,7 @@ const SignIn: React.FC = () => {
   }, []);
   return (
     <>
-      <div className="bg-white dark:bg-[#101010]">
+      <div className="bg-white">
         <div className="flex justify-center h-screen">
           <div
             className="hidden bg-cover lg:block lg:w-2/3"
@@ -104,7 +104,7 @@ const SignIn: React.FC = () => {
                 </h2>
 
                 <p className="max-w-xl mt-3 text-gray-300">
-                  Bem vindo! A Archei agradece mais um dia com você, e lembre-se
+                  Bem vindo! A Sonnen Software agradece mais um dia com você, e lembre-se
                   que qualquer caminhada começa com um passo.
                 </p>
               </div>
@@ -114,12 +114,8 @@ const SignIn: React.FC = () => {
           <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
             <div className="flex-1">
               <div className="text-center">
-                <div className="flex justify-center mx-auto">
-                  <Image className="w-40" src={logoMin} alt="" />
-                </div>
-
-                <p className="mt-3 text-gray-500 dark:text-gray-300">
-                  Faça o Login para acessar sua conta
+                <p className="mt-3 text-gray-500 ">
+                  Faça o Login para acessar sua conta.
                 </p>
               </div>
               {/* Restante do seu código... */}
@@ -129,7 +125,7 @@ const SignIn: React.FC = () => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+                      className="block mb-2 text-sm text-black "
                     >
                       Endereço de Email
                     </label>
@@ -141,7 +137,7 @@ const SignIn: React.FC = () => {
                       onChange={handleEmailChange}
                       required
                       placeholder="exemplo@exemplo.com"
-                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-[#101010] dark:text-gray-300 dark:border-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:ring-red-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white shadow-lg rounded-lg dark:placeholder-black dark:text-gray-300 dark:border-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:ring-red-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
@@ -149,7 +145,7 @@ const SignIn: React.FC = () => {
                     <div className="flex justify-between mb-2">
                       <label
                         htmlFor="password"
-                        className="text-sm text-gray-600 dark:text-gray-200"
+                        className="text-sm text-black "
                       >
                         Senha
                       </label>
@@ -169,7 +165,7 @@ const SignIn: React.FC = () => {
                       onChange={handlePasswordChange}
                       placeholder="●●●●●●●●"
                       required
-                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-[#101010] dark:text-gray-300 dark:border-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:ring-red-400 focus:outline-none focus:ring focus:ring-opacity-40 font-black"
+                      className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white shadow-lg rounded-lg dark:placeholder-gray-600 dark:text-gray-300 dark:border-gray-700 focus:border-red-400 dark:focus:border-red-400 focus:ring-red-400 focus:outline-none focus:ring focus:ring-opacity-40 font-black"
                     />
                     <div className="flex items-start mt-3">
                       <div className="flex items-center h-5">
