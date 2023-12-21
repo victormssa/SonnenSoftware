@@ -12,7 +12,7 @@ const HeroMain = () => {
   return (
 
       <section
-        className="w-full bg-center bg-cover h-screen "
+        className="w-full bg-center bg-cover h-[55rem] "
         style={{
           backgroundImage:
             "url(https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80)",
@@ -21,15 +21,14 @@ const HeroMain = () => {
         <div className="flex flex-col items-center justify-center w-full h-full bg-[#000000]/80 pt-28">
           <section className="text-center mt-8">
           <h3 className="text-3xl font-semibold text-white lg:text-4xl mb-1">
-      Desenvolva seu site
-      conosco.
+      Desenvolva seu <span className="text-red-600">Website</span> conosco.
     </h3>
             <h2 className="text-sm font-semibold text-white lg:text-lg mb-5">
               Solicite um <span className="text-red-600">orçamento</span>, sem
               compromisso.
             </h2>
             <Link
-              href="/pt-br/contato"
+              href="/contato"
               className="px-3 py-2 duration-200 text-white hover:bg-red-600 hover:text-black dark:hover:text-black font-semibold border-2 border-red-600 mr-4 rounded-md"
             >
               Clique aqui !
@@ -116,7 +115,7 @@ const HeroMain = () => {
                   </div>
                   </Link>
                   
-                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter  hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url($https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/optimizationImage.jpg)`}} href='/pt-br/sobre-sites'>
+                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter  hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/optimizationImage.jpg)`}} href='/pt-br/sobre-sites'>
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <FaWrench size='1.5em'/>
@@ -154,7 +153,7 @@ const HeroMain = () => {
                     </span>
 
                     <h1 className="text-xl font-semibold text-gray-700 dark:text-white dark:drop-shadow-2xl">
-                      Nossas Soluções
+                      Soluções Personalizadas
                     </h1>
 
                     <p className="text-red-500 font-semibold dark:text-white dark:drop-shadow-2xl">

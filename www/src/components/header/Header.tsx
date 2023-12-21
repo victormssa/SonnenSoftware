@@ -33,7 +33,7 @@ const Navigation = () => {
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
-            <Link href="/pt-br" className="flex items-center justify-between">
+            <Link href="/" className="flex items-center justify-between">
               <Image
                 className={`w-40 h-auto`}
                 src={ headerLogoWhite}
@@ -96,41 +96,16 @@ const Navigation = () => {
             }`}
           >
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
+              
+              
               <Link
-                href="/pt-br/solucoes"
-                className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive(
-                  "/pt-br/solucoes"
-                )}`}
-              >
-                Soluções
-              </Link>
-              <Link
-                href="/pt-br/eventos"
-                className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive(
-                  "/pt-br/eventos"
-                )}`}
-              >
-                Eventos
-              </Link>
-              <Link
-                href="/pt-br/contato"
+                href="/contato"
                 className={`px-3 py-2 duration-200 lg:hover:bg-red-600  sm:hover:bg-none hover:text-red-500 lg:hover:text-white lg:hover:dark:text-black dark:hover:text-red-500 font-semibold lg:border-2 sm:border-0 border-red-600 mr-4 ${isActive2(
-                  "/pt-br/contato"
+                  "/contato"
                 )}`}
               >
                 Solicite um orçamento
               </Link>
-              <Link
-                href="/pt-br/vagas"
-                className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive(
-                  "/pt-br/vagas"
-                )}`}
-              >
-                Trabalhe conosco
-              </Link>
-              <span className="px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold dark:text-white text-black cursor-not-allowed">
-                PT-BR
-              </span>
               <div
                 className={`md:hidden lg:hidden 
                  
@@ -140,9 +115,9 @@ const Navigation = () => {
               >
               </div>
               <Link
-                href="/pt-br/login"
+                href="/login"
                 className={`px-3 py-2 duration-200  lg:hover:bg-red-600  sm:hover:bg-none hover:text-red-500 lg:hover:text-white lg:hover:dark:text-black dark:hover:text-red-500 border-red-600  font-semibold lg:border-2 sm:border-0 rounded-lg ml-2 ${isActive2(
-                  "/pt-br/login"
+                  "/login"
                 )}`}
               >
                 Login
