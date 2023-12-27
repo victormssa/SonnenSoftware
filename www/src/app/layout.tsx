@@ -3,11 +3,13 @@ import { Inter } from 'next/font/google'
 import '../style/globals.css'
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sonnen Software | Home',
+  title: 'Sonnen Software',
   description: '',
 }
 
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}><Header/>{children}<Footer/></body>
+      <body className={inter.className}><Header/>{children}<Footer/><Analytics /><SpeedInsights /></body>
     </html>
   )
 }

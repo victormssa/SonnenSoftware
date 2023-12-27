@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from 'next/navigation'
-import logoMin from "./../../../public/assets/images/logoSonnen.png";
+import logo from './../../../public/assets/images/logoSonnen_wBg.png';
 import setCookie from "./../../hooks/Cookie";
 
 interface Credentials {
@@ -113,7 +113,8 @@ const SignIn: React.FC = () => {
 
           <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
             <div className="flex-1">
-              <div className="text-center">
+              <div className="flex flex-col align-middle items-center">
+              <Image src={logo} alt="Logo da Sonnen Software" className="w-40 h-auto"></Image>
                 <p className="mt-3 text-gray-500 ">
                   Faça o Login para acessar sua conta.
                 </p>

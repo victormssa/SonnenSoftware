@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bottom-0 w-full text-gray-600 body-font border-t-[0.08rem] border-[#0000002e] bg-[#ff1715]" id="final">
+    <footer className=" bottom-0 w-full text-gray-600 body-font border-t-[0.08rem] border-[#0000002e] bg-gradient-to-tr from-red-600 to-rose-800" id="final">
     <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <Image src={logoMin} alt="Logo da Sonnen" className="w-40" />

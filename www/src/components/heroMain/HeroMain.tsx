@@ -1,4 +1,8 @@
+"use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { CSSTransition } from "react-transition-group";
 import storeImage from "./../../../public/assets/images/storeImage.jpg";
 import optimizationImage from "./../../../public/assets/images/optimizationImage.jpg";
 import solutionImage from "./../../../public/assets/images/solutionImage.jpg";
@@ -9,6 +13,16 @@ import {FaWrench} from "react-icons/fa"
 import {BsBagPlusFill} from "react-icons/bs"
 
 const HeroMain = () => {
+  const texts = ["Website", "Aplicativo", "Sistema", "Futuro"];
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [texts.length]);
   return (
 
       <section
@@ -21,8 +35,22 @@ const HeroMain = () => {
         <div className="flex flex-col items-center justify-center w-full h-full bg-[#000000]/80 pt-28">
           <section className="text-center mt-8">
           <h3 className="text-3xl font-semibold text-white lg:text-4xl mb-1">
-      Desenvolva seu <span className="text-red-600">Website</span> conosco.
-    </h3>
+            Desenvolva seu{" "}
+            <span className="text-red-600">
+              <AnimatePresence mode='wait'>
+                <motion.span
+                  key={texts[currentTextIndex]}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {texts[currentTextIndex]}
+                </motion.span>
+              </AnimatePresence>
+            </span>{" "}
+            conosco.
+          </h3>
             <h2 className="text-sm font-semibold text-white lg:text-lg mb-5">
               Solicite um <span className="text-red-600">orçamento</span>, sem
               compromisso.
@@ -38,7 +66,7 @@ const HeroMain = () => {
             <div className="container px-6 py-10 mx-auto">
               <h3 className="text-2xl font-medium text-white lg:text-3xl dark:text-white">
                 O que nós fazemos, por{" "}
-                <span className="font-black text-red-600">você</span> ?
+                <span className="font-black text-red-600">você</span>?
               </h3>
 
               <div className="">
@@ -51,7 +79,7 @@ const HeroMain = () => {
                   <Link
                     className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] transition-all duration-150"
                     style={{ backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/storeImage.jpg)` }}
-                    href="/pt-br/sobre-sites"
+                    href="/sobre/desenvolvimento_sites"
                   >
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-white rounded-xl dark:text-white dark:bg-red-500">
@@ -83,7 +111,7 @@ const HeroMain = () => {
                     </div>
                   </Link>
                   
-                  <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/appImage.jpg)`}} href='/pt-br/sobre-sites'>
+                  <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/appImage.jpg)`}} href="/sobre/desenvolvimento_app">
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <PiAppWindowFill size='1.5em'/>
@@ -115,7 +143,7 @@ const HeroMain = () => {
                   </div>
                   </Link>
                   
-                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter  hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/optimizationImage.jpg)`}} href='/pt-br/sobre-sites'>
+                  <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter  hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/optimizationImage.jpg)`}} href="/sobre/otimizacao_sistemas">
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <FaWrench size='1.5em'/>
@@ -146,7 +174,7 @@ const HeroMain = () => {
                   </span>
                   </div>
                   </Link>
-                  <Link className="w-full bg-center bg-[length:300px_250px] h-full rounded-md filter hover:bg-[length:350px_300px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/solutionImage.jpg)`}} href='/pt-br/sobre-sites'>
+                  <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150 bg-no-repeat" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/solutionImage.jpg)`}} href="/sobre/solucoes_personalizadas">
                   <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                     <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <BsBagPlusFill size='1.5em'/>
