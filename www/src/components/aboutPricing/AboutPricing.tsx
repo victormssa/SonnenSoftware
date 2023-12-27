@@ -14,13 +14,13 @@ const AboutPricing: React.FC = () => {
         </p>
 
         <div className="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
-            <div className="w-auto p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
+            <div className="w-auto h-[32rem] lg:h-[35rem] p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
                 <p className="font-medium text-black uppercase ">plano <span className="text-red-600 font-bold">Essencial & Simples</span> </p>
                 <div>
-                    <h2 className="text-3xl font-medium text-black">
+                    <h2 className="lg:text-3xl text-xl font-medium text-black">
                      <span className="text-red-600 line-through">De 4x R$ 374,99</span>
                     </h2>
-                    <h2 className="text-4xl font-semibold text-black">
+                    <h2 className="lg:text-4xl text-3xl font-semibold text-black">
                     <span className="text-green-600">Por 4x R$ 325,99</span><br /><span className="text-xl font-semibold">SEM JUROS</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
                     </h2>
                     
@@ -30,24 +30,24 @@ const AboutPricing: React.FC = () => {
                      OU
                 </h2>
                 <div>
-                    <h2 className="text-3xl font-medium text-black">
+                    <h2 className="lg:text-3xl text-xl font-medium text-black">
                      <span className="text-red-600 line-through">R$ 1.499,99</span>
                     </h2>
-                    <h2 className="text-5xl font-semibold text-black">
+                    <h2 className="lg:text-4xl text-3xl font-semibold text-black">
                     <span className="text-green-600">R$ 1.299,99</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
                     </h2>
                 </div>
 
                 <p className="font-medium text-black ">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <div>
+                <div className="">
                     <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Essencial+%26+Simples%2C+poderia+me+contar+mais%3F" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
             </div>
 
-            <div className="w-auto pt-0 px-0 space-y-7 text-center  rounded-lg shadow-xl bg-white">
+            <div className="w-auto h-[32rem] lg:h-[35rem] pb-8 px-0 space-y-5 text-center  rounded-lg shadow-xl bg-white">
             <div className="py-2 bg-gradient-to-r from-amber-200 to-yellow-500 rounded-t shadow-md">
                 <p className="w-full text-sm text-center text-zinc-900 uppercase rounded-t">MELHOR OFERTA</p>
                 <p className=" text-zinc-900 uppercase">Plano <span className="font-semibold text-red-700">PRESENÇA ONLINE CONTINUA</span></p>
@@ -55,43 +55,43 @@ const AboutPricing: React.FC = () => {
                 
 
                 <div>
-                    <h2 className="text-3xl font-medium  uppercase text-red-600 line-through ">
+                    <h2 className="lg:text-3xl md:text-xl text-xl font-medium  uppercase text-red-600 line-through ">
                         R$ 1.499,99 <span className="text-lg text-black font-normal">/Mensal</span>
                     </h2>
-                    <h2 className="text-4xl font-bold pb-2 uppercase text-green-600 ">
-                        R$ 1.299,99 <span className="text-lg text-black font-normal">/Mensal</span>
+                    <h2 className="lg:text-5xl md:text-3xl text-3xl font-bold pb-2 uppercase text-green-600 ">
+                        R$ 1.299,99 <span className="text-lg text-black font-normal">/Mensal</span><br /><span className="font-semibold shadow-md text-2xl text-yellow-600 px-2 bg-gradient-to-r from-amber-200 to-yellow-500">-20% OFF</span>
                     </h2>
                     
                 </div>
-                <span className="font-semibold shadow-md text-2xl text-yellow-600 px-2 bg-gradient-to-r from-amber-200 to-yellow-500">-20% OFF</span>
+                
                 <h2 className="text-4xl font-medium text-black  uppercase ">
                      OU
                 </h2>
                 <div>
-                    <h2 className="text-3xl font-medium text-red-600  uppercase line-through ">
+                    <h2 className="lg:text-3xl md:text-xl text-xl font-medium text-red-600  uppercase line-through ">
                         R$ 17.999,99<span className="text-lg text-black font-normal"> /Anual</span>
                     </h2>
-                    <h2 className="text-4xl font-bold text-green-600  uppercase ">
-                        R$ 14.399,99 <span className="text-lg text-black font-normal">/Anual</span> <br /> <span className="font-semibold shadow-md text-2xl text-yellow-600 px-2 bg-gradient-to-r from-amber-200 to-yellow-500">-20% OFF</span>
+                    <h2 className="lg:text-5xl md:text-3xl text-3xl font-bold text-green-600  uppercase ">
+                        R$ 14.399,99<span className="text-lg text-black font-normal"> /Anual</span> <br /> <span className="font-semibold shadow-md text-2xl text-yellow-600 px-2 bg-gradient-to-r from-amber-200 to-yellow-500">-20% OFF</span>
                     </h2>
                 </div>
 
-                <p className="font-medium text-black pt-3">PROMOÇÃO DE INAUGURAÇÃO</p>
+                <p className="font-medium text-black">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <div>
-                    <Link className="w-96 px-4 py-2 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
+                <div className="">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
             </div>
             
-            <div className="w-auto p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
+            <div className="w-auto h-[32rem] lg:h-[35rem] p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
                 <p className="font-medium text-black uppercase ">plano <span className="text-red-600 font-bold">À SUA MEDIDA</span> </p>
                 <div>
-                    <h2 className="text-3xl font-medium text-black">
+                    <h2 className="lg:text-3xl text-xl  font-medium text-black">
                      <span className="text-red-600 line-through">De 12x R$ 416,99</span>
                     </h2>
-                    <h2 className="text-4xl font-semibold text-black">
+                    <h2 className="lg:text-4xl text-3xl font-semibold text-black">
                     <span className="text-green-600">Por 12x R$ 332,99</span><br /><span className="text-xl font-semibold">SEM JUROS</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
                     </h2>
                     
@@ -101,17 +101,17 @@ const AboutPricing: React.FC = () => {
                      OU
                 </h2>
                 <div>
-                    <h2 className="text-3xl font-medium text-black">
+                    <h2 className="lg:text-3xl text-xl font-medium text-black">
                      <span className="text-red-600 line-through">R$ 4.999,99</span>
                     </h2>
-                    <h2 className="text-5xl font-semibold text-black">
+                    <h2 className="lg:text-4xl text-3xl font-semibold text-black">
                     <span className="text-green-600">R$ 3.999,99</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
                     </h2>
                 </div>
 
                 <p className="font-medium text-black">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <div className="mt-10">
+                <div className="">
                     <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href={"https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+%C3%80+Sua+Medida%2C+poderia+me+contar+mais%3F"} target="_blank">
                     ASSINE AGORA
                     </Link>

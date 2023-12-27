@@ -47,7 +47,7 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed w-full z-10 transition-all ${
-        isTop && !isSpecialPage ? "bg-transparent" : "shadow bg-gradient-to-tr from-red-600 to-rose-800"
+        isTop && !isSpecialPage && !isOpen ? "bg-transparent" : "shadow bg-gradient-to-tr from-red-600 to-rose-800"
       }`}
     >
       <div className="container px-6 py-4 mx-auto">
@@ -63,19 +63,15 @@ const Navigation = () => {
 
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
-              <div
-                className={`md:hidden lg:hidden h-[2rem] pr-[1rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full`}
-              >
-                
-                  </div>
+             
               <button
                 onClick={toggleMenu}
                 type="button"
-                className=" ml-2 text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className=" ml-2 text-white hover:text-red-500 focus:outline-none focus:text-red-500"
                 aria-label="toggle menu"
               >
                 <svg
-                  className={isOpen ? "hidden" : "w-6 h-6"}
+                  className={isOpen ? "hidden" : "w-10 h-10"}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -90,7 +86,7 @@ const Navigation = () => {
                 </svg>
 
                 <svg
-                  className={isOpen ? "w-6 h-6" : "hidden"}
+                  className={isOpen ? "w-10 h-10" : "hidden"}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -109,10 +105,10 @@ const Navigation = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 bg-white lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+            className={`absolute inset-x-0 z-20 w-full px-6 py-4 bg-white mt-4 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
               isOpen
-                ? "translate-x-0 opacity-100"
-                : "opacity-0 -translate-x-full"
+                ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
+                : "opacity-0 -translate-x-full "
             }`}
           >
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
@@ -138,13 +134,13 @@ const Navigation = () => {
               </Link>
               <div
                 className={`md:hidden lg:hidden 
-                    ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full
+                    ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4 lg:border-2 border-red-500 dark:border-red-500 rounded-full
                 `}
               >
               </div>
               <Link
                 href="/login"
-                className={`px-3 py-2 duration-200 sm:hover:bg-none hover:text-black border-red-600 font-semibold lg:border-2 sm:border-0 rounded-lg ml-2 ${isActive2(
+                className={`px-3 py-2 duration-200 sm:hover:bg-none hover:text-black border-red-600 font-semibold lg:border-2 sm:border-0 rounded-lg ${isActive2(
                   "/login"
                 )} ${
                   isTop && !isSpecialPage ?  "lg:hover:bg-red-600 " : "border-white lg:hover:bg-white hover:text-red-600"
