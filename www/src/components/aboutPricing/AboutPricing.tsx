@@ -41,7 +41,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black ">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div>
-                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="https://wa.me/5571996184966?text=Ol%C3%A1+tenho+interesse+no+plano+Essencial+%26+Simples%2C+poderia+me+contar+mais%3F" target="_blank">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Essencial+%26+Simples%2C+poderia+me+contar+mais%3F" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
@@ -79,7 +79,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black pt-3">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div>
-                    <Link className="w-96 px-4 py-2 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/5571996184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
+                    <Link className="w-96 px-4 py-2 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
@@ -112,7 +112,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div className="mt-10">
-                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href={"https://wa.me/5571996184966?text=Ol%C3%A1+tenho+interesse+no+plano+%C3%80+Sua+Medida%2C+poderia+me+contar+mais%3F"} target="_blank">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href={"https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+%C3%80+Sua+Medida%2C+poderia+me+contar+mais%3F"} target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
