@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const AboutPricing: React.FC = () => {
   return (
@@ -39,9 +40,11 @@ const AboutPricing: React.FC = () => {
 
                 <p className="font-medium text-black ">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <button className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold">
-                ASSINE AGORA
-                </button>
+                <div>
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="https://wa.me/5571996184966?text=Ol%C3%A1+tenho+interesse+no+plano+Essencial+%26+Simples%2C+poderia+me+contar+mais%3F" target="_blank">
+                    ASSINE AGORA
+                    </Link>
+                </div>
             </div>
 
             <div className="w-auto pt-0 px-0 space-y-7 text-center  rounded-lg shadow-xl bg-white">
@@ -75,9 +78,11 @@ const AboutPricing: React.FC = () => {
 
                 <p className="font-medium text-black pt-3">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <button className="w-96 px-4 py-2 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80">
-                ASSINE AGORA
-                </button>
+                <div>
+                    <Link className="w-96 px-4 py-2 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/5571996184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
+                    ASSINE AGORA
+                    </Link>
+                </div>
             </div>
             
             <div className="w-auto p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
@@ -104,11 +109,13 @@ const AboutPricing: React.FC = () => {
                     </h2>
                 </div>
 
-                <p className="font-medium text-black ">PROMOÇÃO DE INAUGURAÇÃO</p>
+                <p className="font-medium text-black">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <button className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold">
-                ASSINE AGORA
-                </button>
+                <div className="mt-10">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href={"https://wa.me/5571996184966?text=Ol%C3%A1+tenho+interesse+no+plano+%C3%80+Sua+Medida%2C+poderia+me+contar+mais%3F"} target="_blank">
+                    ASSINE AGORA
+                    </Link>
+                </div>
             </div>
         </div>
     </div>
