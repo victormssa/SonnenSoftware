@@ -1,10 +1,9 @@
 
 import Message from "@/components/message/Message";
+const services = ['Desenvolvimento Web',  'Desenvolvimento Web + Desktop', 'Desenvolvimento Desktop', 'Desenvolvimento Desktop + Mobile', 'Desenvolvimento Mobile', 'Desenvolvimento Mobile + Web',  'Desenvolvimento Web + Desktop + Mobile', 'Consultoria em TI', 'Testes de Software', 'Otimização de Sistema', 'Evento / Palestra'];
 import type { Metadata } from 'next'
-const services = ['Desenvolvimento Web', 'Desenvolvimento Desktop', 'Desenvolvimento Mobile', 'Consultoria em TI', 'Testes de Software', 'Otimização de Sistema', 'Evento'];
 export const metadata: Metadata = {
-  title: 'Sonnen Software | Orçamento',
-  description: '',
+  title: 'Orçamento'
 }
 const Budget: React.FC = () => {
   return (

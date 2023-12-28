@@ -133,7 +133,6 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                   id="message"
                   name="message"
                   placeholder="Insira a sua mensagem."
-                  required
                   className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -145,6 +144,7 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                   type="checkbox"
                   name=""
                   id=""
+                  required
                   className="mr-2 mb-5 w-4 accent-red-600"
                 />
                 <p>
@@ -164,7 +164,7 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                 />
                 <p>
                   Aceito receber comunicados sobre eventos, produtos e serviços
-                  da Archei Software.
+                  da Sonnen Software.
                 </p>
               </div>
 
@@ -177,9 +177,9 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   />
                 </svg>
               </button>
@@ -349,7 +349,7 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                 />
                 <p>
                   Aceito receber comunicados sobre eventos, produtos e serviços
-                  da Archei Software.
+                  da Sonnen Software.
                 </p>
               </div>
 
@@ -362,9 +362,9 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   />
                 </svg>
               </button>

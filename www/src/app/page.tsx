@@ -7,8 +7,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Home: React.FC = () => {
   return (
     <main className="w-screen h-auto">
-
-
       <HeroMain />
       <a href="#final" className="fixed z-10 bottom-4 right-4 bg-red-600 text-white p-3 rounded-md hover:bg-red-600 hover:text-black transition duration-600 ease-in-out">
           <AiOutlineArrowDown size={"2rem"}/>

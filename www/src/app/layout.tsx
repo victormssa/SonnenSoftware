@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../style/globals.css'
 import Header from '@/components/header/Header';
@@ -9,8 +9,25 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sonnen Software',
-  description: '',
+  title: {
+    default: 'Sonnen Software',
+    template: '%s | Sonnen Software'
+  },
+  description: 'Sonnen Software - Desenvolvendo Soluções Digitais! 🚀🌐 Inovação, elegância e funcionalidade para marcar sua presença online. 💻✨',
+  keywords: ['Desenvolvimento de Software', 'Software', 'Sonnen', 'React', 'Next.js', 'Mobile', 'Desktop'],
+  openGraph: {
+    title: 'Sonnen Software',
+    description: 'Sonnen Software - Desenvolvendo Soluções Digitais! 🚀🌐 Inovação, elegância e funcionalidade para marcar sua presença online. 💻✨',
+    url: 'https://sonnensoftware.com',
+    siteName: 'Sonnen Software',
+    images: [
+      {
+        url: 'https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/logoSonnen.png',
+        width: '800px',
+        height: '600px',
+      }
+    ]
+  }
 }
 
 export default function RootLayout({
