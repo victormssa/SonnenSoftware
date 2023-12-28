@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/logoSonnen.png',
-        width: '3604px',
-        height: '1108px',
+        width: 3604,
+        height: 1108,
       }
     ]
   }
