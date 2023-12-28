@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   },
   description: 'Sonnen Software - Desenvolvendo Soluções Digitais! 🚀🌐 Inovação, elegância e funcionalidade para marcar sua presença online. 💻✨',
   keywords: ['Desenvolvimento de Software', 'Software', 'Sonnen', 'React', 'Next.js', 'Mobile', 'Desktop'],
+  metadataBase: new URL('https://sonnensoftware.com'),
   openGraph: {
     title: 'Sonnen Software',
     description: 'Sonnen Software - Desenvolvendo Soluções Digitais! 🚀🌐 Inovação, elegância e funcionalidade para marcar sua presença online. 💻✨',
