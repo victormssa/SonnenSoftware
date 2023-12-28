@@ -13,8 +13,8 @@ const AboutPricing: React.FC = () => {
         Descubra a excelência da Sonnen Software com nossos planos exclusivos. Oferecemos opções personalizadas para atender às suas necessidades, com tecnologias modernas e com preços transparentes e benefícios exclusivos.
         </p>
 
-        <div className="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
-            <div className="w-auto h-[32rem] lg:h-[35rem] p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
+        <div className="grid grid-cols-1 gap-8 mt-6  md:grid-cols-2 lg:grid-cols-3">
+            <div className="w-auto h-auto p-8 text-center shadow-xl rounded-lg bg-white">
                 <p className="font-medium text-black uppercase ">plano <span className="text-red-600 font-bold">Essencial & Simples</span> </p>
                 <div>
                     <h2 className="lg:text-3xl text-xl font-medium text-black">
@@ -26,7 +26,7 @@ const AboutPricing: React.FC = () => {
                     
                 </div>
                 
-                <h2 className="text-4xl font-medium text-black uppercase ">
+                <h2 className="text-4xl font-medium text-black uppercase my-4">
                      OU
                 </h2>
                 <div>
@@ -38,16 +38,16 @@ const AboutPricing: React.FC = () => {
                     </h2>
                 </div>
 
-                <p className="font-medium text-black ">PROMOÇÃO DE INAUGURAÇÃO</p>
+                <p className="font-medium text-black mt-2">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <div className="">
+                <div className="mt-5">
                     <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="/planos/essencial&simples" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
             </div>
 
-            <div className="w-auto h-[32rem] lg:h-[35rem] pb-8 px-0 space-y-5 text-center  rounded-lg shadow-xl bg-white">
+            <div className="w-auto h-auto pb-8 px-0 text-center  rounded-lg shadow-xl bg-white">
             <div className="py-2 bg-gradient-to-r from-amber-200 to-yellow-500 rounded-t shadow-md">
                 <p className="w-full text-sm text-center text-zinc-900 uppercase rounded-t">MELHOR OFERTA</p>
                 <p className=" text-zinc-900 uppercase">Plano <span className="font-semibold text-red-700">PRESENÇA ONLINE CONTINUA</span></p>
@@ -58,34 +58,34 @@ const AboutPricing: React.FC = () => {
                     <h2 className="lg:text-3xl md:text-xl text-xl font-medium  uppercase text-red-600 line-through ">
                         R$ 1.499,99 <span className="text-lg text-black font-normal">/Mensal</span>
                     </h2>
-                    <h2 className="lg:text-5xl md:text-3xl text-3xl font-bold pb-2 uppercase text-green-600 ">
+                    <h2 className="lg:text-4xl md:text-3xl text-3xl font-bold pb-2 uppercase text-green-600 ">
                         R$ 1.299,99 <span className="text-lg text-black font-normal">/Mensal</span><br /><span className="font-semibold shadow-md text-2xl text-yellow-600 px-2 bg-gradient-to-r from-amber-200 to-yellow-500">-20% OFF</span>
                     </h2>
                     
                 </div>
                 
-                <h2 className="text-4xl font-medium text-black  uppercase ">
+                <h2 className="text-4xl font-medium text-black  uppercase my-5">
                      OU
                 </h2>
                 <div>
                     <h2 className="lg:text-3xl md:text-xl text-xl font-medium text-red-600  uppercase line-through ">
                         R$ 17.999,99<span className="text-lg text-black font-normal"> /Anual</span>
                     </h2>
-                    <h2 className="lg:text-5xl md:text-3xl text-3xl font-bold text-green-600  uppercase ">
+                    <h2 className="lg:text-4xl md:text-3xl text-3xl font-bold text-green-600  uppercase ">
                         R$ 14.399,99<span className="text-lg text-black font-normal"> /Anual</span> <br /> <span className="font-semibold shadow-md text-2xl text-yellow-600 px-2 bg-gradient-to-r from-amber-200 to-yellow-500">-20% OFF</span>
                     </h2>
                 </div>
 
-                <p className="font-medium text-black">PROMOÇÃO DE INAUGURAÇÃO</p>
+                <p className="font-medium text-black mt-2">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <div className="">
+                <div className="mt-4">
                     <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
             </div>
             
-            <div className="w-auto h-[32rem] lg:h-[35rem] p-8 space-y-5 text-center shadow-xl rounded-lg bg-white">
+            <div className="w-auto h-auto p-8 text-center shadow-xl rounded-lg bg-white">
                 <p className="font-medium text-black uppercase ">plano <span className="text-red-600 font-bold">À SUA MEDIDA</span> </p>
                 <div>
                     <h2 className="lg:text-3xl text-xl  font-medium text-black">
@@ -97,7 +97,7 @@ const AboutPricing: React.FC = () => {
                     
                 </div>
                 
-                <h2 className="text-4xl font-medium text-black uppercase ">
+                <h2 className="text-4xl font-medium text-black uppercase my-4">
                      OU
                 </h2>
                 <div>
@@ -109,9 +109,9 @@ const AboutPricing: React.FC = () => {
                     </h2>
                 </div>
 
-                <p className="font-medium text-black">PROMOÇÃO DE INAUGURAÇÃO</p>
+                <p className="font-medium text-black mt-2">PROMOÇÃO DE INAUGURAÇÃO</p>
 
-                <div className="">
+                <div className="mt-5">
                     <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href={"https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+%C3%80+Sua+Medida%2C+poderia+me+contar+mais%3F"} target="_blank">
                     ASSINE AGORA
                     </Link>

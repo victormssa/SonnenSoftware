@@ -40,7 +40,7 @@ const Navigation = () => {
 
   const isActive2 = (path: string) => {
     return pathname === path
-      ? " sm:bg-none bg-white text-red-600 "
+      ? " sm:bg-none text-rose-300 lg:bg-white lg:text-red-600 "
       : " text-white";
   };
 
@@ -105,7 +105,7 @@ const Navigation = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 bg-white mt-4 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+            className={`absolute inset-x-0 z-20 w-full px-6 py-0 bg-white mt-4 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
               isOpen
                 ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
                 : "opacity-0 -translate-x-full "
@@ -114,20 +114,20 @@ const Navigation = () => {
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
             <Link
                 href="/#planos"
-                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 ${isActive(
+                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen ${isActive(
                   "/#planos"
                 )} ${
-                  isTop && !isSpecialPage ?  "lg:hover:text-red-600 " : " hover:text-rose-300"
+                  isTop && !isSpecialPage ?  "lg:hover:text-red-600 hover:text-rose-300 " : " hover:text-rose-300"
                 }`}
               >
                 Nossos Planos
               </Link>
               <Link
                 href="/contato"
-                className={`px-3 py-2 duration-200 hover:text-black font-semibold lg:border-2 sm:border-0 border-red-600 mr-4 ${isActive2(
+                className={`px-3 py-2 duration-200 hover:text-black font-semibold lg:border-2 border-b-2 lg:w-auto w-screen mr-4 ${isActive2(
                   "/contato"
                 )} ${
-                  isTop && !isSpecialPage ?  "lg:hover:bg-red-600 " : "border-white lg:hover:bg-white hover:text-red-600"
+                  isTop && !isSpecialPage ?  "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300" : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
               >
                 Solicite um orçamento
@@ -140,10 +140,10 @@ const Navigation = () => {
               </div>
               <Link
                 href="/login"
-                className={`px-3 py-2 duration-200 sm:hover:bg-none hover:text-black border-red-600 font-semibold lg:border-2 sm:border-0 rounded-lg ${isActive2(
+                className={`px-3 py-2 duration-200 sm:hover:bg-none hover:text-black border-red-600 font-semibold lg:border-2 sm:border-0 rounded-lg lg:border-b-2 lg:w-auto w-screen ${isActive2(
                   "/login"
                 )} ${
-                  isTop && !isSpecialPage ?  "lg:hover:bg-red-600 " : "border-white lg:hover:bg-white hover:text-red-600"
+                  isTop && !isSpecialPage ?  "lg:hover:bg-red-600 lg:hover:text-black hover:text-rose-300" : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
               >
                 Login
