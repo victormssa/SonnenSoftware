@@ -2,28 +2,37 @@
 import { useState, useEffect } from "react";
 
 const CookieBanner = () => {
+  const isServer = typeof window === "undefined"; // Check if running on the server
+
   const [cookieConsent, setCookieConsent] = useState(() => {
-    const consent = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("cookieConsent="));
-    return consent ? consent.split("=")[1] === "true" : "";
+    if (!isServer) {
+      const consent = document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("cookieConsent="));
+      return consent ? consent.split("=")[1] === "true" : "";
+    }
+    return ""; // Default value for server-side rendering
   });
 
   const handleAcceptCookies = () => {
     setCookieConsent(true);
-    document.cookie =
-      "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    if (!isServer) {
+      document.cookie =
+        "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    }
   };
 
   const handleDeclineCookies = () => {
     setCookieConsent(false);
-    document.cookie =
-      "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-    // Logic to close the modal
-    const modal = document.getElementById("cookie-modal");
-    if (modal) {
-      modal.style.display = "none";
-      enableSiteInteraction();
+    if (!isServer) {
+      document.cookie =
+        "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      // Logic to close the modal
+      const modal = document.getElementById("cookie-modal");
+      if (modal) {
+        modal.style.display = "none";
+        enableSiteInteraction();
+      }
     }
   };
 
