@@ -41,7 +41,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black ">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div className="">
-                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Essencial+%26+Simples%2C+poderia+me+contar+mais%3F" target="_blank">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="/planos/essencial&simples" target="_blank">
                     ASSINE AGORA
                     </Link>
                 </div>
