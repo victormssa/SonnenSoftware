@@ -1,62 +1,39 @@
 "use client";
 import { useState, useEffect } from "react";
-
-const CookieBanner = () => {
-  const isServer = typeof window === "undefined"; // Check if running on the server
-
-  const [cookieConsent, setCookieConsent] = useState(() => {
-    if (!isServer) {
-      const consent = document.cookie
-        .split("; ")
-        .find((row) => row.startsWith("cookieConsent="));
-      return consent ? consent.split("=")[1] === "true" : "";
-    }
-    return ""; // Default value for server-side rendering
-  });
-
-  const handleAcceptCookies = () => {
-    setCookieConsent(true);
-    if (!isServer) {
-      document.cookie =
-        "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-    }
-  };
-
-  const handleDeclineCookies = () => {
-    setCookieConsent(false);
-    if (!isServer) {
-      document.cookie =
-        "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-      // Logic to close the modal
-      const modal = document.getElementById("cookie-modal");
-      if (modal) {
-        modal.style.display = "none";
-        enableSiteInteraction();
-      }
-    }
-  };
-
-  const disableSiteInteraction = () => {
-    document.body.style.pointerEvents = "none";
-  };
-
-  const enableSiteInteraction = () => {
-    document.body.style.pointerEvents = "auto";
-  };
+import Link from "next/link";
+const CookieBanner: React.FC = () => {
+  const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    if (cookieConsent !== "") {
-      if (cookieConsent === true || cookieConsent === false) {
-        enableSiteInteraction();
-      } else {
-        disableSiteInteraction();
-      }
-    }
-  }, [cookieConsent]);
+    const cookieValue = document.cookie
+      .split('; ')
+      .find((row) => row.startsWith('session_info='))
+      ?.split('=')[1];
 
-  if (cookieConsent === true || cookieConsent === false) {
-    return null;
+    const isCookieAccepted = cookieValue ? JSON.parse(decodeURIComponent(cookieValue)).cc === true : false;
+
+    const localStorageValue = localStorage.getItem('session_info') || '{}';
+    const isLocalStorageAccepted = JSON.parse(localStorageValue).cc === true;
+
+    if (!isCookieAccepted && !isLocalStorageAccepted) {
+      setShowBanner(true);
+    }
+  }, []);
+
+  const handleAccept = () => {
+    document.cookie = 'session_info=' + encodeURIComponent(JSON.stringify({ cc: true })) + '; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+    setShowBanner(false);
+  };
+
+  const handleDecline = () => {
+    localStorage.setItem('session_info', JSON.stringify({ cc: false }));
+    setShowBanner(false);
+  };
+
+  if (!showBanner) {
+    return null; // Não renderiza o banner se não for necessário
   }
+
 
   return (
     <>
@@ -71,7 +48,7 @@ const CookieBanner = () => {
 
           <p className="mt-4 text-sm text-gray-300">
             Olá, este site utiliza cookies essenciais para garantir seu correto
-            funcionamento e para melhorar seu desenvolvimento. Os cookies serão configurados apenas após o consentimento. Se possuir alguma dúvida <a href="/politicas/cookies" className="text-red-500 hover:underline">Leia as políticas de cookies</a>.
+            funcionamento e para melhorar seu desenvolvimento. Os cookies serão configurados apenas após o consentimento. Se possuir alguma dúvida <Link href="/politicas/privacidade" className="text-red-500 hover:underline">Leia as políticas de cookies</Link>.
           </p>
 
           <p className="mt-3 text-sm text-gray-300">
@@ -81,13 +58,13 @@ const CookieBanner = () => {
           <div className="grid grid-cols-2 gap-4 mt-4 shrink-0">
             <button
               className="text-xs shadow-lg bg-green-700 text-white hover:bg-green-600 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
-              onClick={handleAcceptCookies}
+              onClick={handleAccept}
             >
               Aceitar
             </button>
             <button
               className="text-xs shadow-lg bg-red-700 text-white hover:bg-red-600 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
-              onClick={handleDeclineCookies}
+              onClick={handleDecline}
             >
               Não Aceitar
             </button>

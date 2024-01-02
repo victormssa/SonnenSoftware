@@ -3,8 +3,9 @@ import { Inter } from 'next/font/google'
 import '../style/globals.css'
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
+import CookieBanner from '@/components/cookieBanner/CookieBanner';
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,7 +41,7 @@ export default function RootLayout({
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}><Header />{children}<Footer/><Analytics /><SpeedInsights /></body>
+      <body className={inter.className}><CookieBanner/><Header />{children}<Footer/><Analytics /><SpeedInsights /></body>
     </html>
   )
 }

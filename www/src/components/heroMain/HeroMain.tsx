@@ -29,10 +29,10 @@ const HeroMain = () => {
         className="w-full bg-center bg-no-repeat bg-cover h-[90rem] md:h-[48rem] lg:h-[48rem] border-b-4 border-red-600"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80)",
+            "url(https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/background_red.png)",
         }}
       >
-        <div className="flex flex-col items-center justify-center w-full h-full bg-[#000000]/80 pt-28">
+        <div className="flex flex-col items-center justify-center w-full h-full  pt-28">
           <section className="text-center mt-8">
           <h3 className="text-2xl font-semibold text-white md:text-4xl lg:text-4xl mb-1">
             Desenvolva seu <br />{" "}
@@ -57,9 +57,9 @@ const HeroMain = () => {
             </h2>
             <Link
               href="/contato"
-              className="px-2 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2 duration-200 text-white hover:bg-red-600 hover:text-black dark:hover:text-black font-semibold border-2 border-red-600 mr-4 rounded-md"
+              className="px-2 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2 duration-200 text-white hover:bg-red-600 hover:text-black dark:hover:text-black font-black border-2 border-red-600 mr-4 rounded-md"
             >
-              Clique aqui !
+              CLIQUE E SOLICITE AGORA
             </Link>
           </section>
           <section className="">
@@ -70,9 +70,9 @@ const HeroMain = () => {
               </h3>
 
               <div className="">
-                <span className="inline-block w-40 h-1 bg-red-500 rounded-full"></span>
-                <span className="inline-block w-3 h-1 ml-1 bg-red-500 rounded-full"></span>
-                <span className="inline-block w-1 h-1 ml-1 bg-red-500 rounded-full"></span>
+                <span className="inline-block w-40 h-1 bg-red-600 rounded-full"></span>
+                <span className="inline-block w-3 h-1 ml-1 bg-red-600 rounded-full"></span>
+                <span className="inline-block w-1 h-1 ml-1 bg-red-600 rounded-full"></span>
               </div>
               <div className="mt-4 xl:mt-4 lg:flex lg:items-center">
                 <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4">

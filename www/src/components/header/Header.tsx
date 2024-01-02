@@ -30,7 +30,7 @@ const Navigation = () => {
   }, []);
 
   const pathname = usePathname();
-  const specialPages = ["/login", "/contato"];
+  const specialPages = ["/login", "/contato", "/politicas/privacidade"];
   const isSpecialPage = specialPages.includes(pathname);
   const isActive = (path: string) => {
     return pathname === path

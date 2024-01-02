@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useForm, ValidationError } from '@formspree/react';
+import Link from "next/link";
 interface DropdownProps {
   services: string[];
 }
@@ -149,9 +150,9 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                 />
                 <p>
                   Ao informar meus dados, eu concordo com a{" "}
-                  <a href="" className="text-red-600 hover:underline">
+                  <Link href="/politicas/cookies" className="text-red-600 hover:underline">
                     Política de Privacidade
-                  </a>{" "}
+                  </Link>{" "}
                   disponibilizada no site.
                 </p>
               </div>
@@ -334,9 +335,9 @@ const Message: React.FC<DropdownProps> = ({services}) => {
                 />
                 <p>
                   Ao informar meus dados, eu concordo com a{" "}
-                  <a href="" className="text-red-600 hover:underline">
+                  <Link href="/politicas/privacidade" className="text-red-600 hover:underline">
                     Política de Privacidade
-                  </a>{" "}
+                  </Link>{" "}
                   disponibilizada no site.
                 </p>
               </div>
