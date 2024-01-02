@@ -26,7 +26,7 @@ const HeroMain = () => {
   return (
 
       <section
-        className="w-full bg-center bg-no-repeat bg-cover h-[90rem] md:h-[48rem] lg:h-[48rem] border-b-4 border-red-600"
+        className="w-full bg-center bg-no-repeat bg-cover h-[83rem] md:h-[48rem] lg:h-[48rem] border-b-4 border-red-600"
         style={{
           backgroundImage:
             "url(https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/background_red.png)",

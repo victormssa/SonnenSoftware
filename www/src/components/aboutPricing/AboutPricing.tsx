@@ -21,7 +21,7 @@ const AboutPricing: React.FC = () => {
                      <span className="text-red-600 line-through">De 4x R$ 374,99</span>
                     </h2>
                     <h2 className="lg:text-4xl text-3xl font-semibold text-black">
-                    <span className="text-green-600">Por 4x R$ 325,99</span><br /><span className="text-xl font-semibold">SEM JUROS</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
+                    <span className="text-green-600">Por 4x R$ 325,99</span><br /><span className="text-xl font-semibold">SEM JUROS</span><br /> <span className="font-semibold shadow-md text-2xl text-gray-400 px-2 bg-gradient-to-r from-gray-100 to-gray-300">-20% OFF</span>
                     </h2>
                     
                 </div>
@@ -34,7 +34,7 @@ const AboutPricing: React.FC = () => {
                      <span className="text-red-600 line-through">R$ 1.499,99</span>
                     </h2>
                     <h2 className="lg:text-4xl text-3xl font-semibold text-black">
-                    <span className="text-green-600">R$ 1.299,99</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
+                    <span className="text-green-600">R$ 1.299,99</span><br /> <span className="font-semibold shadow-md text-2xl text-gray-400 px-2 bg-gradient-to-r from-gray-100 to-gray-300">-20% OFF</span>
                     </h2>
                 </div>
 
@@ -48,9 +48,9 @@ const AboutPricing: React.FC = () => {
             </div>
 
             <div className="w-auto h-auto pb-8 px-0 text-center  rounded-lg shadow-xl bg-white">
-            <div className="py-2 bg-gradient-to-r from-amber-200 to-yellow-500 rounded-t shadow-md mb-5">
-                <p className="w-full text-sm text-center text-zinc-900 uppercase rounded-t">MELHOR OFERTA</p>
-                <p className=" text-zinc-900 uppercase">Plano <span className="font-semibold text-red-700">PRESENÇA ONLINE CONTINUA</span></p>
+            <div className="py-2 bg-gradient-to-tr from-red-600 to-rose-800 rounded-t shadow-md mb-5">
+                <p className="w-full text-sm text-center text-white uppercase rounded-t">MELHOR OFERTA</p>
+                <p className=" text-white uppercase">Plano <span className="font-semibold text-white">PRESENÇA ONLINE CONTINUA</span></p>
             </div>
                 
 
@@ -79,7 +79,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black mt-2">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div className="mt-4">
-                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="/planos/presenca_continua">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80" href="/planos/presenca_continua">
                     ASSINE AGORA
                     </Link>
                 </div>
@@ -92,7 +92,7 @@ const AboutPricing: React.FC = () => {
                      <span className="text-red-600 line-through">De 12x R$ 416,99</span>
                     </h2>
                     <h2 className="lg:text-4xl text-3xl font-semibold text-black">
-                    <span className="text-green-600">Por 12x R$ 332,99</span><br /><span className="text-xl font-semibold">SEM JUROS</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
+                    <span className="text-green-600">Por 12x R$ 332,99</span><br /><span className="text-xl font-semibold">SEM JUROS</span><br /> <span className="font-semibold shadow-md text-2xl text-gray-400 px-2 bg-gradient-to-r from-gray-100 to-gray-300">-20% OFF</span>
                     </h2>
                     
                 </div>
@@ -105,7 +105,7 @@ const AboutPricing: React.FC = () => {
                      <span className="text-red-600 line-through">R$ 4.999,99</span>
                     </h2>
                     <h2 className="lg:text-4xl text-3xl font-semibold text-black">
-                    <span className="text-green-600">R$ 3.999,99</span><br /> <span className="text-xl font-medium bg-green-600 text-white rounded-xl px-2">20% OFF</span>
+                    <span className="text-green-600">R$ 3.999,99</span><br /> <span className="font-semibold shadow-md text-2xl text-gray-400 px-2 bg-gradient-to-r from-gray-100 to-gray-300">-20% OFF</span>
                     </h2>
                 </div>
 

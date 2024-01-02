@@ -105,13 +105,13 @@ const Navigation = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-0 bg-white mt-4 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+            className={`absolute inset-x-0 z-20 w-full h-screen px-6 py-0 bg-white mt-4 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
               isOpen
                 ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
                 : "opacity-0 -translate-x-full "
             }`}
           >
-            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
+            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8 ">
             <Link
                 href="/#planos"
                 className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen ${isActive(
