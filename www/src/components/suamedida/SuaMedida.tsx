@@ -89,7 +89,7 @@ const SuaMedida = () => {
         <section className='flex-1  '>
 
           <p className="mt-8 lg:mt-10 xl:mt-6 lg:ms-15 text-center text-md ">
-                Com o Plano "À Sua Medida", entregamos uma experiência única e personalizada. Aqui, você tem total autonomia para cuidar do deploy, gerenciamento e manutenção do seu site, enquanto nós lidamos com toda a complexidade do desenvolvimento.
+                Com o Plano &quot;À Sua Medida&quot;, entregamos uma experiência única e personalizada. Aqui, você tem total autonomia para cuidar do deploy, gerenciamento e manutenção do seu site, enquanto nós lidamos com toda a complexidade do desenvolvimento.
             <br />
           </p>
           <p className="mt-8 lg:mt-10 xl:mt-6 lg:ms-20 text-center text-md">
@@ -126,7 +126,7 @@ const SuaMedida = () => {
                 <li className='flex items-center '>
                     <CiCoinInsert size='20em'/>
                     <span className='ml-2 lg:ml-6'>
-                    Com um modelo de pagamento único, o Plano "À Sua Medida" simplifica suas finanças. Você efetua o pagamento uma vez e desfruta de todos os benefícios listados, sem preocupações com mensalidades recorrentes. Essa abordagem transparente oferece controle financeiro e previsibilidade.
+                    Com um modelo de pagamento único, o Plano &quot;À Sua Medida&quot; simplifica suas finanças. Você efetua o pagamento uma vez e desfruta de todos os benefícios listados, sem preocupações com mensalidades recorrentes. Essa abordagem transparente oferece controle financeiro e previsibilidade.
                     </span>
                 </li>
               </ul>
@@ -137,7 +137,7 @@ const SuaMedida = () => {
                 <li className='flex items-center '>
                     <CiCoinInsert size='20em'/>
                     <span className='ml-2 lg:ml-6 '>
-                    Priorizamos a experiência do usuário em todos os dispositivos. Seu site, desenvolvido sob o Plano "À Sua Medida", é totalmente responsivo, garantindo que os visitantes tenham uma navegação suave e consistente, independentemente do dispositivo que estão usando.
+                    Priorizamos a experiência do usuário em todos os dispositivos. Seu site, desenvolvido sob o Plano &quot;À Sua Medida&quot;, é totalmente responsivo, garantindo que os visitantes tenham uma navegação suave e consistente, independentemente do dispositivo que estão usando.
                     </span>
                 </li>
                 <li className='flex items-center '>
