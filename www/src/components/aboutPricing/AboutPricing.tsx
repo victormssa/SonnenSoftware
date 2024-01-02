@@ -48,13 +48,13 @@ const AboutPricing: React.FC = () => {
             </div>
 
             <div className="w-auto h-auto pb-8 px-0 text-center  rounded-lg shadow-xl bg-white">
-            <div className="py-2 bg-gradient-to-r from-amber-200 to-yellow-500 rounded-t shadow-md">
+            <div className="py-2 bg-gradient-to-r from-amber-200 to-yellow-500 rounded-t shadow-md mb-5">
                 <p className="w-full text-sm text-center text-zinc-900 uppercase rounded-t">MELHOR OFERTA</p>
                 <p className=" text-zinc-900 uppercase">Plano <span className="font-semibold text-red-700">PRESENÇA ONLINE CONTINUA</span></p>
             </div>
                 
 
-                <div>
+                <div className="">
                     <h2 className="lg:text-3xl md:text-xl text-xl font-medium  uppercase text-red-600 line-through ">
                         R$ 1.499,99 <span className="text-lg text-black font-normal">/Mensal</span>
                     </h2>
@@ -79,7 +79,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black mt-2">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div className="mt-4">
-                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+Presen%C3%A7a+Online+Continua%2C+poderia+me+contar+mais%3F" target="_blank">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white font-semibold capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-gray-100 focus:ring focus:ring-black focus:ring-opacity-80" href="/planos/presenca_continua">
                     ASSINE AGORA
                     </Link>
                 </div>
@@ -112,7 +112,7 @@ const AboutPricing: React.FC = () => {
                 <p className="font-medium text-black mt-2">PROMOÇÃO DE INAUGURAÇÃO</p>
 
                 <div className="mt-5">
-                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href={"https://wa.me/557196184966?text=Ol%C3%A1+tenho+interesse+no+plano+%C3%80+Sua+Medida%2C+poderia+me+contar+mais%3F"} target="_blank">
+                    <Link className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" href="planos/sua_medida">
                     ASSINE AGORA
                     </Link>
                 </div>
