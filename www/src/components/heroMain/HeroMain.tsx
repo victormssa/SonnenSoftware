@@ -26,7 +26,7 @@ const HeroMain = () => {
   return (
 
       <section
-        className="w-full bg-center bg-no-repeat bg-cover h-[83rem] md:h-[48rem] lg:h-[48rem] border-b-4 border-red-600"
+        className="w-full bg-center bg-no-repeat bg-cover h-[84rem] md:h-[48rem] lg:h-[48rem] border-b-4 border-red-600"
         style={{
           backgroundImage:
             "url(https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/background_red.png)",
@@ -59,7 +59,7 @@ const HeroMain = () => {
               href="/contato"
               className="px-2 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2 duration-200 text-white hover:bg-red-600 hover:text-black dark:hover:text-black font-black border-2 border-red-600 mr-4 rounded-md"
             >
-              CLIQUE E SOLICITE AGORA
+              CLIQUE E SOLICITE
             </Link>
           </section>
           <section className="">
