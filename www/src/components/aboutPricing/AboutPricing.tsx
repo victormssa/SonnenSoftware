@@ -533,7 +533,7 @@ const AboutPricing: React.FC = () => {
                       </svg>
 
                       <span className="mx-4 text-gray-300">
-                      Acesso a Módulos Premium & Base
+                      Acesso a Módulos Base & Premium
                       </span>
                     </div>
                     <div className="flex items-center">
