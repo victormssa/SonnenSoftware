@@ -34,16 +34,7 @@ const AboutPricing: React.FC = () => {
                     Este plano se configura como a escolha ideal para aqueles que buscam o essencial, sendo especialmente adequado para pequenos negócios, profissionais autônomos e projetos pessoais, atendendo as necessidades de forma eficiente.
                   </p>
 
-                  <h2 className="mt-4 text-2xl font-semibold  sm:text-3xl text-gray-300">
-                    {" "}
-                    R$ 1.499,99
-                  </h2>
-
-                  <p className="mt-1  text-gray-300">Ou</p>
-                  <h2 className="mt-1 text-2xl font-semibold  sm:text-3xl text-gray-300">
-                    4x R$ 374,99
-                  </h2>
-                  <p className="mt-1  text-gray-300 font-semibold">SEM JUROS</p>
+                  
                   <Link href="https://wa.link/sbu0bd">
                       <button className="w-full px-4 py-2 mt-6 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80">
                         ASSINE AGORA
@@ -62,7 +53,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -81,7 +72,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -100,7 +91,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -117,7 +108,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -136,7 +127,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -184,7 +175,7 @@ const AboutPricing: React.FC = () => {
                       </svg>
 
                       <span className="mx-4 text-gray-300">
-                        Acesso a Módulos Premium & Base
+                        Acesso a Módulos Base & Premium
                       </span>
                     </div>
                     <div className="flex items-center">
@@ -222,16 +213,7 @@ const AboutPricing: React.FC = () => {
                   Nosso Plano Presença Online Continua é ideal para quem almeja uma experiência completa, sem precisar se preocupar. A Sonnen Software cuida de tudo para você poder desfrutar, com acesso à diversos módulos para enriquecer seu site.
                   </p>
 
-                  <h2 className="mt-4 text-2xl font-semibold  sm:text-3xl text-gray-300">
-                    {" "}
-                    R$ 17.999,99<span className="text-base font-medium"> /Anual</span>
-                  </h2>
-
-                  <p className="mt-1  text-gray-300">Ou</p>
-                  <h2 className="mt-1 text-2xl font-semibold  sm:text-3xl text-gray-300">
-                    R$ 1.499,99<span className="text-base font-medium"> /Mensal</span>
-                  </h2>
-                  <p className="mt-1  text-gray-300 font-semibold">&nbsp;</p>
+                  
                   <Link href="https://wa.link/8we64h">
                       <button className="w-full px-4 py-2 mt-6 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80">
                         ASSINE AGORA
@@ -250,7 +232,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -269,7 +251,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -288,7 +270,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -305,7 +287,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -324,7 +306,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -343,7 +325,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -360,7 +342,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -378,7 +360,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -410,16 +392,7 @@ const AboutPricing: React.FC = () => {
                   Com o plano À Sua Medida, entregamos uma experiência única e personalizada. Você terá total autonomia para cuidar do deploy, gerenciamento e manutenção, enquanto nós lidamos com a complexidade do desenvolvimento.
                   </p>
 
-                  <h2 className="mt-4 text-2xl font-semibold  sm:text-3xl text-gray-300">
-                    {" "}
-                    R$ 4.999,99
-                  </h2>
-
-                  <p className="mt-1  text-gray-300">Ou</p>
-                  <h2 className="mt-1 text-2xl font-semibold  sm:text-3xl text-gray-300">
-                    12x R$ 416,99
-                  </h2>
-                  <p className="mt-1  text-gray-300 font-semibold">SEM JUROS</p>
+                  
                   <Link href="https://wa.link/n2xntf">
                       <button className="w-full px-4 py-2 mt-6 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80">
                         ASSINE AGORA
@@ -438,7 +411,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -457,7 +430,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -476,7 +449,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -493,7 +466,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -548,7 +521,7 @@ const AboutPricing: React.FC = () => {
                     <div className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5 text-red-500"
+                        className="w-5 h-5 text-green-500"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
