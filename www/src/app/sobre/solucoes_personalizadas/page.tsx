@@ -37,8 +37,8 @@ const SolucoesPersonalizadas = () => {
   ) => (
     <div className="justify-evenly flex w-full space-x-4">
       <div className="w-96 h-auto bg-neutral-900 rounded-3xl">
-        <h1>{title}</h1>
-        <p>{description}</p>
+        <h1 className="py-2">{title}</h1>
+        <p className="text-start py-2 px-4">{description}</p>
       </div>
       {items.map((item, index) => (
         <div key={index} className="w-32 h-auto bg-neutral-900 rounded-3xl">
@@ -72,8 +72,8 @@ const SolucoesPersonalizadas = () => {
     <div className="w-screen flex flex-col text-white bg-zinc-900 bg-center -z-10">
       <section className="mt-10 w-full bg-zinc-900">
         <div className="flex justify-center text-center items-center flex-col mx-auto space-y-2 my-16">
-          <h3 className="p-1 text-3xl font-bold bg-red-600 rounded-md">
-          Nossos Módulos e Serviços
+          <h3 className="p-1 text-3xl font-bold rounded-md">
+          Nossos Módulos Disponiveis
           </h3>
         </div>
 
@@ -98,7 +98,8 @@ const SolucoesPersonalizadas = () => {
           <div className="mt-10 w-full px-16">
             <div className="ml-auto right-10 relative top-0 flex-row flex w-40 h-auto bg-red-600 rounded-t-2xl text-center justify-center py-2">
               {/* Content of the div with red background */}
-              <h1 className="">e-commerce</h1>
+              
+              <h1 className="">{selectedButton}</h1>
             </div>
           </div>
 
@@ -110,7 +111,7 @@ const SolucoesPersonalizadas = () => {
             )}
           </div>
 
-          <p className="text-zinc-500 text-sm font-bold pb-20">
+          <p className="text-zinc-500 text-sm font-bold py-4">
             *Os valores acima são valores mínimos para seu desenvolvimento, de
             acordo com funcionalidades.
           </p>

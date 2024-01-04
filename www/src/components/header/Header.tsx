@@ -46,7 +46,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed w-full z-10 transition-all ${
+      className={`fixed w-full z-20 transition-all ${
         isTop && !isSpecialPage && !isOpen ? "bg-transparent" : "shadow bg-gradient-to-tr from-red-600 to-rose-800"
       }`}
     >

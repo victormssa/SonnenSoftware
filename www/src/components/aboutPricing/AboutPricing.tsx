@@ -9,11 +9,11 @@ const AboutPricing: React.FC = () => {
       <section className="" id="planos">
         <div className="bg-zinc-900">
           <div className="container flex flex-col px-6 py-8 mx-auto justify-center items-center align-middle">
-            <h1 className="text-2xl font-semibold text-center text-white lg:text-3xl">
+            <h1 className="text-2xl font-semibold text-center text-white lg:text-3xl z-10">
               Conheça os <span className="text-red-600">Nossos Planos</span>
             </h1>
 
-            <p className="max-w-4xl mx-auto mt-4 text-center text-gray-100 xl:mt-6 ">
+            <p className="max-w-4xl mx-auto mt-4 text-center text-gray-100 xl:mt-6 z-10">
               Descubra a excelência da Sonnen Software com nossos planos
               exclusivos. Oferecemos opções personalizadas para atender às suas
               necessidades, com tecnologias modernas e com preços transparentes
@@ -120,7 +120,7 @@ const AboutPricing: React.FC = () => {
                       </svg>
 
                       <span className="mx-4 text-gray-300">
-                        Foco no SEO
+                        Desenvolvimento do SEO
                       </span>
                     </div>
                     
@@ -141,6 +141,23 @@ const AboutPricing: React.FC = () => {
                       <span className="mx-4 text-gray-300">
                         Hospedagem Incluída
                       </span>
+                    </div>
+                    
+                    <div className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5 text-red-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span className="mx-4 text-gray-300">Marketing Digital</span>
                     </div>
 
                     <div className="flex items-center">
@@ -299,7 +316,7 @@ const AboutPricing: React.FC = () => {
                       </svg>
 
                       <span className="mx-4 text-gray-300">
-                        Foco no SEO
+                        Desenvolvimento do SEO
                       </span>
                     </div>
                     
@@ -320,6 +337,23 @@ const AboutPricing: React.FC = () => {
                       <span className="mx-4 text-gray-300">
                         Hospedagem Incluída
                       </span>
+                    </div>
+                    
+                    <div className="flex items-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5 text-green-500"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span className="mx-4 text-gray-300">Marketing Digital</span>
                     </div>
 
                     <div className="flex items-center">
@@ -478,7 +512,7 @@ const AboutPricing: React.FC = () => {
                       </svg>
 
                       <span className="mx-4 text-gray-300">
-                        Foco no SEO
+                        Desenvolvimento do SEO
                       </span>
                     </div>
                     
@@ -499,6 +533,22 @@ const AboutPricing: React.FC = () => {
                       <span className="mx-4 text-gray-300">
                         Hospedagem Incluída
                       </span>
+                    </div>
+                    <div className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5 text-red-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+
+                      <span className="mx-4 text-gray-300">Marketing Digital</span>
                     </div>
 
                     <div className="flex items-center">
