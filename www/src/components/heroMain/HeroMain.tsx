@@ -7,6 +7,7 @@ import storeImage from "./../../../public/assets/images/storeImage.jpg";
 import optimizationImage from "./../../../public/assets/images/optimizationImage.jpg";
 import solutionImage from "./../../../public/assets/images/solutionImage.jpg";
 import appImage from "./../../../public/assets/images/appImage.jpg";
+import  backgroundImage from "../../../public/assets/images/background_red.png";
 import { AiFillHtml5 } from "react-icons/ai";
 import {PiAppWindowFill} from "react-icons/pi"
 import {FaWrench} from "react-icons/fa"
@@ -27,11 +28,8 @@ const HeroMain = () => {
 
       <>
         <section
-          className="w-full bg-center bg-no-repeat bg-cover h-[84rem] md:h-[48rem] lg:h-[48rem] border-b-4 border-red-600"
-          style={{
-            backgroundImage:
-              "url(https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/background_red.png)",
-          }}
+          className="w-full bg-center bg-no-repeat bg-cover h-[85rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-600"
+          style={{backgroundImage: `url(${backgroundImage})`}}
         >
           <div className="flex flex-col items-center justify-center w-full h-full  pt-28">
             <section className="text-center mt-8">
@@ -67,12 +65,11 @@ const HeroMain = () => {
               <div className="container px-6 py-10 mx-auto">
                 <h3 className="text-xl font-medium md:text-3xl lg:text-3xl text-white">
                   O que nós fazemos, por{" "}
-                  <span className="font-black text-red-600">você</span>?
+                  <span className="font-black text-red-500">você</span>?
                 </h3>
                 <div className="">
-                  <span className="inline-block w-40 h-1 bg-red-600 rounded-full"></span>
-                  <span className="inline-block w-3 h-1 ml-1 bg-red-600 rounded-full"></span>
-                  <span className="inline-block w-1 h-1 ml-1 bg-red-600 rounded-full"></span>
+                  <span className="inline-block w-full h-1 bg-red-600"></span>
+                  
                 </div>
                 <div className="mt-4 xl:mt-4 lg:flex lg:items-center">
                   <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4">
