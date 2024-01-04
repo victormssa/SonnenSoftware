@@ -7,7 +7,7 @@ import storeImage from "./../../../public/assets/images/storeImage.jpg";
 import optimizationImage from "./../../../public/assets/images/optimizationImage.jpg";
 import solutionImage from "./../../../public/assets/images/solutionImage.jpg";
 import appImage from "./../../../public/assets/images/appImage.jpg";
-import  backgroundImage from "../../../public/assets/images/background_red.png";
+import  backgroundImage from "../../../public/assets/images/background_red_new.png";
 import { AiFillHtml5 } from "react-icons/ai";
 import {PiAppWindowFill} from "react-icons/pi"
 import {FaWrench} from "react-icons/fa"
