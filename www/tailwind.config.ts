@@ -7,9 +7,10 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-
-    },
+    backgroundImage: {
+      'hero-pattern': "url('/public/assets/images/background_red.png')",
+      'footer-texture': "url('/img/footer-texture.png')",
+    }
   },
   plugins: [],
 }
