@@ -104,7 +104,7 @@ const HeroMain = () => {
                       </div>
                     </Link>
         
-                    <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/appImage.jpg)`}} href="/sobre/desenvolvimento_app">
+                    <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/appImage.jpg)`}} href="/sobre/desenvolvimento_apps">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3 rounded-xl text-white bg-red-600">
                       <PiAppWindowFill size='1.5em'/>
