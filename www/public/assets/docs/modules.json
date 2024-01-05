@@ -1,0 +1,39 @@
+[
+    {
+      "icon": "<MdOutlineSecurity />",
+      "title": "Módulo de Segurança Avançada",
+      "description": "Fortaleça a integridade dos seus dados por meio de nosso avançado módulo de segurança, assegurando um ambiente confiável e protegido contra ameaças.",
+      "link": "#"
+    },
+    {
+      "icon": "<BsFillClipboard2DataFill />",
+      "title": "Módulo de Análise de Dados",
+      "description": "Aprimore a capacidade de decisão de sua organização com nosso módulo avançado de análise de dados, fornecendo insights estratégicos cruciais para o sucesso empresarial.",
+      "link": "#"
+    },
+    {
+      "icon": "<MdIntegrationInstructions />",
+      "title": "Módulo de Integração de Sistemas",
+      "description": "Simplifique e otimize operações complexas com nosso módulo de integração de sistemas, garantindo uma eficiência operacional sem precedentes.",
+      "link": "#"
+    },
+    {
+      "icon": "<FaBrush />",
+      "title": "Módulo de Personalização Avançada",
+      "description": "Adapte a interface de sua aplicação de maneira sofisticada e precisa com nosso módulo de personalização avançada, atendendo às exigências específicas de sua operação.",
+      "link": "#"
+    },
+    {
+      "icon": "<FaShoppingBasket />",
+      "title": "Módulo de Ecommerce Avançado",
+      "description": "Potencialize sua presença online com nosso Módulo de E-commerce Avançado. Oferecendo recursos robustos, desde a gestão eficiente de inventário até a otimização da jornada do cliente, proporcionamos uma experiência de compra excepcional e impulsionamos suas operações comerciais para o sucesso.",
+      "link": "#"
+    },
+    {
+      "icon": "<IoIosPaper />",
+      "title": "Módulo de Relatórios Personalizados",
+      "description": "Acesse informações detalhadas e personalizadas de maneira instantânea com nosso módulo de relatórios personalizados, permitindo uma análise profunda e estratégica dos dados.",
+      "link": "#"
+    }
+  ]
+  

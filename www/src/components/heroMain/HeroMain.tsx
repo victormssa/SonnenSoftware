@@ -66,7 +66,7 @@ const HeroMain = () => {
                   <span className="font-black text-red-500">você</span>?
                 </h3>
                 <div className="">
-                  <span className="inline-block w-full h-1 bg-red-600"></span>
+                  <span className="inline-block w-full h-1 bg-red-600" ></span>
                   
                 </div>
                 <div className="mt-4 xl:mt-4 lg:flex lg:items-center">

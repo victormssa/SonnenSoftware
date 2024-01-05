@@ -213,35 +213,6 @@ const SimplesEssencial = () => {
                 </ul>
               </div>
             </section>
-
-            <section className="flex flex-col items-center justify-center text-center">
-              <h3 className="text-2xl font-semibold lg:text-3xl mt-5 lg:me-5">
-                Valor à vista com 20% de desconto, de&nbsp;
-                <span className="text-red-600 line-through">
-                  R$ 1.499,99
-                </span>{" "}
-                por
-                <span className="text-green-600"> R$ 1.299,99</span>
-              </h3>
-              <h3 className="text-1xl font-semibold lg:text-2xl lg:mt-5">
-                À vista com <span className="text-green-600">20%</span> de
-                desconto.
-              </h3>
-              <h3 className="text-1xl font-semibold lg:text-2xl mt-5">
-                Até 4x no cartão de crédito sem juros. <br />
-                Adiantamento de comprometimento: R$ 300,00
-              </h3>
-
-              <Link
-                className="w-50 px-8 py-3 mt-10 tracking-wide text-white transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold"
-                href="https://wa.link/qwzw34"
-                target="_blank"
-              >
-                ENTRE EM CONTATO
-              </Link>
-              {/*Imagens do canto da pagina */}
-            </section>
-
             <div className="flex text-sm font-semibold absolute left-4 mt-20">
               <h6 className="me-2">WEB</h6>
               <Image
