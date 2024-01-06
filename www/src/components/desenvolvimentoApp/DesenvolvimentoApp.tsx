@@ -26,7 +26,7 @@ const DesenvolvimentoApp = () => {
 
     { id: 4, icon: <Image src={googleCloud} alt="Logo Google Cloud" className={`w-24 h-auto`} />, text: "Google Cloud", link: "https://cloud.google.com/?hl=pt_br" },
 
-    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-24 h-auto bg-white rounded-2xl p-4`} />, text: "Logo Next.js", link: "https://nextjs.org/showcase" },
+    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-24 h-auto bg-white rounded-2xl p-4`} />, text: "Next.js", link: "https://nextjs.org/showcase" },
 
     { id: 5, icon: <Image src={elysia} alt="Logo Elysia.js" className={`w-36 h-auto`} />, text: "Elysia.js", link: "https://elysiajs.com" },
 

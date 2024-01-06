@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <Image src={logoMin} alt="Logo da Sonnen" className="w-40" />
       </a>
-      <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Sonnen Software -
+      <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"> 2024 Sonnen Software -
         <a href="https://x.com/sonnensoftware" className="text-gray-100 ml-1" rel="noopener noreferrer" target="_blank">@SonnenSoftware</a>
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
@@ -36,6 +36,46 @@ const Footer: React.FC = () => {
         </a>
       </span>
     </div>
+    <div className="flex justify-center items-center align-middle">
+      <hr className="w-[40rem] h-auto border-red-800"/>
+      <p className="px-10 w-auto text-white font-medium">Mais Informações</p>
+      <hr className="w-[40rem] h-auto border-red-800"/>
+    </div>
+    <section className="px-10 py-10 flex justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+              <div>
+                  <p className="font-semibold text-gray-800 dark:text-white">Links Importantes</p>
+                  <div className="flex flex-col items-start mt-5 space-y-2">
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Home</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Who We Are</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Our Philosophy</a>
+                  </div>
+              </div>
+              <div>
+                  <p className="font-semibold text-gray-800 dark:text-white">Saiba Mais</p>
+                  <div className="flex flex-col items-start mt-5 space-y-2">
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Retail & E-Commerce</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Information Technology</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Finance & Insurance</a>
+                  </div>
+              </div>
+              <div>
+                  <p className="font-semibold text-gray-800 dark:text-white">Serviços</p>
+                  <div className="flex flex-col items-start mt-5 space-y-2">
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Translation</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Proofreading & Editing</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Content Creation</a>
+                  </div>
+              </div>
+              <div>
+                  <p className="font-semibold text-gray-800 dark:text-white">Contato</p>
+                  <div className="flex flex-col items-start mt-5 space-y-2">
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">+880 768 473 4978</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">sonnensoftware@outlook.com</a>
+                  </div>
+              </div>
+          </div>
+    </section>
   </footer>
   );
 };

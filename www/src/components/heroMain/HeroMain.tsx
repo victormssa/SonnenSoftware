@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CSSTransition } from "react-transition-group";
@@ -13,6 +14,7 @@ import {FaWrench} from "react-icons/fa"
 import {BsBagPlusFill} from "react-icons/bs"
 
 const HeroMain = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const texts = ["Website", "Aplicativo", "Sistema", "Futuro"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
@@ -23,11 +25,26 @@ const HeroMain = () => {
 
     return () => clearInterval(intervalId);
   }, [texts.length]);
+  
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
   return (
 
-      <>
+      <section className="bg-zinc-900">
+      <Image
+        src="/assets/images/background_red.png"
+        alt="Preload"
+        className="hidden"
+        onLoad={handleImageLoad}
+        width={6990}
+        height={2501}
+      />
         <section
-          className="w-full bg-center bg-no-repeat bg-cover bg-[url('/assets/images/background_red.png')] h-[85rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-600"
+          className="w-full bg-center bg-no-repeat bg-cover h-[90rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-500"
+          style={{
+            backgroundImage: `url(${imageLoaded ? '/assets/images/background_red.png' : '/assets/images/background_red-transformed.png'})`,
+          }}
         >
           <div className="flex flex-col items-center justify-center w-full h-full  pt-28">
             <section className="text-center mt-8">
@@ -61,19 +78,14 @@ const HeroMain = () => {
             </section>
             <section className="z-10">
               <div className="container px-6 py-10 mx-auto">
-                <h3 className="text-xl font-medium md:text-3xl lg:text-3xl text-white">
-                  O que nós fazemos, por{" "}
-                  <span className="font-black text-red-500">você</span>?
+                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white">
+                  <span className="font-bold text-4xl">Bem vindo,</span> <br/>a onde o <span className="text-red-600">seu futuro </span>é construido.
                 </h3>
-                <div className="">
-                  <span className="inline-block w-full h-1 bg-red-600" ></span>
-                  
-                </div>
-                <div className="mt-4 xl:mt-4 lg:flex lg:items-center">
+
+                <div className="mt-4 xl:mt-4 lg:flex lg:items-center border-2 border-red-600 p-4 rounded-xl backdrop-blur-sm bg-zinc-900/40">
                   <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4">
                     <Link
-                      className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] transition-all duration-150"
-                      style={{ backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/storeImage.jpg)` }}
+                      className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] bg-[url('/assets/images/storeImage.jpg')] transition-all duration-150"
                       href="/sobre/desenvolvimento_sites"
                     >
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
@@ -104,7 +116,7 @@ const HeroMain = () => {
                       </div>
                     </Link>
         
-                    <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/appImage.jpg)`}} href="/sobre/desenvolvimento_apps">
+                    <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] bg-[url('/assets/images/appImage.jpg')] transition-all duration-150" href="/sobre/desenvolvimento_apps">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3 rounded-xl text-white bg-red-600">
                       <PiAppWindowFill size='1.5em'/>
@@ -134,7 +146,7 @@ const HeroMain = () => {
                     </div>
                     </Link>
         
-                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter  hover:bg-[length:500px_350px] transition-all duration-150" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/optimizationImage.jpg)`}} href="/sobre/otimizacao_sistemas">
+                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter  hover:bg-[length:500px_350px] bg-[url('/assets/images/optimizationImage.jpg')] transition-all duration-150" href="/sobre/otimizacao_sistemas">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3  rounded-xl text-white bg-red-600">
                       <FaWrench size='1.5em'/>
@@ -163,7 +175,7 @@ const HeroMain = () => {
                     </span>
                     </div>
                     </Link>
-                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] transition-all duration-150 bg-no-repeat" style={{backgroundImage: `url(https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/solutionImage.jpg)`}} href="/sobre/solucoes_personalizadas">
+                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] bg-[url('/assets/images/solutionImage.jpg')] transition-all duration-150 bg-no-repeat" href="/sobre/solucoes_personalizadas">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3  rounded-xl text-white bg-red-600">
                       <BsBagPlusFill size='1.5em'/>
@@ -198,7 +210,7 @@ const HeroMain = () => {
             </section>
           </div>
         </section>
-      </>
+      </section>
   );
 };
 

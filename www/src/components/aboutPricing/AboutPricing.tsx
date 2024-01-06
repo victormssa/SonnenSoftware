@@ -6,10 +6,10 @@ import { MdWorkspacePremium } from "react-icons/md";
 const AboutPricing: React.FC = () => {
   return (
     <>
-      <section className="" id="planos">
-        <div className="bg-zinc-900">
+      <section className="bg-zinc-900" id="planos">
+        <div className="">
           <div className="container flex flex-col px-6 py-8 mx-auto justify-center items-center align-middle">
-            <h1 className="text-2xl font-semibold text-center text-white lg:text-3xl z-10">
+            <h1 className="text-2xl font-semibold text-center text-white lg:text-3xl">
               Conheça os <span className="text-red-600">Nossos Planos</span>
             </h1>
 
