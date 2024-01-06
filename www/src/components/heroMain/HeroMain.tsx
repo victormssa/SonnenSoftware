@@ -13,6 +13,7 @@ import {PiAppWindowFill} from "react-icons/pi"
 import {FaWrench} from "react-icons/fa"
 import {BsBagPlusFill} from "react-icons/bs"
 
+
 const HeroMain = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const texts = ["Website", "Aplicativo", "Sistema", "Futuro"];
@@ -41,12 +42,12 @@ const HeroMain = () => {
         height={2501}
       />
         <section
-          className="w-full bg-center bg-no-repeat bg-cover h-[90rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-500"
+          className="w-full bg-center bg-no-repeat bg-cover h-[94rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-500 lg:pt-0 pt-0"
           style={{
             backgroundImage: `url(${imageLoaded ? '/assets/images/background_red.png' : '/assets/images/background_red-transformed.png'})`,
           }}
         >
-          <div className="flex flex-col items-center justify-center w-full h-full  pt-28">
+          <div className="flex flex-col items-center justify-center w-full h-full ">
             <section className="text-center mt-8">
             <h3 className="text-2xl font-semibold text-white md:text-4xl lg:text-4xl mb-1">
               Desenvolva seu <br />{" "}
@@ -76,14 +77,14 @@ const HeroMain = () => {
                 CLIQUE E SOLICITE
               </Link>
             </section>
-            <section className="z-10">
-              <div className="container px-6 py-10 mx-auto">
-                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white">
-                  <span className="font-bold text-4xl">Bem vindo,</span> <br/>a onde o <span className="text-red-600">seu futuro </span>é construido.
+            <section className="z-10 w-full">
+              <div className="w-full py-10 mx-auto">
+                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white lg:ml-40 ml-10">
+                  <span className="font-bold text-4xl">Bem vindo,</span> <br/>o que podemos fazer por <span className="text-red-600">você </span>?
                 </h3>
 
-                <div className="mt-4 xl:mt-4 lg:flex lg:items-center border-2 border-red-600 p-4 rounded-xl backdrop-blur-sm bg-zinc-900/40">
-                  <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4">
+                <div className="mt-4 xl:mt-4 lg:flex lg:items-center w-full border-y-2 border-red-600 p-4 backdrop-blur-sm bg-zinc-900/40">
+                  <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4 lg:px-20 px-0">
                     <Link
                       className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] bg-[url('/assets/images/storeImage.jpg')] transition-all duration-150"
                       href="/sobre/desenvolvimento_sites"

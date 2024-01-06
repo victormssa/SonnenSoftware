@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               <div>
                   <p className="font-semibold text-gray-800 dark:text-white">Contato</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
-                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">+880 768 473 4978</a>
+                      <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">(71) 9961-84966</a>
                       <a href="#" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">sonnensoftware@outlook.com</a>
                   </div>
               </div>

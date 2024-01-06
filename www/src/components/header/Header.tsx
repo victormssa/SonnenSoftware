@@ -2,7 +2,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import Image from "next/image";
 import headerLogoBlack from "./../../../public/assets/images/logoSonnen.png";
 import headerLogoWhite from "./../../../public/assets/images/logoSonnen_wBg.png";
@@ -10,6 +13,11 @@ import headerLogoWhite from "./../../../public/assets/images/logoSonnen_wBg.png"
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isTop, setIsTop] = useState(true);
+  const [mostrarLista, setMostrarLista] = useState(false);
+
+  const toggleLista = () => {
+    setMostrarLista(!mostrarLista);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -50,10 +58,10 @@ const Navigation = () => {
         isTop && !isSpecialPage && !isOpen ? "bg-transparent" : "shadow bg-gradient-to-tr from-red-600 to-rose-800"
       }`}
     >
-      <div className="container px-6 py-4 mx-auto">
+      <div className=" px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center justify-between">
+            <Link href="/" className="flex items-center justify-between ml-20">
             <Image
               className={`w-40 h-auto transition-all `}
               src={isTop && !isSpecialPage ?  headerLogoBlack : headerLogoBlack}
@@ -111,7 +119,7 @@ const Navigation = () => {
                 : "opacity-0 -translate-x-full "
             }`}
           >
-            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8 ">
+            <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
             <Link
                 href="/#planos"
                 className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen ${isActive(
@@ -122,6 +130,26 @@ const Navigation = () => {
               >
                 Nossos Planos
               </Link>
+              <div className="flex flex-col">
+                <button
+                
+                  className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen flex items-center gap-1 ${isActive(
+                    "/#planos"
+                  )} ${
+                    isTop && !isSpecialPage ?  "lg:hover:text-red-600 hover:text-rose-300 " : " hover:text-rose-300"
+                  }`} onClick={toggleLista}
+                >
+                  Nosso Trabalho {mostrarLista ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
+                </button>
+                {mostrarLista && (
+                        <div className="lg:absolute top-[2rem] left-[11.5rem] flex flex-col px-2 py-2 rounded-xl gap-3">
+                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/desenvolvimento_sites">Desenvolvimento de Sites</Link>
+                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/desenvolvimento_apps">Desenvolvimento de Apps</Link>
+                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/otimizacao_sistemas">Otimização de Sistemas</Link>
+                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/solucoes_personalizadas">Soluções Personalizadas</Link>
+                        </div>
+                      )}
+              </div>
               <Link
                 href="/contato"
                 className={`px-3 py-2 duration-200 hover:text-black font-semibold lg:border-2 border-b-2 lg:w-auto w-screen mr-4 ${isActive2(
@@ -148,7 +176,14 @@ const Navigation = () => {
               >
                 Login
               </Link>
+              
             </div>
+            <p
+                
+                className={`lg:text-2xl px-3 py-2 duration-200 font-medium mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-white ml-20 flex items-center gap-2`}
+              >
+                <BiSolidPhoneCall />(71) 9961-84966
+              </p>
           </div>
         </div>
       </div>
