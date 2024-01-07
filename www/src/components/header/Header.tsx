@@ -43,7 +43,7 @@ const Navigation = () => {
   const isActive = (path: string) => {
     return pathname === path
       ? " text-red-600"
-      : "text-white";
+      : "";
   };
 
   const isActive2 = (path: string) => {
@@ -122,7 +122,7 @@ const Navigation = () => {
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
             <Link
                 href="/#planos"
-                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-center ${isActive(
+                className={`px-3 py-2 duration-200 hover:text-black text-white font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-center ${isActive(
                   "/#planos"
                 )} ${
                   isTop && !isSpecialPage ?  "lg:hover:text-red-600 hover:text-rose-300 " : " hover:text-rose-300"
@@ -133,7 +133,7 @@ const Navigation = () => {
               <div className="flex flex-col">
                 <button
                 
-                  className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
+                  className={`px-3 py-2 duration-200 hover:text-black text-white font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
                     "/#planos"
                   )} ${
                     isTop && !isSpecialPage ?  "lg:hover:text-red-600 hover:text-rose-300 " : " hover:text-rose-300"
@@ -144,16 +144,16 @@ const Navigation = () => {
                 {mostrarLista && (
                         <div className="lg:absolute top-[2rem] left-[11.5rem] flex flex-col lg:px-2 lg:py-2 lg:rounded-xl rounded-none lg:gap-3 lg:border-b-0 border-b-2 lg:bg-transparent bg-white
                         ">
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive2(
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
                   "/sobre/desenvolvimento_sites"
                 )}`} href="/sobre/desenvolvimento_sites">Desenvolvimento de Sites</Link>
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive2(
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
                   "/sobre/desenvolvimento_apps"
                 )}`} href="/sobre/desenvolvimento_apps">Desenvolvimento de Apps</Link>
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive2(
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
                   "/sobre/otimizacao_sistemas"
                 )}`} href="/sobre/otimizacao_sistemas">Otimização de Sistemas</Link>
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg text-center ${isActive2(
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg text-center ${isActive(
                   "/sobre/solucoes_personalizadas"
                 )}`} href="/sobre/solucoes_personalizadas">Soluções Personalizadas</Link>
                         </div>
@@ -177,10 +177,10 @@ const Navigation = () => {
               </div>
               <Link
                 href="/login"
-                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black lg:border-red-600 font-semibold lg:border-2 border-b-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
+                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 border-b-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
                   "/login"
                 )} ${
-                  isTop && !isSpecialPage ?  "lg:hover:bg-red-600 lg:hover:text-black hover:text-rose-300" : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
+                  isTop && !isSpecialPage ?  "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300" : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
               >
                 Login
