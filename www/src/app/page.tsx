@@ -2,6 +2,7 @@ import HeroMain from "@/components/heroMain/HeroMain";
 import AboutPricing from "@/components/aboutPricing/AboutPricing";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
+import AboutSonnen from "@/components/aboutSonnen/AboutSonnen";
 
 
 const Home: React.FC = () => {
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
           <IoLogoWhatsapp size={"2rem"}/>
         </a>
       <AboutPricing/>
+      <AboutSonnen />
     </main>
   );
 };

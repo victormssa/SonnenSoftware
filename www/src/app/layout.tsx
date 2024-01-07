@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     siteName: 'Sonnen Software',
     images: [
       {
-        url: 'https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/logoSonnen.png',
-        width: 3604,
-        height: 1108,
+        url: 'https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/openGraph.png',
+        width: 1200,
+        height: 630,
       }
     ]
   }
