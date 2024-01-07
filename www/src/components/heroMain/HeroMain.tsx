@@ -43,7 +43,7 @@ const HeroMain = () => {
         height={2501}
       />
         <section
-          className="w-full bg-center bg-no-repeat bg-cover h-[94rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-500 lg:pt-0 pt-0"
+          className="w-full bg-center bg-no-repeat bg-cover h-[100rem] md:h-[60rem] lg:h-[60rem] border-b-4 border-red-500 lg:pt-0 pt-0"
           style={{
             backgroundImage: `url(${imageLoaded ? '/assets/images/background_red.png' : '/assets/images/background_red-transformed.png'})`,
           }}
@@ -67,7 +67,7 @@ const HeroMain = () => {
               </span>{" "}
               conosco.
             </h3>
-              <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5 px-4 w-auto">
+              <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5 px-10 w-auto">
                 Solicite um <span className="text-red-600">orçamento</span>, sem
                 compromisso.
               </h2>
@@ -80,7 +80,7 @@ const HeroMain = () => {
             </section>
             <section className="z-10 w-full">
               <div className="w-full py-10 mx-auto">
-                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white lg:ml-40 ml-10">
+                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white lg:ml-40 ml-2">
                   <span className="font-bold text-4xl">Bem vindo,</span> <br/>o que podemos fazer por <span className="text-red-600">você </span>?
                 </h3>
 

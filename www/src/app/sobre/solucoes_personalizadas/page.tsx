@@ -8,6 +8,7 @@ import { MdIntegrationInstructions } from "react-icons/md";
 import { FaBrush } from "react-icons/fa6";
 import { FaShoppingBasket } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
+import Link from "next/link";
 export const metadata: Metadata = {
   title: "Soluções Personalizadas",
 };
@@ -20,7 +21,7 @@ const SolucoesPersonalizadas = () => {
       addon: "Segurança",
       description:
         "Fortaleça a integridade dos seus dados por meio de nosso avançado módulo de segurança, assegurando um ambiente confiável e protegido contra ameaças.",
-      link: "#",
+      link: "https://wa.link/awwuy3",
     },
     {
       icon: <BsFillClipboard2DataFill />,
@@ -29,7 +30,7 @@ const SolucoesPersonalizadas = () => {
       addon: "Análise de Dados",
       description:
         "Aprimore a capacidade de decisão de sua organização com nosso módulo avançado de análise de dados, fornecendo insights estratégicos cruciais para o sucesso empresarial.",
-      link: "#",
+      link: "https://wa.link/bs2k6k",
     },
     {
       icon: <MdIntegrationInstructions />,
@@ -38,7 +39,7 @@ const SolucoesPersonalizadas = () => {
       addon: "Otimização",
       description:
         "Simplifique e otimize operações complexas com nosso módulo de integração de sistemas, garantindo uma eficiência operacional sem precedentes.",
-      link: "#",
+      link: "https://wa.link/67v5yf",
     },
     {
       icon: <FaBrush />,
@@ -47,7 +48,7 @@ const SolucoesPersonalizadas = () => {
       addon: "Design",
       description:
         "Adapte a interface de sua aplicação de maneira sofisticada e precisa com nosso módulo de personalização avançada, atendendo às exigências específicas de sua operação.",
-      link: "#",
+      link: "https://wa.link/wuvx1u",
     },
     {
       icon: <FaShoppingBasket />,
@@ -56,16 +57,16 @@ const SolucoesPersonalizadas = () => {
       addon: "Loja",
       description:
         "Potencialize sua presença online com nosso Módulo de E-commerce Avançado. Oferecendo recursos robustos, desde a gestão eficiente de inventário até a otimização da jornada do cliente, proporcionamos uma experiência de compra excepcional e impulsionamos suas operações comerciais para o sucesso.",
-      link: "#",
+      link: "https://wa.link/t437i9",
     },
     {
       icon: <IoIosPaper />,
-      title: "Módulo de Relatórios Avançados",
+      title: "Módulo de Relatórios Avançado",
       type: "Premium",
       addon: "Negócios",
       description:
         "Acesse informações detalhadas e personalizadas de maneira instantânea com nosso módulo de relatórios avançados, permitindo uma análise profunda e estratégica dos dados.",
-      link: "#",
+      link: "https://wa.link/q4lu4y",
     },
   ];
   return (
@@ -145,8 +146,9 @@ const SolucoesPersonalizadas = () => {
                 <p className=" text-gray-300">
                   {module.description}
                 </p>
-                <a
+                <Link
                   href={module.link}
+                  target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center -mx-1 text-sm capitalize transition-colors duration-300 transform text-red-400 hover:underline hover:text-red-500"
                 >
                   <span className="mx-1">Entre em contato</span>
@@ -162,7 +164,7 @@ const SolucoesPersonalizadas = () => {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

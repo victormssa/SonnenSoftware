@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                   </div>
               </div>
               <div>
-                  <p className="font-semibold text-gray-800 dark:text-white">Serviços</p>
+                  <p className="font-semibold text-white">Serviços</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
                       <Link href="/sobre/desenvolvimento_sites" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Desenvolvimento de Site</Link>
                       <Link href="/sobre/desenvolvimento_apps" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Desenvolvimento de Apps</Link>
@@ -62,13 +62,13 @@ const Footer: React.FC = () => {
                   </div>
               </div>
               <div>
-                  <p className="font-semibold text-gray-800 dark:text-white">Políticas</p>
+                  <p className="font-semibold text-white">Políticas</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
                       <Link href="/politicas/privacidade" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Política de Privacidade</Link>
                   </div>
               </div>
               <div>
-                  <p className="font-semibold text-gray-800 dark:text-white">Contato</p>
+                  <p className="font-semibold text-white">Contato</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
                       <p className="text-gray-300">+55 (71) 9961-84966</p>
                       <p className="text-gray-300">sonnensoftware@outlook.com</p>
