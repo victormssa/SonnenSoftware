@@ -49,7 +49,7 @@ const Navigation = () => {
   const isActive2 = (path: string) => {
     return pathname === path
       ? " sm:bg-none text-rose-300 lg:bg-white lg:text-red-600 "
-      : " text-white";
+      : "";
   };
 
   return (
@@ -61,7 +61,7 @@ const Navigation = () => {
       <div className=" px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center justify-between ml-20">
+            <Link href="/" className="flex items-center justify-between lg:ml-20 ml-0">
             <Image
               className={`w-40 h-auto transition-all `}
               src={isTop && !isSpecialPage ?  headerLogoBlack : headerLogoBlack}
@@ -113,7 +113,7 @@ const Navigation = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full h-screen px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+            className={`absolute inset-x-0 z-20 w-full h-auto px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
               isOpen
                 ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
                 : "opacity-0 -translate-x-full "
@@ -122,7 +122,7 @@ const Navigation = () => {
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
             <Link
                 href="/#planos"
-                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen ${isActive(
+                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-center ${isActive(
                   "/#planos"
                 )} ${
                   isTop && !isSpecialPage ?  "lg:hover:text-red-600 hover:text-rose-300 " : " hover:text-rose-300"
@@ -133,7 +133,7 @@ const Navigation = () => {
               <div className="flex flex-col">
                 <button
                 
-                  className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen flex items-center gap-1 ${isActive(
+                  className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
                     "/#planos"
                   )} ${
                     isTop && !isSpecialPage ?  "lg:hover:text-red-600 hover:text-rose-300 " : " hover:text-rose-300"
@@ -142,17 +142,26 @@ const Navigation = () => {
                   Nosso Trabalho {mostrarLista ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
                 </button>
                 {mostrarLista && (
-                        <div className="lg:absolute top-[2rem] left-[11.5rem] flex flex-col px-2 py-2 rounded-xl gap-3">
-                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/desenvolvimento_sites">Desenvolvimento de Sites</Link>
-                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/desenvolvimento_apps">Desenvolvimento de Apps</Link>
-                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/otimizacao_sistemas">Otimização de Sistemas</Link>
-                          <Link className="bg-red-600 hover:bg-red-500 text-white py-1 px-2 w-40 rounded-lg" href="/sobre/solucoes_personalizadas">Soluções Personalizadas</Link>
+                        <div className="lg:absolute top-[2rem] left-[11.5rem] flex flex-col lg:px-2 lg:py-2 lg:rounded-xl rounded-none lg:gap-3 lg:border-b-0 border-b-2 lg:bg-transparent bg-white
+                        ">
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive2(
+                  "/sobre/desenvolvimento_sites"
+                )}`} href="/sobre/desenvolvimento_sites">Desenvolvimento de Sites</Link>
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive2(
+                  "/sobre/desenvolvimento_apps"
+                )}`} href="/sobre/desenvolvimento_apps">Desenvolvimento de Apps</Link>
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive2(
+                  "/sobre/otimizacao_sistemas"
+                )}`} href="/sobre/otimizacao_sistemas">Otimização de Sistemas</Link>
+                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg text-center ${isActive2(
+                  "/sobre/solucoes_personalizadas"
+                )}`} href="/sobre/solucoes_personalizadas">Soluções Personalizadas</Link>
                         </div>
                       )}
               </div>
               <Link
                 href="/contato"
-                className={`px-3 py-2 duration-200 hover:text-black font-semibold lg:border-2 border-b-2 lg:w-auto w-screen mr-4 ${isActive2(
+                className={`px-3 py-2 duration-200 text-white hover:text-black font-semibold lg:border-2 border-b-2 lg:w-auto w-screen mr-4 text-center ${isActive2(
                   "/contato"
                 )} ${
                   isTop && !isSpecialPage ?  "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300" : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
@@ -168,7 +177,7 @@ const Navigation = () => {
               </div>
               <Link
                 href="/login"
-                className={`px-3 py-2 duration-200 sm:hover:bg-none hover:text-black border-red-600 font-semibold lg:border-2 sm:border-0 rounded-lg lg:border-b-2 lg:w-auto w-screen ${isActive2(
+                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black lg:border-red-600 font-semibold lg:border-2 border-b-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
                   "/login"
                 )} ${
                   isTop && !isSpecialPage ?  "lg:hover:bg-red-600 lg:hover:text-black hover:text-rose-300" : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
@@ -180,7 +189,7 @@ const Navigation = () => {
             </div>
             <p
                 
-                className={`lg:text-2xl px-3 py-2 duration-200 font-medium mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-white ml-20 flex items-center gap-2`}
+                className={`lg:text-2xl px-3 py-2 duration-200 font-medium mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-white lg:ml-20 lg:flex items-center gap-2  hidden`}
               >
                 <BiSolidPhoneCall />(71) 9961-84966
               </p>
