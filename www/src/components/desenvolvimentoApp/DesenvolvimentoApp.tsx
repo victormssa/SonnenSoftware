@@ -1,8 +1,6 @@
-// DesenvolvimentoApp.tsx
 "use client"
 import Image from "next/image";
 import React, { useState } from 'react';
-import { FcAndroidOs } from "react-icons/fc";
 import android from '../../../public/assets/images/img__android.png';
 import googlePlay from '../../../public/assets/images/img__google_play.png';
 import googleAds from '../../../public/assets/images/img__google__ads.png';
@@ -14,7 +12,6 @@ import nextJS from '../../../public/assets/images/img__next__js.png';
 import SonnenLogo from '../../../public/assets/images/logoSonnen.png';
 import InterfaceApp from '../../../public/assets/images/img__interface__app.jpg';
 import NotificationMessage from '../../../public/assets/images/img__notification_app.png';
-
 import {Tilt} from 'react-tilt';
 import { MdKeyboardArrowUp } from "react-icons/md";
 
@@ -129,19 +126,19 @@ const DesenvolvimentoApp = () => {
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">
-              <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Desenvolva sua <span className="text-red-600">aplicação.</span> <br /> Foque no core do seu negócio.</h1>
+              <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Evolua sua <br /> plataforma<span className="text-red-600"> digital.</span> </h1>
               
 
               <button className="w-auto ml-6 px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-red-600 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
                   Assine agora
               </button>
 
-                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-3 hidden md:block text-gray-400 text-left">
-                  <p className="max-w-4xl text-lg  md:text-sm xl:text-lg leading-7  mb-6 ">
-                    Potencialize o crescimento da sua empresa com soluções de desenvolvimento de software feitas sob medida. Na Sonnen Software, estamos comprometidos em oferecer serviços personalizados que atendam às suas necessidades exclusivas.
+                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-3  text-gray-400 text-left">
+                  <p className="max-w-4xl text-lg sm:px-5 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
+                    Potencialize o crescimento da sua empresa com soluções de desenvolvimento de aplicações Desktop e Mobile feitas sob medida. Na Sonnen Software, estamos comprometidos em oferecer serviços personalizados que atendam às suas necessidades exclusivas.
                   </p>
 
-                  <p className="max-w-4xl text-lg  md:text-sm xl:text-lg leading-7 ">
+                  <p className="max-w-4xl text-lg  md:text-sm xl:text-lg leading-7 hidden md:block">
                     Desenvolvemos aplicativos específicos que não apenas otimizam a eficiência operacional, mas também impulsionam a produtividade da sua equipe, resultando em redução de custos e processos mais eficientes.
                   </p>
                 </div>
@@ -158,10 +155,10 @@ const DesenvolvimentoApp = () => {
                     <Tilt options={defaultOptions} >
                         <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48 bg-cover border-2 border-red-900 shadow-lg " style={{
                           backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/mobile%20dev.jpg')" }}>
-                          <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-sm transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-600/60 hover:bg-gray-900/60 hover:h-full ">
-                            <div className="flex justify-center items-center gap-3">
-                              <h2 className="mt-4 text-xl font-semibold capitalize">Experiência do Usuário </h2>
-                              <MdKeyboardArrowUp />
+                          <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
+                            <div className="flex justify-center items-center ">
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Experiência do Usuário </h2>
+                              <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
                             <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Ofereça uma experiência mobile completa para seus clientes</p>
                           </div>
@@ -170,10 +167,10 @@ const DesenvolvimentoApp = () => {
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48  bg-cover border-2 border-red-900 shadow-lg" style={{
                             backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/_4a8bc26b-300f-46b8-b30f-c316a05704f6.jpg')" }}>
-                            <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-sm transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-600/60 hover:bg-gray-900/60  hover:h-full">
-                            <div className="flex justify-center items-center gap-3 ">
-                              <h2 className="mt-4 text-xl font-semibold capitalize ">Back End Integrado</h2>
-                              <MdKeyboardArrowUp />
+                            <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
+                            <div className="flex justify-center items-center">
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Back End Integrado</h2>
+                              <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
                               <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Back End escalacionável e protegido capaz de oferecer soluções de hospedagem e armazenamento para milhões de usuários</p>
                             </div>
@@ -182,10 +179,10 @@ const DesenvolvimentoApp = () => {
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48  bg-cover border-2 border-red-900 shadow-lg" style={{
                             backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__arquitetura__app.jpg')" }}>
-                            <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-sm transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-600/60 hover:bg-gray-900/60  hover:h-full">
-                            <div className="flex justify-center items-center gap-3">
-                              <h2 className="mt-4 text-xl font-semibold capitalize">Arquitetura do Sistema </h2>
-                              <MdKeyboardArrowUp />
+                            <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
+                            <div className="flex justify-center items-center">
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Arquitetura do Sistema </h2>
+                              <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
                               <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Construa com um alicerce robusto. Desenvolva com precisão e inovação, aproveitando todo o potencial de seu projeto.</p>
                             </div>
@@ -194,10 +191,10 @@ const DesenvolvimentoApp = () => {
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48 bg-cover border-2 border-red-900 shadow-lg" style={{
                             backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img_mobile_app_dev.jpg')" }}>
-                            <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-sm transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-600/60  hover:bg-gray-900/60  hover:h-full">
-                            <div className="flex justify-center items-center gap-3">
-                              <h2 className="mt-4 text-xl font-semibold capitalize">Monitoramento</h2>
-                              <MdKeyboardArrowUp />
+                            <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
+                            <div className="flex justify-center items-center">
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Monitoramento</h2>
+                              <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
                               <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Acompanhe de perto os indicadores essenciais para tomadas de decisão de importântes para sua aplicação. </p>
                             </div>
@@ -206,22 +203,22 @@ const DesenvolvimentoApp = () => {
                  
                   </div>
 
-                  <div className="grid lg:hidden grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2 mx-0 md:mx-5 lg:mx-10 ">
+                  <div className="grid lg:hidden grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2 mx-0 md:mx-5 lg:mx-10 h-full">
                       {cards.map((card, index) => (
                         <div
                           key={index}
-                          className={`flex items-end overflow-hidden bg-center rounded-lg bg-cover border-2 border-red-900 shadow-lg ${
-                            clickedIndex === index ? 'h-full ' : 'h-20 bg-gray-900/40'
+                          className={`flex  items-end overflow-hidden bg-center rounded-lg bg-cover border-2 border-red-900 shadow-lg justify-center align-middle items-center${
+                            clickedIndex === index ? 'h-28' : 'h-32 bg-gray-900/40'
                           }`}
                           style={{ backgroundImage: `url('${card.image}')` }}
                         >
                           <div
                             className={`group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-sm transform-gpu transition-transform duration-300 cursor-pointer ${
-                              clickedIndex === index ? 'bg-gray-900/40' : ''
+                              clickedIndex === index ? 'bg-gray-900/60 h-full' : ''
                             }`}
                             onClick={() => handleClick(index)}
                           >
-                            <div className="flex justify-center items-center gap-3">
+                            <div className="flex justify-center items-center align-middle">
                               <h2
                                 id={`title-${index}`}
                                 className={`mt-4 text-xl font-semibold capitalize transition-transform ${
@@ -230,11 +227,11 @@ const DesenvolvimentoApp = () => {
                               >
                                 {card.title}
                               </h2>
-                              <MdKeyboardArrowUp />
+                              <MdKeyboardArrowUp size='3rem' className='pt-4'/>
                             </div>
                             <p
                               className={`mt-2 text-sm tracking-wider uppercase transition-opacity duration-300 ${
-                                clickedIndex === index ? 'opacity-100 visible ' : 'opacity-0 invisible'
+                                clickedIndex === index ? 'flex' : ' hidden'
                               }`}
                             >
                               {card.content}
@@ -258,7 +255,7 @@ const DesenvolvimentoApp = () => {
                   <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white ">Potencialize Seu Lucro:<br /> Monetize com a<span className="underline decoration-red-500"> Sonnen.</span> </h1>
        
                   <p className=" mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
-                    A monetização de aplicativos tornou-se uma estratégia essencial para maximizar seus ganhos. Duas abordagens eficazes são a integração do Google Ads e a implementação de soluções de E-commerce.
+                    A monetização de aplicativos tornou-se uma estratégia essencial para maximizar seus ganhos. Duas abordagens eficazes são a integração do Google Ads e a implementação de soluções de E-commerce. A integração de um aplicativo de e-commerce para dispositivos móveis pode potencializar a visibilidade da sua marca. Isso se justifica pelo fato de que a maioria das pessoas dedica mais tempo à busca por serviços e lojas virtuais por meio de dispositivos móveis.
                   </p>
                   </div>
 
@@ -286,6 +283,7 @@ const DesenvolvimentoApp = () => {
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-center mt-36">
                     <h1 className="text-xl font-semibold  drop-shadow-2xl">Potencialize Sua Receita com Google AdMob e Google Analytics</h1>
                     <p className="font-semibold drop-shadow-2xl px-8 mt-2">Maximize seus ganhos integrando estrategicamente Google AdMob e aproveitando as análises detalhadas do Google Analytics.</p>
+
                   </div>
                 </div>
               </div>
@@ -312,7 +310,7 @@ const DesenvolvimentoApp = () => {
         <figure >
             <Image src={SonnenLogo} alt="Sonnen Software Logo" className={`w-60 h-auto`} />
         </figure>
-        <a className=" px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" target="_blank" href="/planos/essencial&amp;simples">Solicite um Orçamento</a>
+        <a className=" md:hidden  px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" target="_blank" href="/planos/essencial&amp;simples">Solicite um Orçamento</a>
       </div>
       
 

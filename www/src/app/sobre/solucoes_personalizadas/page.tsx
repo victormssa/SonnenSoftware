@@ -16,7 +16,7 @@ const SolucoesPersonalizadas = () => {
     {
       icon: <MdOutlineSecurity />,
       title: "Módulo de Segurança Avançada",
-      type: "Módulo Básico",
+      type: "Básico",
       addon: "Segurança",
       description:
         "Fortaleça a integridade dos seus dados por meio de nosso avançado módulo de segurança, assegurando um ambiente confiável e protegido contra ameaças.",
@@ -25,7 +25,7 @@ const SolucoesPersonalizadas = () => {
     {
       icon: <BsFillClipboard2DataFill />,
       title: "Módulo de Análise de Dados",
-      type: "Módulo Básico",
+      type: "Básico",
       addon: "Análise de Dados",
       description:
         "Aprimore a capacidade de decisão de sua organização com nosso módulo avançado de análise de dados, fornecendo insights estratégicos cruciais para o sucesso empresarial.",
@@ -34,7 +34,7 @@ const SolucoesPersonalizadas = () => {
     {
       icon: <MdIntegrationInstructions />,
       title: "Módulo de Integração de Sistemas",
-      type: "Módulo Básico",
+      type: "Básico",
       addon: "Otimização",
       description:
         "Simplifique e otimize operações complexas com nosso módulo de integração de sistemas, garantindo uma eficiência operacional sem precedentes.",
@@ -43,7 +43,7 @@ const SolucoesPersonalizadas = () => {
     {
       icon: <FaBrush />,
       title: "Módulo de Personalização Avançada",
-      type: "Módulo Básico",
+      type: "Básico",
       addon: "Design",
       description:
         "Adapte a interface de sua aplicação de maneira sofisticada e precisa com nosso módulo de personalização avançada, atendendo às exigências específicas de sua operação.",
@@ -52,7 +52,7 @@ const SolucoesPersonalizadas = () => {
     {
       icon: <FaShoppingBasket />,
       title: "Módulo de E-commerce Avançado",
-      type: "Módulo Premium",
+      type: "Premium",
       addon: "Loja",
       description:
         "Potencialize sua presença online com nosso Módulo de E-commerce Avançado. Oferecendo recursos robustos, desde a gestão eficiente de inventário até a otimização da jornada do cliente, proporcionamos uma experiência de compra excepcional e impulsionamos suas operações comerciais para o sucesso.",
@@ -61,7 +61,7 @@ const SolucoesPersonalizadas = () => {
     {
       icon: <IoIosPaper />,
       title: "Módulo de Relatórios Avançados",
-      type: "Módulo Premium",
+      type: "Premium",
       addon: "Negócios",
       description:
         "Acesse informações detalhadas e personalizadas de maneira instantânea com nosso módulo de relatórios avançados, permitindo uma análise profunda e estratégica dos dados.",
