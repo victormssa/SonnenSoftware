@@ -83,7 +83,7 @@ const HeroMain = () => {
                   <span className="font-bold text-4xl">Bem vindo,</span> <br/>o que podemos fazer por <span className="text-red-600">você </span>?
                 </h3>
 
-                <div className="mt-4 xl:mt-4 lg:flex lg:items-center w-full border-y-2 border-red-600 p-4 backdrop-blur-sm bg-zinc-900/40">
+                <div className="mt-4 xl:mt-4 lg:flex lg:items-center w-full border-y-2 border-red-600 p-4 backdrop-blur-md bg-red-900/20 shadow-xl">
                   <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4 lg:px-20 px-0">
                     <Link
                       className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] bg-[url('/assets/images/storeImage.jpg')] transition-all duration-150"

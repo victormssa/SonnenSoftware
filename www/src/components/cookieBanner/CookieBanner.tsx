@@ -29,6 +29,10 @@ const CookieBanner: React.FC = () => {
     localStorage.setItem('session_info', JSON.stringify({ cc: false }));
     setShowBanner(false);
   };
+  
+  const handleLater = () => {
+    setShowBanner(false);
+  };
 
   if (!showBanner) {
     return null; // Não renderiza o banner se não for necessário
@@ -55,7 +59,7 @@ const CookieBanner: React.FC = () => {
             Ao fechar esse modal, as configurações padrões serão salvas.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 mt-4 shrink-0">
+          <div className="grid grid-cols-3 gap-4 mt-4 shrink-0">
             <button
               className="text-xs shadow-lg bg-green-700 text-white hover:bg-green-600 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
               onClick={handleAccept}
@@ -67,6 +71,12 @@ const CookieBanner: React.FC = () => {
               onClick={handleDecline}
             >
               Não Aceitar
+            </button>
+            <button
+              className="text-xs shadow-lg bg-gray-500 text-white hover:bg-gray-400 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+              onClick={handleLater}
+            >
+              Mais Tarde
             </button>
           </div>
         </div>
