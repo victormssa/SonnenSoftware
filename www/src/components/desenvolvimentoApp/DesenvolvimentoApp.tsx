@@ -134,7 +134,7 @@ const DesenvolvimentoApp = () => {
               </button>
 
                 <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-3  text-gray-400 text-left">
-                  <p className="max-w-4xl text-lg sm:px-5 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
+                  <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
                     Potencialize o crescimento da sua empresa com soluções de desenvolvimento de aplicações Desktop e Mobile feitas sob medida. Na Sonnen Software, estamos comprometidos em oferecer serviços personalizados que atendam às suas necessidades exclusivas.
                   </p>
 

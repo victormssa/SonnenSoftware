@@ -25,7 +25,7 @@ background-color: white;
   
   .custom-outer-border-red {
     @media (min-width: 768px) and (max-width: 767.98px), (min-width: 820.2px) {
-      border-top-left-radius: 1% 100%;
+      border-top-left-radius: 0% 100%;
       border-bottom-left-radius: 100% 100%;
       box-shadow: 0px 0px 75px 30px rgba(255, 0, 0, 0.3);
     }
@@ -39,12 +39,15 @@ background-color: white;
     }
   }
   
-  
-  @layer components {
-    @media (max-width: 767.98px) {
-      .custom-sm-BgImage {
-        @apply bg-contain bg-center bg-no-repeat ;
-        background-image: url(https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/mobile%20dev.jpg);
-      }
+  .custom-inner-border-black {
+    @media (min-width: 768px) and (max-width: 767.98px), (min-width: 820.1px) {
+      border-Top-Left-Radius: 50% 100%;
+      border-Bottom-Left-Radius: 50% 100%;
+      box-Shadow: 0px 0px 75px 45px rgba(30, 0, 0, 0.3);
     }
   }
+  
+
+
+
+  
