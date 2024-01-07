@@ -122,14 +122,14 @@ const OtimizacaoSistemas = () => {
   return (
     <div className='w-screen  text-white bg-zinc-900 bg-center'>
 
-      <section className='md:border-b-8 border-red-600 items-center justify-center custom-outer-border-red '>
+      <section className='md:border-b-8 border-red-600 bg-gradient-to-tr from-red-600 to-rose-800 items-center justify-center custom-outer-border-red '>
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">
-              <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Otimize sua <br /> plataforma<span className="text-red-600"> digital.</span> </h1>
+              <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Otimize sua <br /> plataforma<span className="text-black"> digital.</span> </h1>
               
 
-              <button className="w-auto ml-6 px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-red-600 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
+              <button className="w-auto ml-6 px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-zinc-900 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
                   Assine agora
               </button>
 
@@ -144,7 +144,7 @@ const OtimizacaoSistemas = () => {
               </div>
             </div>
 
-            <div className="lg:w-1/2 shadow bg-gradient-to-tr from-red-600 to-rose-800 mt-6 py-6 md:py-10  lg:py-20 custom-inner-border-red " >
+            <div className="lg:w-1/2 shadow bg-zinc-900  mt-6 py-6 md:py-10  lg:py-20 custom-inner-border-black " >
               <div className=" px-6 py-0 md:py-10 mx-auto">
 
                   <div className="hidden lg:grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2 mx-0 md:mx-5 lg:mx-10 "  >

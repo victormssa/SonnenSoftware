@@ -134,7 +134,7 @@ const Desenvolvimento_Site = () => {
                   Assine agora
               </button>
 
-                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 md:mt-0 text-gray-400 text-left">
+                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 md:mt-0 text-white text-left">
                   <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 md:mt-0 mb-6 ">
                     A Sonnen Software cuida de tudo para você poder desfrutar da sua presença online ideal.
                     Nossa equipe dedicada cria uma base sólida, alinhada com as melhores práticas de desenvolvimento web, para garantir que seu site atenda às suas necessidades exclusivas desde o início.
