@@ -88,7 +88,7 @@ const HeroMain = () => {
                   <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4 lg:px-20 px-0">
                     <Link
                       className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] bg-[url('/assets/images/storeImage.jpg')] transition-all duration-150"
-                      href="/sobre/desenvolvimento_site"
+                      href="/sobre/desenvolvimento_sites"
                     >
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3 rounded-xl text-white bg-red-600">
