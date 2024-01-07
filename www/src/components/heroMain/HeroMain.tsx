@@ -9,9 +9,10 @@ import optimizationImage from "./../../../public/assets/images/optimizationImage
 import solutionImage from "./../../../public/assets/images/solutionImage.jpg";
 import appImage from "./../../../public/assets/images/appImage.jpg";
 import { AiFillHtml5 } from "react-icons/ai";
-import {PiAppWindowFill} from "react-icons/pi"
-import {FaWrench} from "react-icons/fa"
-import {BsBagPlusFill} from "react-icons/bs"
+import {PiAppWindowFill} from "react-icons/pi";
+import {FaWrench} from "react-icons/fa";
+import {BsBagPlusFill} from "react-icons/bs";
+
 
 
 const HeroMain = () => {
@@ -66,7 +67,7 @@ const HeroMain = () => {
               </span>{" "}
               conosco.
             </h3>
-              <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5">
+              <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5 px-4 w-auto">
                 Solicite um <span className="text-red-600">orçamento</span>, sem
                 compromisso.
               </h2>

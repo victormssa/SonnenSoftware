@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { RiFireLine } from "react-icons/ri";
-import { MdWorkspacePremium } from "react-icons/md";
+import { RiVipDiamondLine } from "react-icons/ri";
+
 
 const AboutPricing: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ const AboutPricing: React.FC = () => {
                     Essencial & Simples
                   </h1>
 
-                  <p className="mt-4  text-gray-300">
+                  <p className="mt-4 lg:h-40 text-gray-300">
                     Este plano se configura como a escolha ideal para aqueles que buscam o essencial, sendo especialmente adequado para pequenos negócios, profissionais autônomos e projetos pessoais, atendendo as necessidades de forma eficiente.
                   </p>
 
@@ -64,7 +65,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Site estático performático com CSR
                       </span>
                     </div>
@@ -83,7 +84,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Design moderno pensado no UX/UI
                       </span>
                     </div>
@@ -102,7 +103,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Responsividade completa</span>
+                      <span className="mx-4 text-gray-300 w-full">Responsividade completa</span>
                     </div>
 
                     <div className="flex items-center">
@@ -119,7 +120,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Desenvolvimento do SEO
                       </span>
                     </div>
@@ -138,7 +139,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Hospedagem Incluída
                       </span>
                     </div>
@@ -157,7 +158,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Marketing Digital</span>
+                      <span className="mx-4 text-gray-300 w-full">Marketing Digital</span>
                     </div>
 
                     <div className="flex items-center">
@@ -174,7 +175,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Suporte</span>
+                      <span className="mx-4 text-gray-300 w-full">Suporte</span>
                     </div>
 
                     <div className="flex items-center">
@@ -191,7 +192,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Acesso a Módulos Base & Premium
                       </span>
                     </div>
@@ -209,7 +210,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Desconto nos Módulos
                       </span>
                     </div>
@@ -220,13 +221,13 @@ const AboutPricing: React.FC = () => {
               </div>
               
               <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
-              <div className="text-white bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="font-semibold flex align-middle items-center ">MELHOR OFERTA <MdWorkspacePremium className="mx-[0.1rem]" size={"1.3rem"}/>| 20% OFF</p></div>
+              <div className="text-white bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="font-semibold flex align-middle items-center ">MELHOR OFERTA <RiVipDiamondLine className="mx-[0.3rem]" size={"1.1rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
                     Presença Online Continua
                   </h1>
 
-                  <p className="mt-4  text-gray-300">
+                  <p className="mt-4 lg:h-40 text-gray-300">
                   Nosso Plano Presença Online Continua é ideal para quem almeja uma experiência completa, sem precisar se preocupar. A Sonnen Software cuida de tudo para você poder desfrutar, com acesso à diversos módulos para enriquecer seu site.
                   </p>
 
@@ -260,8 +261,8 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
-                        Aplicativo Web Dinâmico e Interativo
+                      <span className="mx-4 text-gray-300 w-full">
+              App Web Dinâmico e Interativo
                       </span>
                     </div>
 
@@ -279,7 +280,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Design moderno pensado no UX/UI
                       </span>
                     </div>
@@ -298,7 +299,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Responsividade completa</span>
+                      <span className="mx-4 text-gray-300 w-full">Responsividade completa</span>
                     </div>
 
                     <div className="flex items-center">
@@ -315,7 +316,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Desenvolvimento do SEO
                       </span>
                     </div>
@@ -334,7 +335,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Hospedagem Incluída
                       </span>
                     </div>
@@ -353,7 +354,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Marketing Digital</span>
+                      <span className="mx-4 text-gray-300 w-full">Marketing Digital</span>
                     </div>
 
                     <div className="flex items-center">
@@ -370,7 +371,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Suporte</span>
+                      <span className="mx-4 text-gray-300 w-full">Suporte</span>
                     </div>
 
                     <div className="flex items-center">
@@ -387,7 +388,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Acesso a Módulos Base & Premium
                       </span>
                     </div>
@@ -405,7 +406,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Desconto nos Módulos
                       </span>
                     </div>
@@ -422,7 +423,7 @@ const AboutPricing: React.FC = () => {
                     À Sua Medida
                   </h1>
 
-                  <p className="mt-4  text-gray-300">
+                  <p className="mt-4 lg:h-40 text-gray-300">
                   Com o plano À Sua Medida, entregamos uma experiência única e personalizada. Você terá total autonomia para cuidar do deploy, gerenciamento e manutenção, enquanto nós lidamos com a complexidade do desenvolvimento.
                   </p>
 
@@ -456,8 +457,8 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
-                       Aplicativo Web Dinâmico e Interativo
+                      <span className="mx-4 text-gray-300 w-full">
+                       App Web Dinâmico e Interativo
                       </span>
                     </div>
 
@@ -475,7 +476,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Design moderno pensado no UX/UI
                       </span>
                     </div>
@@ -494,7 +495,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Responsividade completa</span>
+                      <span className="mx-4 text-gray-300 w-full">Responsividade completa</span>
                     </div>
 
                     <div className="flex items-center">
@@ -511,7 +512,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Desenvolvimento do SEO
                       </span>
                     </div>
@@ -530,7 +531,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Hospedagem Incluída
                       </span>
                     </div>
@@ -548,7 +549,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Marketing Digital</span>
+                      <span className="mx-4 text-gray-300 w-full">Marketing Digital</span>
                     </div>
 
                     <div className="flex items-center">
@@ -565,7 +566,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">Suporte</span>
+                      <span className="mx-4 text-gray-300 w-full">Suporte</span>
                     </div>
 
                     <div className="flex items-center">
@@ -582,7 +583,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                       Acesso a Módulos Base & Premium
                       </span>
                     </div>
@@ -600,7 +601,7 @@ const AboutPricing: React.FC = () => {
                         />
                       </svg>
 
-                      <span className="mx-4 text-gray-300">
+                      <span className="mx-4 text-gray-300 w-full">
                         Desconto nos Módulos
                       </span>
                     </div>

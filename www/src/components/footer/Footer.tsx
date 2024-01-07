@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
     <section className="px-10 py-10 flex justify-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
               <div>
-                  <p className="font-semibold text-gray-800 dark:text-white">Links Importantes</p>
+                  <p className="font-semibold text-white">Links Importantes</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
                       <Link href="/" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Página Inicial</Link>
                       <Link href="/#sobre" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Sobre Nós</Link>
@@ -70,8 +70,8 @@ const Footer: React.FC = () => {
               <div>
                   <p className="font-semibold text-gray-800 dark:text-white">Contato</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
-                      <p className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">(71) 9961-84966</p>
-                      <p className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">sonnensoftware@outlook.com</p>
+                      <p className="text-gray-300">+55 (71) 9961-84966</p>
+                      <p className="text-gray-300">sonnensoftware@outlook.com</p>
                   </div>
               </div>
           </div>
