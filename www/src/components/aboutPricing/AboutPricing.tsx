@@ -36,9 +36,9 @@ const AboutPricing: React.FC = () => {
                   </p>
 
                   
-                  <Link href="https://wa.link/sbu0bd">
+                  <Link href="https://wa.link/sbu0bd" target="_blank" rel="noopener noreferrer">
                       <button className="w-full px-4 py-2 mt-6 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80">
-                        ASSINE AGORA
+                        ENTRE EM CONTATO
                       </button>
                   </Link>
                 </div>
@@ -232,9 +232,9 @@ const AboutPricing: React.FC = () => {
                   </p>
 
                   
-                  <Link href="https://wa.link/8we64h">
+                  <Link href="https://wa.link/8we64h" target="_blank" rel="noopener noreferrer">
                       <button className="w-full px-4 py-2 mt-6 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80">
-                        ASSINE AGORA
+                      ENTRE EM CONTATO
                       </button>
                   </Link>
                 </div>
@@ -428,9 +428,9 @@ const AboutPricing: React.FC = () => {
                   </p>
 
                   
-                  <Link href="https://wa.link/n2xntf">
+                  <Link href="https://wa.link/n2xntf" target="_blank" rel="noopener noreferrer" >
                       <button className="w-full px-4 py-2 mt-6 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80">
-                        ASSINE AGORA
+                      ENTRE EM CONTATO
                       </button>
                   </Link>
                 </div>
