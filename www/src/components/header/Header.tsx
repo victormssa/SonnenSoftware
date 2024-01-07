@@ -161,7 +161,7 @@ const Navigation = () => {
                       )}`}
                       href="/sobre/desenvolvimento_sites"
                       onClick={() => {
-                        toggleMenu();
+                        setIsOpen(false);
                         toggleLista();
                       }}
                     >
@@ -174,7 +174,7 @@ const Navigation = () => {
                       )}`}
                       href="/sobre/desenvolvimento_apps"
                       onClick={() => {
-                        toggleMenu();
+                        setIsOpen(false);
                         toggleLista();
                       }}
                     >
@@ -186,7 +186,7 @@ const Navigation = () => {
                       )}`}
                       href="/sobre/otimizacao_sistemas"
                       onClick={() => {
-                        toggleMenu();
+                        setIsOpen(false);
                         toggleLista();
                       }}
                     >
@@ -198,7 +198,7 @@ const Navigation = () => {
                       )}`}
                       href="/sobre/solucoes_personalizadas"
                       onClick={() => {
-                        toggleMenu();
+                        setIsOpen(false);
                         toggleLista();
                       }}
                     >
