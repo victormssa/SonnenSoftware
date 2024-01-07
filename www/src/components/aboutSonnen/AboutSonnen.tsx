@@ -20,7 +20,7 @@ const AboutSonnen: React.FC = () => {
         <div className="container px-6 py-10 mx-auto">
           <div className="lg:-mx-6 lg:flex lg:items-center">
             <Image
-              className="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[35rem]"
+              className="lg:flex hidden object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[35rem]"
               src={logo}
               alt=""
             />

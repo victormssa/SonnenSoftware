@@ -144,18 +144,18 @@ const Navigation = () => {
                 {mostrarLista && (
                         <div className="lg:absolute top-[2rem] left-[11.5rem] flex flex-col lg:px-2 lg:py-2 lg:rounded-xl rounded-none lg:gap-3 lg:border-b-0 border-b-2 lg:bg-transparent bg-white
                         ">
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
+                          <Link className={`lg:bg-red-600 lg:hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
                   "/sobre/desenvolvimento_sites"
-                )}`} href="/sobre/desenvolvimento_sites">Desenvolvimento de Sites</Link>
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
+                )}`} href="/sobre/desenvolvimento_sites" onClick={toggleMenu}>Desenvolvimento de Sites</Link>
+                          <Link className={`lg:bg-red-600 lg:hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
                   "/sobre/desenvolvimento_apps"
-                )}`} href="/sobre/desenvolvimento_apps">Desenvolvimento de Apps</Link>
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
+                )}`} href="/sobre/desenvolvimento_apps" onClick={toggleMenu}>Desenvolvimento de Apps</Link>
+                          <Link className={`lg:bg-red-600 lg:hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg lg:border-b-0 border-b-2 text-center ${isActive(
                   "/sobre/otimizacao_sistemas"
-                )}`} href="/sobre/otimizacao_sistemas">Otimização de Sistemas</Link>
-                          <Link className={`lg:bg-red-600 hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg text-center ${isActive(
+                )}`} href="/sobre/otimizacao_sistemas" onClick={toggleMenu}>Otimização de Sistemas</Link>
+                          <Link className={`lg:bg-red-600 lg:hover:bg-red-500 lg:text-white text-black py-1 px-2 lg:w-40 lg:rounded-lg text-center ${isActive(
                   "/sobre/solucoes_personalizadas"
-                )}`} href="/sobre/solucoes_personalizadas">Soluções Personalizadas</Link>
+                )}`} href="/sobre/solucoes_personalizadas" onClick={toggleMenu}>Soluções Personalizadas</Link>
                         </div>
                       )}
               </div>
