@@ -75,7 +75,7 @@ const OtimizacaoSistemas = () => {
 
   const cards = [
     {
-      image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/system-optimization.jpg',
+      image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__otimiza%C3%A7%C3%A3o.jpg',
       title: 'Experiência Otimizada',
       content: 'Elevando a satisfação do usuário através da otimização de sistemas para atender às necessidades específicas, proporcionando uma experiência mais eficiente e personalizada.',
     },
@@ -85,7 +85,7 @@ const OtimizacaoSistemas = () => {
       content: 'Reforçamos um back-end escalável e seguro, capaz de oferecer soluções de hospedagem e armazenamento eficientes para processar grandes volumes de dados de forma rápida e confiável.',
     },
     {
-      image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/system-architecture.jpg',
+      image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img_otimizacao__site.jpg',
       title: 'Arquitetura Otimizada',
       content: 'Otimizamos sistemas com uma base robusta, desenvolvendo com precisão e inovação para aproveitar todo o potencial do seu projeto, garantindo flexibilidade e adaptabilidade às demandas futuras.',
     },
@@ -152,7 +152,7 @@ const OtimizacaoSistemas = () => {
                   
                     <Tilt options={defaultOptions} >
                         <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48 bg-cover border-2 border-red-900 shadow-lg " style={{
-                          backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/mobile%20dev.jpg')" }}>
+                          backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__otimiza%C3%A7%C3%A3o.jpg')" }}>
                           <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center ">
                               <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Experiência Otimizada </h2>
@@ -164,7 +164,7 @@ const OtimizacaoSistemas = () => {
                         </Tilt>
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48  bg-cover border-2 border-red-900 shadow-lg" style={{
-                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/_4a8bc26b-300f-46b8-b30f-c316a05704f6.jpg')" }}>
+                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/backend-optimization.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
                               <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Back-End Otimizado</h2>
@@ -176,7 +176,7 @@ const OtimizacaoSistemas = () => {
                         </Tilt>
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48  bg-cover border-2 border-red-900 shadow-lg" style={{
-                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__arquitetura__app.jpg')" }}>
+                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img_otimizacao__site.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
                               <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Arquitetura Otimizada </h2>

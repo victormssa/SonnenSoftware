@@ -134,7 +134,7 @@ const Desenvolvimento_Site = () => {
                   Assine agora
               </button>
 
-                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 md:mt-0 text-gray-400 text-left">
+                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 md:mt-0 text-white text-left">
                   <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 md:mt-0 mb-6 ">
                     A Sonnen Software cuida de tudo para você poder desfrutar da sua presença online ideal.
                     Nossa equipe dedicada cria uma base sólida, alinhada com as melhores práticas de desenvolvimento web, para garantir que seu site atenda às suas necessidades exclusivas desde o início.
@@ -156,10 +156,10 @@ const Desenvolvimento_Site = () => {
                           backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/modulo__solucoes__personalizadas.png')" }}>
                           <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center ">
-                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Experiência do Usuário </h2>
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">UX/UI </h2>
                               <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
-                            <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Ofereça uma experiência mobile completa para seus clientes</p>
+                            <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">UI é responsável pela aparência do seu site, enquanto que o UX cuida da acessibilidade. A combinação permite a criação de páginas modernas mas levando em consideração a expêriencia do usuário</p>
                           </div>
                         </div>
                         </Tilt>
@@ -168,10 +168,10 @@ const Desenvolvimento_Site = () => {
                             backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__host.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
-                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Back End Integrado</h2>
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Hospedagem Segura e escalável</h2>
                               <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
-                              <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Back End escalacionável e protegido capaz de oferecer soluções de hospedagem e armazenamento para milhões de usuários</p>
+                              <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Suporte 24h em servidores confiaveis, Certificação SSL, proteção de privacidade</p>
                             </div>
                           </div>
                         </Tilt>
@@ -180,10 +180,10 @@ const Desenvolvimento_Site = () => {
                             backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__localization.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
-                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Arquitetura do Sistema </h2>
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Geolocalização</h2>
                               <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
-                              <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Construa com um alicerce robusto. Desenvolva com precisão e inovação, aproveitando todo o potencial de seu projeto.</p>
+                              <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Geocalize seu site para se adaptar as Características regionais e aumentar a chance da sua página encontrar o seu usuário.</p>
                             </div>
                           </div>
                         </Tilt>
@@ -192,10 +192,10 @@ const Desenvolvimento_Site = () => {
                             backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__security.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
-                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Monitoramento</h2>
+                              <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Proteção</h2>
                               <span className="group-hover:opacity-0 "><MdKeyboardArrowUp size='3rem'/></span>
                             </div>
-                              <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Acompanhe de perto os indicadores essenciais para tomadas de decisão de importântes para sua aplicação. </p>
+                              <p className="mt-2 text-sm tracking-wider uppercase opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300">Nossos desenvolvedores seguem diretrizes rigorosas como: validação adequada de entrada, prevenção de injeção de código e implementação de controles de acesso.</p>
                             </div>
                           </div>
                         </Tilt>
@@ -251,10 +251,11 @@ const Desenvolvimento_Site = () => {
       <section className="m-3 px-6 mx-auto">
           <div className="xl:flex xl:items-center xL:-mx-4">
               <div className="xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left">
-                  <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white ">Potencialize Seu Lucro:<br /> Monetize com a<span className="underline decoration-red-500"> Sonnen.</span> </h1>
+                  <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white ">Potencialize seus negócios:<br /> com  <span className="underline decoration-red-500">dashboards</span> </h1>
        
                   <p className=" mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
-                    A monetização de aplicativos tornou-se uma estratégia essencial para maximizar seus ganhos. Duas abordagens eficazes são a integração do Google Ads e a implementação de soluções de E-commerce. A integração de um aplicativo de e-commerce para dispositivos móveis pode potencializar a visibilidade da sua marca. Isso se justifica pelo fato de que a maioria das pessoas dedica mais tempo à busca por serviços e lojas virtuais por meio de dispositivos móveis.
+                  Uma das ferramentas mais poderosas em nosso arsenal são os dashboards personalizados. Essas interfaces intuitivas e visualmente atraentes permitem que nossos clientes acompanhem, analisem e interpretem dados cruciais de maneira simplificada.
+                   Essas interfaces intuitivas e visualmente atraentes permitem que nossos clientes acompanhem, analisem e interpretem dados cruciais de maneira simplificada.Os elementos visuais dinâmicos, como gráficos interativos e tabelas informativas, permitem que os usuários compreendam rapidamente o desempenho de seus negócios.
                   </p>
                   </div>
 
