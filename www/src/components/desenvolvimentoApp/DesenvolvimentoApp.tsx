@@ -251,9 +251,9 @@ const DesenvolvimentoApp = () => {
       <section className="m-3 px-6 mx-auto">
           <div className="xl:flex xl:items-center xL:-mx-4">
               <div className="xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left">
-                  <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white ">Potencialize Seu Lucro:<br /> Monetize com a<span className="underline decoration-red-500"> Sonnen.</span> </h1>
+                  <h1 className="text-2xl font-semibold  capitalize lg:text-3xl text-white ">Potencialize Seu Lucro:<br /> Monetize com a<span className="underline decoration-red-500"> Sonnen.</span> </h1>
        
-                  <p className=" mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
+                  <p className=" mt-4  xl:mt-6 text-gray-300">
                     A monetização de aplicativos tornou-se uma estratégia essencial para maximizar seus ganhos. Duas abordagens eficazes são a integração do Google Ads e a implementação de soluções de E-commerce. <br /> <br /> A integração de um aplicativo de e-commerce para dispositivos móveis pode potencializar a visibilidade da sua marca. Isso se justifica pelo fato de que a maioria das pessoas dedica mais tempo à busca por serviços e lojas virtuais por meio de dispositivos móveis.
                   </p>
                   </div>

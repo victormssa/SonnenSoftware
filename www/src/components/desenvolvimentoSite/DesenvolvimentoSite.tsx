@@ -253,9 +253,9 @@ const Desenvolvimento_Site = () => {
       <section className="m-3 px-6 mx-auto">
           <div className="xl:flex xl:items-center xL:-mx-4">
               <div className="xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left">
-                  <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white ">Potencialize seus negócios:<br /> com  <span className="underline decoration-red-500">dashboards</span> </h1>
+                  <h1 className="text-2xl font-semibold capitalize lg:text-3xl text-white ">Potencialize seus negócios:<br /> com  <span className="underline decoration-red-500">dashboards</span> </h1>
        
-                  <p className=" mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
+                  <p className=" mt-4 xl:mt-6 text-gray-300">
                   Uma das ferramentas mais poderosas em nosso arsenal são os dashboards personalizados. Essas interfaces intuitivas e visualmente atraentes permitem que nossos clientes acompanhem, analisem e interpretem dados cruciais de maneira simplificada.
                   <br /> <br /> São excelentes ferramentas para monitorar o progresso em relação a metas e indicadores-chave de desempenho KPIs. Isso possibilita que as equipes avaliem o sucesso de suas estratégias e façam ajustes conforme necessário.
                   </p>

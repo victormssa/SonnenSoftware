@@ -221,7 +221,7 @@ const Navigation = () => {
               </Link>
               <div
                 className={`md:hidden lg:hidden 
-                    ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4 lg:border-2 border-red-500 dark:border-red-500 rounded-full
+                    ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4 lg:border-2 border-red-500  rounded-full
                 `}
               ></div>
               <Link

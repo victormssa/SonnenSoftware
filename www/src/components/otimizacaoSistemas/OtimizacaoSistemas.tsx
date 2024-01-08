@@ -127,7 +127,7 @@ const OtimizacaoSistemas = () => {
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">
-              <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Otimize sua <br /> plataforma<span className="text-black"> digital.</span> </h1>
+              <h1 className=" text-3xl font-semibold text-white lg:text-4xl mt-4  px-6  md:px-7">Otimize sua <br /> plataforma<span className="text-black"> digital.</span> </h1>
               
 
               <Link href='https://wa.link/lprzpn' target="_blank" rel="noopener noreferrer">
@@ -136,8 +136,8 @@ const OtimizacaoSistemas = () => {
               </button>
               </Link>
 
-                <div className=" md:p-2 xl:p-0 rounded-lg font-semibold md:mx-0  xl:pl-0 mt-3 xl:mt-0  text-white text-left">
-                  <p className="max-w-4xl text-lg sm:px-5 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
+                <div className="md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-3  text-white text-left">
+                  <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
                   Nossos serviços personalizados de Otimização de Sistema são projetados para atender às suas necessidades específicas, proporcionando uma resposta direcionada aos desafios operacionais que você enfrenta.
                   </p>
                 </div>
