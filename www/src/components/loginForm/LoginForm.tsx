@@ -206,8 +206,8 @@ const SignIn: React.FC = () => {
                 <p className="mt-6 text-sm text-center text-gray-400">
                   Tem interesse em uma vaga?{" "}
                   <a
-                    href="/pt-br/sign-up"
-                    className="text-red-500 focus:outline-none focus:underline hover:underline"
+                    href="#"
+                    className="text-red-500 focus:outline-none focus:underline hover:underline cursor-not-allowed"
                   >
                     Cadastre-se
                   </a>
