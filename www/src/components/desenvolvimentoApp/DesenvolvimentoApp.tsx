@@ -136,13 +136,9 @@ const DesenvolvimentoApp = () => {
               </button>
               </Link>
 
-                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-3  text-gray-400 text-left">
+                <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-3  text-white text-left">
                   <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
                     Potencialize o crescimento da sua empresa com soluções de desenvolvimento de aplicações Desktop e Mobile feitas sob medida. Na Sonnen Software, estamos comprometidos em oferecer serviços personalizados que atendam às suas necessidades exclusivas.
-                  </p>
-
-                  <p className="max-w-4xl text-lg  md:text-sm xl:text-lg leading-7 hidden md:block">
-                    Desenvolvemos aplicativos específicos que não apenas otimizam a eficiência operacional, mas também impulsionam a produtividade da sua equipe, resultando em redução de custos e processos mais eficientes.
                   </p>
                 </div>
 

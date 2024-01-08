@@ -86,9 +86,9 @@ const OtimizacaoSistemas = () => {
       content: 'Reforçamos o back-end de forma escalável e seguro, capaz de oferecer soluções seguras, rápida e eficientes para processar grandes volumes de dados de forma rápida e confiável.',
     },
     {
-      image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/system-architecture.jpg',
-      title: 'Arquitetura Otimizada',
-      content: 'Otimizamos sistemas com uma base robusta, desenvolvendo com precisão e inovação para aproveitar todo o potencial do seu projeto, garantindo flexibilidade e adaptabilidade às demandas futuras.',
+      image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__otimizacao__app.jpg',
+      title: 'Otimização de Aplicativos',
+      content: 'Otimizamos aplicativos com uma base robusta, desenvolvendo com precisão e inovação para aproveitar todo o potencial do seu projeto.',
     },
     {
       image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__otimizacao_interface.jpg',
@@ -136,11 +136,9 @@ const OtimizacaoSistemas = () => {
               </button>
               </Link>
 
-                <div className=" md:p-2 xl:p-0 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-0  text-white text-left">
+                <div className=" md:p-2 xl:p-0 rounded-lg font-semibold md:mx-0  xl:pl-0 mt-3 xl:mt-0  text-white text-left">
                   <p className="max-w-4xl text-lg sm:px-5 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
                   Nossos serviços personalizados de Otimização de Sistema são projetados para atender às suas necessidades específicas, proporcionando uma resposta direcionada aos desafios operacionais que você enfrenta.
-                  <br /><br/>
-                  Ao contrário do desenvolvimento de novos aplicativos, concentramos nossos esforços em refinamentos e melhorias contínuas no seu sistema atual. Isso resulta não apenas em uma eficiência operacional aprimorada, mas também em um aumento significativo na produtividade da sua equipe.
                   </p>
                 </div>
 
@@ -155,7 +153,7 @@ const OtimizacaoSistemas = () => {
                   
                     <Tilt options={defaultOptions} >
                         <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48 bg-cover border-2 border-red-900 shadow-lg " style={{
-                          backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/mobile%20dev.jpg')" }}>
+                          backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img_otimizacao__site.jpg')" }}>
                           <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center ">
                               <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Otimização de Website </h2>
@@ -167,7 +165,7 @@ const OtimizacaoSistemas = () => {
                         </Tilt>
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48  bg-cover border-2 border-red-900 shadow-lg" style={{
-                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/_4a8bc26b-300f-46b8-b30f-c316a05704f6.jpg')" }}>
+                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__otimiza%C3%A7%C3%A3o.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
                               <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Otimização de Banco de Dados</h2>
@@ -179,7 +177,7 @@ const OtimizacaoSistemas = () => {
                         </Tilt>
                         <Tilt options={defaultOptions}>
                           <div className="flex items-end overflow-hidden bg-center rounded-lg md:h-36 xl:h-48  bg-cover border-2 border-red-900 shadow-lg" style={{
-                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__arquitetura__app.jpg')" }}>
+                            backgroundImage:"url('https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__otimizacao__app.jpg')" }}>
                             <div className="group w-full px-8 overflow-hidden rounded-b-lg backdrop-blur-md bg-opacity-40 transform-gpu transition-transform duration-300 hover:scale-105 h-16 cursor-pointer bg-gray-900 hover:bg-gray-900/60  hover:h-full">
                             <div className="flex justify-center items-center">
                               <h2 className=" text-xl font-semibold capitalize group-hover:ml-10 group-hover:mt-4">Otimização de Aplicativos </h2>
