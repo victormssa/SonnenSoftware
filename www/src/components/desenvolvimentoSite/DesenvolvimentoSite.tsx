@@ -1,17 +1,17 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from 'react';
+import Link from "next/link";
 import modulo from '../../../public/assets/images/sitemodulo.svg'
 import android from '../../../public/assets/images/img__android.png';
 import googlePlay from '../../../public/assets/images/img__google_play.png';
 import googleAds from '../../../public/assets/images/img__google__ads.png';
-import googleCloud from '../../../public/assets/images/img__google__cloud.png';
 import elysia from '../../../public/assets/images/elysia.png';
 import postgresql from '../../../public/assets/images/postgresql.png';
 import analytics from '../../../public/assets/images/google-analytics.png';
-import nextJS from '../../../public/assets/images/img__next__js.png';
+import nextJS from '../../../public/assets/images/nextLogo.png';
 import SonnenLogo from '../../../public/assets/images/logoSonnen.png';
-
+import awslogo from '../../../public/assets/images/AWSLogo.png';
 import dashboard from '../../../public/assets/images/digital-tablet-online-learning.jpg';
 import {Tilt} from 'react-tilt';
 import { MdKeyboardArrowUp } from "react-icons/md";
@@ -31,9 +31,9 @@ const Desenvolvimento_Site = () => {
     
     { id: 3, icon: <Image src={googleAds} alt="Logo Google Ads" className={`w-12 md:w-24 h-auto`} />, text: "Google Ads", link: "https://ads.google.com/intl/pt-BR_br/start/overview-ha/?subid=br-pt-ha-awa-bk-c-scru!o3~Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB~140965879609~aud-780873439152:kwd-94527731~17334788550~664803803888&gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB&gclsrc=aw.ds"  },
 
-    { id: 4, icon: <Image src={googleCloud} alt="Logo Google Cloud" className={`w-12 md:w-24 h-auto`} />, text: "Google Cloud", link: "https://cloud.google.com/?hl=pt_br" },
+    { id: 4, icon: <Image src={awslogo} alt="Logo AWS" className={`w-12 md:w-24 h-auto`} />, text: "AWS", link: "https://aws.amazon.com/pt" },
 
-    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-12 md:w-24 h-auto bg-white rounded-2xl p-4`} />, text: "Logo Next.js", link: "https://nextjs.org/showcase" },
+    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-12 md:w-24 h-auto`} />, text: "Next.js", link: "https://nextjs.org/showcase" },
 
     { id: 5, icon: <Image src={elysia} alt="Logo Elysia.js" className={`w-16 md:w-36 h-auto`} />, text: "Elysia.js", link: "https://elysiajs.com" },
 
@@ -77,23 +77,23 @@ const Desenvolvimento_Site = () => {
   const cards = [
     {
       image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/modulo__solucoes__personalizadas.png',
-      title: 'Experiência do Usuário',
-      content: 'Ofereça uma experiência mobile completa para seus clientes',
+      title: 'UX/UI ',
+      content: 'UI é responsável pela aparência do seu site, enquanto que o UX cuida da acessibilidade. A combinação permite a criação de páginas modernas mas levando em consideração a expêriencia do usuário',
     },
     {
       image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__host.jpg',
-      title: 'Back End Integrado',
-      content: 'Back End escalonável e protegido capaz de oferecer soluções de hospedagem e armazenamento para milhões de usuários',
+      title: 'Hospedagem Segura e escalável',
+      content: 'Suporte 24h em servidores confiaveis, Certificação SSL, proteção de privacidade',
     },
     {
       image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__localization.jpg',
-      title: 'Arquitetura do Sistema',
-      content: 'Construa com um alicerce robusto. Desenvolva com precisão e inovação, aproveitando todo o potencial de seu projeto.',
+      title: 'Geolocalização',
+      content: 'Geocalize seu site para se adaptar as Características regionais e aumentar a chance da sua página encontrar o seu usuário.',
     },
     {
       image: 'https://raw.githubusercontent.com/MiracleForge/SonnenSoftware_Images/main/images/img__security.jpg',
-      title: 'Monitoramento',
-      content: 'Acompanhe de perto os indicadores essenciais para tomadas de decisão importantes para sua aplicação.',
+      title: 'Proteção',
+      content: 'Nossos desenvolvedores seguem diretrizes rigorosas como: validação adequada de entrada, prevenção de injeção de código e implementação de controles de acesso.',
     },
   ];
   
@@ -129,10 +129,12 @@ const Desenvolvimento_Site = () => {
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">
               <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Construa sua presença<br /> Online<span className="text-black"> contínua.</span> </h1>
               
-
+              <Link href='https://wa.link/lprzpn' target="_blank" rel="noopener noreferrer">
               <button className="w-auto ml-6 px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-zinc-900 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
-                  Assine agora
+                  Entre em Contato
               </button>
+              </Link>
+
 
                 <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 md:mt-0 text-white text-left">
                   <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 md:mt-0 mb-6 ">
@@ -255,32 +257,32 @@ const Desenvolvimento_Site = () => {
        
                   <p className=" mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
                   Uma das ferramentas mais poderosas em nosso arsenal são os dashboards personalizados. Essas interfaces intuitivas e visualmente atraentes permitem que nossos clientes acompanhem, analisem e interpretem dados cruciais de maneira simplificada.
-                   Essas interfaces intuitivas e visualmente atraentes permitem que nossos clientes acompanhem, analisem e interpretem dados cruciais de maneira simplificada.Os elementos visuais dinâmicos, como gráficos interativos e tabelas informativas, permitem que os usuários compreendam rapidamente o desempenho de seus negócios.
+                  <br /> <br /> São excelentes ferramentas para monitorar o progresso em relação a metas e indicadores-chave de desempenho KPIs. Isso possibilita que as equipes avaliem o sucesso de suas estratégias e façam ajustes conforme necessário.
                   </p>
                   </div>
 
               <div className="grid grid-cols-1 gap-8 md:mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2  ">
-                <div className="relative h-96 rounded-xl border border-zinc-950 shadow-md overflow-hidden mt-10 md:mt-20">
+                <div className="relative h-96 rounded-xl border border-zinc-950 shadow-md overflow-hidden justify-center items-center text-center">
                   <div className="bg-black absolute inset-0 opacity-40"></div>
                   <Image
                     src={modulo}
                     alt="Monetização App"
                     className="w-full h-full object-cover mt-5"
                   />
-                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center mt-36">
-                    <h1 className="text-xl font-semibold  drop-shadow-2xl">Notificações Push</h1>
-                    <p className="font-semibold drop-shadow-2xl px-8 mt-2 ">Estimule a interação contínua de seus usuários em seu aplicativo por meio de mensagens. Acompanhe os dados de entrega para assegurar uma experiência eficiente e personalizada.</p>
+                  <div className="absolute inset-0 flex flex-col justify-end items-center text-center pb-2">
+                    <h1 className="text-xl font-semibold  drop-shadow-2xl">News Letters</h1>
+                    <p className="font-semibold drop-shadow-2xl px-8 mt-2 ">A sua empresa procura divulgar amplamente informações e notícias relacionadas com a sua atividade? A newsletter é a ferramenta ideal para informar seus clientes, promover ofertas especiais ou simplesmente cultivar um relacionamento sólido.</p>
                   </div>
                 </div>
 
-                <div className="relative h-96 rounded-xl border border-zinc-950 shadow-md overflow-hidden mt-6 md:mt-20">
+                <div className="relative h-96 rounded-xl border border-zinc-950 shadow-md overflow-hidden justify-center items-center text-center">
                   <div className="bg-black absolute inset-0 opacity-40"></div>
                   <Image
                     src={dashboard}
                     alt="Monetização App"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center mt-36">
+                  <div className="absolute inset-0 flex flex-col justify-end items-center text-center pb-2">
                     <h1 className="text-xl font-semibold  drop-shadow-2xl">Potencialize Sua Receita com Google AdMob e Google Analytics</h1>
                     <p className="font-semibold drop-shadow-2xl px-8 mt-2">Maximize seus ganhos integrando estrategicamente Google AdMob e aproveitando as análises detalhadas do Google Analytics.</p>
 
@@ -310,7 +312,10 @@ const Desenvolvimento_Site = () => {
         <figure >
             <Image src={SonnenLogo} alt="Sonnen Software Logo" className={`w-60 h-auto`} />
         </figure>
-        <a className=" md:hidden  px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" target="_blank" href="/planos/essencial&amp;simples">Solicite um Orçamento</a>
+        <Link href='/contato' rel="noopener noreferrer">
+          <button className="px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold">Solicite um Orçamento
+          </button>
+        </Link>
       </div>
       
 

@@ -91,9 +91,11 @@ const SolucoesPersonalizadas = () => {
                   conveniência na busca por soluções personalizadas.
                 </p>
 
-                <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-red-600 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
-                  Assine agora
-                </button>
+                <Link href='https://wa.link/lprzpn' target="_blank" rel="noopener noreferrer">
+              <button className="w-auto ml-6 px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-red-600 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
+                  Entre em Contato
+              </button>
+              </Link>
               </div>
             </div>
 

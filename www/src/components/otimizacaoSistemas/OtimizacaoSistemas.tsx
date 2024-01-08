@@ -1,14 +1,15 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from 'react';
+import Link from "next/link";
 import android from '../../../public/assets/images/img__android.png';
 import googlePlay from '../../../public/assets/images/img__google_play.png';
 import googleAds from '../../../public/assets/images/img__google__ads.png';
-import googleCloud from '../../../public/assets/images/img__google__cloud.png';
+import nextJS from '../../../public/assets/images/nextLogo.png';
 import elysia from '../../../public/assets/images/elysia.png';
 import postgresql from '../../../public/assets/images/postgresql.png';
 import analytics from '../../../public/assets/images/google-analytics.png';
-import nextJS from '../../../public/assets/images/img__next__js.png';
+import awslogo from '../../../public/assets/images/AWSLogo.png';
 import SonnenLogo from '../../../public/assets/images/logoSonnen.png';
 import InterfaceApp from '../../../public/assets/images/img__interface__app.jpg';
 import NotificationMessage from '../../../public/assets/images/img__notification_app.png';
@@ -30,9 +31,9 @@ const OtimizacaoSistemas = () => {
     
     { id: 3, icon: <Image src={googleAds} alt="Logo Google Ads" className={`w-12 md:w-24 h-auto`} />, text: "Google Ads", link: "https://ads.google.com/intl/pt-BR_br/start/overview-ha/?subid=br-pt-ha-awa-bk-c-scru!o3~Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB~140965879609~aud-780873439152:kwd-94527731~17334788550~664803803888&gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB&gclsrc=aw.ds"  },
 
-    { id: 4, icon: <Image src={googleCloud} alt="Logo Google Cloud" className={`w-12 md:w-24 h-auto`} />, text: "Google Cloud", link: "https://cloud.google.com/?hl=pt_br" },
+    { id: 4, icon: <Image src={awslogo} alt="Logo AWS" className={`w-16 md:w-36 h-auto`} />, text: "AWS", link: "https://aws.amazon.com/pt" },
 
-    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-12 md:w-24 h-auto bg-white rounded-2xl p-4`} />, text: "Logo Next.js", link: "https://nextjs.org/showcase" },
+    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-16 md:w-36 h-auto`} />, text: "Next.js", link: "https://nextjs.org/showcase" },
 
     { id: 5, icon: <Image src={elysia} alt="Logo Elysia.js" className={`w-16 md:w-36 h-auto`} />, text: "Elysia.js", link: "https://elysiajs.com" },
 
@@ -129,9 +130,11 @@ const OtimizacaoSistemas = () => {
               <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-3  px-6  md:px-7">Otimize sua <br /> plataforma<span className="text-black"> digital.</span> </h1>
               
 
+              <Link href='https://wa.link/lprzpn' target="_blank" rel="noopener noreferrer">
               <button className="w-auto ml-6 px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-zinc-900 rounded-lg lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">
-                  Assine agora
+                  Entre em Contato
               </button>
+              </Link>
 
                 <div className=" md:p-2 xl:p-0 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 xl:mt-0  text-white text-left">
                   <p className="max-w-4xl text-lg sm:px-5 md:text-sm xl:text-lg leading-7 sm:mt-6 mb-6 ">
@@ -262,7 +265,10 @@ const OtimizacaoSistemas = () => {
         <figure >
             <Image src={SonnenLogo} alt="Sonnen Software Logo" className={`w-60 h-auto`} />
         </figure>
-        <a className=" md:hidden  px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold" target="_blank" href="/planos/essencial&amp;simples">Solicite um Orçamento</a>
+        <Link href='/contato' rel="noopener noreferrer">
+          <button className="px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold">Solicite um Orçamento
+          </button>
+        </Link>
       </div>
       
 

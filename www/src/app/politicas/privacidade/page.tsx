@@ -6,7 +6,7 @@ const Cookies: React.FC = () => {
   return (
     <main className="w-screen h-auto bg-zinc-900">
       <section className='pt-24 flex justify-center items-center align-middle'>
-        <div className=" py-8 px-[35rem] rounded-lg text-xl text-white text-pretty leading-10">
+        <div className=" py-8 px-2 lg:px-[35rem] rounded-lg text-xl text-white text-pretty leading-10">
           <h2 className="text-4xl font-bold mb-8">Política de Privacidade</h2>
           <p className=''>
             Esta Política de Privacidade tem o propósito de descrever detalhadamente como coletamos, utilizamos e protegemos as informações pessoais que você compartilha conosco ao utilizar nosso site (sonnensoftware.com) e nossos aplicativos desktop e móveis.
