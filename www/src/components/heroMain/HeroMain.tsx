@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import smartphone from "./../../../public/assets/images/smartphoneImage.png"
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -44,34 +45,39 @@ const HeroMain = () => {
           }}
         >
           <div className="flex flex-col items-center justify-center w-full h-full ">
-            <section className="text-center mt-8">
-            <h3 className="text-2xl font-semibold text-white md:text-4xl lg:text-4xl mb-1">
-              Desenvolva seu <br />{" "}
-              <span className="text-red-600">
-                <AnimatePresence mode='wait'>
-                  <motion.span
-                    key={texts[currentTextIndex]}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {texts[currentTextIndex]}
-                  </motion.span>
-                </AnimatePresence>
-              </span>{" "}
-              conosco.
-            </h3>
-              <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5 px-10 w-auto">
-                Solicite um <span className="text-red-600">orçamento</span>, sem
-                compromisso.
-              </h2>
-              <Link
-                href="/contato"
-                className="px-2 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2 duration-200 text-white hover:bg-red-600 hover:text-black font-black border-2 border-red-600 mr-4 rounded-md"
-              >
-                CLIQUE E SOLICITE
-              </Link>
+            <section className="flex items-center max-h-56 mt-40">
+            <div className="text-center">
+              <h3 className="text-2xl font-semibold text-white md:text-4xl lg:text-4xl mb-1">
+                Desenvolva seu <br />{" "}
+                <span className="text-red-600">
+                  <AnimatePresence mode='wait'>
+                    <motion.span
+                      key={texts[currentTextIndex]}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {texts[currentTextIndex]}
+                    </motion.span>
+                  </AnimatePresence>
+                </span>{" "}
+                conosco.
+              </h3>
+                <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5 px-10 w-auto">
+                  Solicite um orçamento, <span className="underline decoration-red-600">sem compromisso</span>.
+                </h2>
+                <Link
+                  href="/contato"
+                  className="px-2 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2 duration-200 text-white hover:bg-red-600 hover:text-black font-black border-2 border-red-600 mr-4 rounded-md"
+                >
+                  CLIQUE E SOLICITE
+                </Link>
+            </div>
+              <div className="">
+                <Image src="/assets/images/smartphoneImage.png" alt="Imagem de Smartphone" width={300}
+                        height={10} className="hidden lg:flex"/>
+              </div>
             </section>
             <section className="z-10 w-full">
               <div className="w-full py-10 mx-auto">
