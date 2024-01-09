@@ -74,10 +74,6 @@ const HeroMain = () => {
                   CLIQUE E SOLICITE
                 </Link>
             </div>
-              <div className="">
-                <Image src="/assets/images/smartphoneImage.png" alt="Imagem de Smartphone" width={300}
-                        height={10} className="hidden lg:flex"/>
-              </div>
             </section>
             <section className="z-10 w-full">
               <div className="w-full py-10 mx-auto">
