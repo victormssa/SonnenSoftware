@@ -119,7 +119,7 @@ const Navigation = () => {
             className={`absolute inset-x-0 z-20 w-full h-auto px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center transition-transform duration-300 ease-in-out transform ${
               isOpen
                 ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
-                : " -translate-x-full bg-gradient-to-tr "
+                : " -translate-x-full"
             }`}
           >
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
@@ -225,7 +225,7 @@ const Navigation = () => {
                 )} ${
                   isTop && !isSpecialPage
                     ? "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300"
-                    : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
+                    : "lg:border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
               >
                 Solicite um orçamento
