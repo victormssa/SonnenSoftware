@@ -29,7 +29,7 @@ const AboutSonnen: React.FC = () => {
                 ?
               </h1>
 
-              <p className="w-[40rem] mt-6 text-gray-400 text-left ">
+              <p className="max-w-[40rem] w-auto mt-6 text-gray-400 text-left ">
                 {showFullText ? (
                   <>
                     A Sonnen Software foi fundada com a missão de auxiliar o
