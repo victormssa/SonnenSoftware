@@ -11,7 +11,7 @@ const AboutSonnen: React.FC = () => {
   const toggleFullText1 = () => {
     setShowFullText1(!showFullText1);
   };
-  
+
   const toggleFullText2 = () => {
     setShowFullText2(!showFullText2);
   };
@@ -22,13 +22,13 @@ const AboutSonnen: React.FC = () => {
         <div className="px-10 pt-5 mx-auto rounded-xl mb-10">
           <div className="lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:w-full lg:px-6 flex flex-col items-center justify-center align-middle">
-              <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
-                O que é a{" "}
+              <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto place-self-start">
+                + Sobre a {" "}
                 <span className="underline decoration-red-600">
                   Sonnen Software
                 </span>
-                ?
               </h1>
+              <h2 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto place-self-start">Empresa de desenvolvimento de <strong className="">Aplicações Tecnológicas</strong>.</h2>
 
               <p className="max-w-[60rem] w-auto mt-6 text-gray-400 text-left ">
                 {showFullText1 ? (
@@ -104,19 +104,21 @@ const AboutSonnen: React.FC = () => {
             </div>
           </div>
         </div>
+        <h2 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto py-10 px-5"><span className="text-red-600">“</span>A ideia veio ao querer criar um farol, em meio a tempestade.<span className="text-red-600">”</span> </h2>
         <div className="px-10 pt-5 pb-10 mx-auto rounded-xl mb-10">
           <div className="lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:w-full lg:px-6 flex flex-col items-center justify-center align-middle">
               <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
-                A nossa{" "}
-                <span className="underline decoration-red-600">Filosofia</span>
+                A {" "}
+                <span className="underline decoration-red-600">Filosofia</span> da Empresa
               </h1>
 
               <p className="max-w-[60rem] w-auto mt-6 text-gray-400 text-left ">
                 {showFullText2 ? (
                   <>
-                    A nossa filosofia retem o propósito central de contribuir para
-                    o desenvolvimento nacional por meio de soluções tecnológicas
+                    Em meio ao caos do mundo, queremos ser a fonte de luz do futuro,
+                    e é isso que nossa filosofia se trata; Esperança. Sonhamos com um mundo melhor e trabalhamos para o mesmo, por isso retemos o propósito central de contribuir para
+                    o desenvolvimento nacional e mundial por meio de soluções tecnológicas
                     inovadoras. Buscamos a excelência em todas as etapas do
                     desenvolvimento, priorizando não apenas a eficiência, mas
                     também a entrega de produtos de alta qualidade.
@@ -132,7 +134,7 @@ const AboutSonnen: React.FC = () => {
                     obsoletas. Nossa missão é estabelecer uma presença
                     comprometida com soluções sofisticadas e personalizadas,
                     atendendo às crescentes demandas do dinâmico ambiente
-                    tecnológico. 
+                    tecnológico.
                     <br /><br />
                     Buscamos não apenas elevar padrões, mas também
                     oferecer alternativas inovadoras alinhadas com as exigências
@@ -150,8 +152,9 @@ const AboutSonnen: React.FC = () => {
                   </>
                 ) : (
                   <>
-                    {`A nossa filosofia retem o propósito central de contribuir para
-                    o desenvolvimento nacional por meio de soluções tecnológicas
+                    {`Em meio ao caos do mundo, queremos ser a fonte de luz do futuro,
+                    e é isso que nossa filosofia se trata; Esperança. Sonhamos com um mundo melhor e trabalhamos para o mesmo, por isso retemos o propósito central de contribuir para
+                    o desenvolvimento nacional e mundial por meio de soluções tecnológicas
                     inovadoras. Buscamos a excelência em todas as etapas do
                     desenvolvimento, priorizando não apenas a eficiência, mas
                     também a entrega de produtos de alta qualidade.

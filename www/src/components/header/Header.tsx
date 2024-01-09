@@ -54,7 +54,7 @@ const Navigation = () => {
       className={`fixed w-full z-20 transition-all  ${
         isTop && !isSpecialPage && !isOpen
           ? "bg-transparent"
-          : "shadow-2xl bg-gradient-to-tr from-red-600 to-rose-800"
+          : "shadow-2xl bg-gradient-to-tr from-red-600 to-rose-800 "
       }`}
     >
       <div className=" px-6 py-4 mx-auto">
@@ -116,7 +116,7 @@ const Navigation = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full h-auto px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center transition-transform duration-300 ease-in-out transform ${
+            className={`absolute inset-x-0 z-20 w-full h-auto px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
               isOpen
                 ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
                 : " -translate-x-full"
@@ -249,7 +249,7 @@ const Navigation = () => {
               ></div>
               <Link
                 href="/login"
-                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 border-b-0 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
+                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
                   "/login"
                 )} ${
                   isTop && !isSpecialPage
@@ -263,7 +263,7 @@ const Navigation = () => {
               >
                 Login
               </Link>
-              <span className="lg:hidden flex w-full h-20 shadow-inner bg-red-600" />
+              <span className="lg:hidden flex w-full h-20 shadow-2xl bg-gradient-to-br from-red-600 to-rose-800" />
             </div>
             <p
               className={`lg:text-2xl px-3 py-2 duration-200 font-medium mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-white lg:ml-20 lg:flex items-center gap-2  hidden`}
