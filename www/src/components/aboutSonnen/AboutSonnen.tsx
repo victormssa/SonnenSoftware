@@ -20,7 +20,7 @@ const AboutSonnen: React.FC = () => {
         <div className="container px-6 py-10 mx-auto">
           <div className="lg:-mx-6 lg:flex lg:items-center">
 
-            <div className="mt-4 lg:w-1/2 lg:px-6 lg:mt-0">
+            <div className="mt-4 lg:w-1/2 lg:px-6 lg:mt-0 items-center justify-center align-middle">
               <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
                 O que é a{" "}
                 <span className="underline decoration-red-600">
