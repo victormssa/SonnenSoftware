@@ -41,7 +41,7 @@ const Navigation = () => {
   const specialPages = ["/login", "/contato", "/politicas/privacidade"];
   const isSpecialPage = specialPages.includes(pathname);
   const isActive = (path: string) => {
-    return pathname === path ? " text-red-600" : "";
+    return pathname === path ? " text-red-300" : "text-white";
   };
 
   const isActive2 = (path: string) => {
@@ -124,9 +124,21 @@ const Navigation = () => {
             }`}
           >
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
+            <Link
+                href="/sobre/sonnen_software"
+                className={`px-3 py-2 duration-200 hover:text-black  font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-center ${isActive(
+                  "/sobre/sonnen_software"
+                )} ${
+                  isTop && !isSpecialPage
+                    ? "lg:hover:text-red-600 hover:text-rose-300 "
+                    : " hover:text-rose-300"
+                }`}
+              >
+                Sobre Nós
+              </Link>
               <Link
                 href="/#planos"
-                className={`px-3 py-2 duration-200 hover:text-black text-white font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-center ${isActive(
+                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen text-center ${isActive(
                   "/#planos"
                 )} ${
                   isTop && !isSpecialPage
@@ -138,7 +150,7 @@ const Navigation = () => {
               </Link>
               <div className="flex flex-col">
                 <button
-                  className={`px-3 py-2 duration-200 hover:text-black text-white font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
+                  className={`px-3 py-2 duration-200 hover:text-black  font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
                     "/#planos"
                   )} ${
                     isTop && !isSpecialPage
@@ -152,7 +164,7 @@ const Navigation = () => {
                 </button>
                 {mostrarLista && (
                   <div
-                    className="lg:absolute top-[2rem] left-[11.5rem] flex flex-col lg:px-2 lg:py-2 lg:rounded-xl rounded-none lg:gap-3 lg:border-b-0 border-b-2 lg:bg-transparent bg-white
+                    className="lg:absolute top-[2rem] left-[19rem] flex flex-col lg:px-2 lg:py-2 lg:rounded-xl rounded-none lg:gap-3 lg:border-b-0 border-b-2 lg:bg-transparent bg-white
                         "
                   >
                     <Link

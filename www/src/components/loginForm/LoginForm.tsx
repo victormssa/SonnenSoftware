@@ -138,7 +138,7 @@ const SignIn: React.FC = () => {
                       value={email}
                       onChange={handleEmailChange}
                       required
-                      placeholder="exemplo@exemplo.com"
+                      placeholder="exemplo@sonnensoftware.com"
                       className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white shadow-lg rounded-lg focus:border-red-400 focus:ring-red-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -151,12 +151,6 @@ const SignIn: React.FC = () => {
                       >
                         Senha
                       </label>
-                      <a
-                        href="/pt-br/forgot-password"
-                        className="text-sm text-gray-400 focus:text-red-500 hover:text-red-500 hover:underline"
-                      >
-                        Esqueceu sua senha?
-                      </a>
                     </div>
 
                     <input
@@ -209,7 +203,7 @@ const SignIn: React.FC = () => {
                     href="#"
                     className="text-red-500 focus:outline-none focus:underline hover:underline cursor-not-allowed"
                   >
-                    Cadastre-se
+                    Inscreva-se
                   </a>
                   .
                 </p>
