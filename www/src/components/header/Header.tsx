@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Image from "next/image";
 import headerLogoBlack from "./../../../public/assets/images/logoSonnen.png";

@@ -52,7 +52,7 @@ const AboutSonnen: React.FC = () => {
                     <br />
                     <br />A fundação da Sonnen Software emergiu como resposta a
                     uma observação notável no panorama tecnológico do ano de
-                    2024, uma época marcada por avanços significativos e
+                    2023, uma época marcada por avanços significativos e
                     evolução contínua. Diante das inovações e progressos
                     tecnológicos, surpreende constatar que, ainda assim, o
                     mercado nacional opta pelo uso de ferramentas antiquadas
@@ -104,7 +104,7 @@ const AboutSonnen: React.FC = () => {
             </div>
           </div>
         </div>
-        <h2 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto py-10 px-5"><span className="text-red-600">“</span>A ideia veio ao querer criar um farol, em meio a tempestade.<span className="text-red-600">”</span> </h2>
+        <h2 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto py-10 px-5"><span className="text-red-600">“</span>A ideia veio ao querer criar um farol, para guiar as pessoas pela tempestade.<span className="text-red-600">”</span> </h2>
         <div className="px-10 pt-5 pb-10 mx-auto rounded-xl mb-10">
           <div className="lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:w-full lg:px-6 flex flex-col items-center justify-center align-middle">
