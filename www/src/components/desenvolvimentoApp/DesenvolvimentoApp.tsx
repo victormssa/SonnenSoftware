@@ -125,22 +125,28 @@ const DesenvolvimentoApp = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
-      const isCorrectPosition = scrolled < 150; 
-      setIsCorrectYPosition(isCorrectPosition);
+      const isCorrectPosition = scrolled < 150;
+
+      // Verifica se a animação já ocorreu
+      if (isCorrectPosition && isCorrectYPosition) {
+        setIsCorrectYPosition(false);
+        // Execute sua lógica de animação aqui
+        console.log('Animação ocorreu!');
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isCorrectYPosition]); 
+  }, [isCorrectYPosition]);
   
 
   return (
     <div className='w-screen  text-white bg-zinc-900 bg-center relative'>
 
-<section className='md:border-b-8 border-red-600 items-center justify-center custom-outer-border-red slide-left'>
+      <section className='md:border-b-8 border-red-600 items-center justify-center custom-outer-border-red slide-left-hero'>
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">
@@ -267,7 +273,7 @@ const DesenvolvimentoApp = () => {
  
       <section className="m-3 px-6 mx-auto">
           <div className="xl:flex xl:items-center xL:-mx-4">
-              <div className={`xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left ${isCorrectYPosition ? 'opacity-0' : 'slide-right'}`}>
+              <div className={`xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left ${isCorrectYPosition ? 'md:opacity-0' : 'slide-right'}`}>
                   <h1 className="text-2xl font-semibold  capitalize lg:text-3xl text-white ">Potencialize Seu Lucro:<br /> Monetize com a<span className="underline decoration-red-500"> Sonnen.</span> </h1>
        
                   <p className=" mt-4  xl:mt-6 text-gray-300">
@@ -275,7 +281,7 @@ const DesenvolvimentoApp = () => {
                   </p>
               </div>
 
-              <div className={`grid grid-cols-1 gap-8 md:mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2 ${isCorrectYPosition ? 'hidden' : 'slide-left'}`}>
+              <div className={`grid grid-cols-1 gap-8 md:mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2 ${isCorrectYPosition ? 'md:hidden' : 'slide-left'}`}>
                 <div className="relative h-96 rounded-xl border border-zinc-950 shadow-md overflow-hidden mt-10 md:mt-20">
                   <div className="bg-black absolute inset-0 opacity-40"></div>
                   <Image
