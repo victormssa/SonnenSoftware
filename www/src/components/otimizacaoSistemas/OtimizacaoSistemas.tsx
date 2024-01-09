@@ -123,7 +123,7 @@ const OtimizacaoSistemas = () => {
   return (
     <div className='w-screen  text-white bg-zinc-900 bg-center'>
 
-      <section className='md:border-b-8 border-red-600 bg-gradient-to-tr from-red-600 to-rose-800 items-center justify-center custom-outer-border-red '>
+      <section className='md:border-b-8 border-red-600 bg-gradient-to-tr from-red-600 to-rose-800 items-center justify-center custom-outer-border-red slide-left-hero'>
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">

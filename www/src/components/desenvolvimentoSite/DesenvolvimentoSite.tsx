@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from "next/link";
 import modulo from '../../../public/assets/images/sitemodulo.svg'
 import android from '../../../public/assets/images/img__android.png';
@@ -120,10 +120,63 @@ const Desenvolvimento_Site = () => {
     aesing: "cubic-bezier(.2,.8,.3,1",
   }
 
+
+  const targetRef1 = useRef(null); //Aqui eu defino meus alvos
+  const targetRef2 = useRef(null);
+
+  useEffect(() => {
+    const observer1 = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log('Animação 1 ocorreu!');
+   
+            entry.target.classList.add('slide-right'); // removo e adiciono minhas classes de interesse
+            entry.target.classList.remove('opacity-0');
+          }
+        });
+      },
+      { threshold: 0 } // O quanto preciso mostrar da div para a animação ocorrer
+    );
+
+    const observer2 = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log('Animação 2 ocorreu!');
+            
+            entry.target.classList.add('slide-left');
+            entry.target.classList.remove('opacity-0');
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    if (targetRef1.current) {
+      observer1.observe(targetRef1.current);
+    }
+
+    if (targetRef2.current) {
+      observer2.observe(targetRef2.current);
+    }
+
+    return () => {
+      if (targetRef1.current) {
+        observer1.unobserve(targetRef1.current);
+      }
+
+      if (targetRef2.current) {
+        observer2.unobserve(targetRef2.current);
+      }
+    };
+  }, []);
+
+
   return (
     <div className='w-screen  text-white bg-zinc-900 bg-center'>
 
-      <section className='md:border-b-8 border-red-600 bg-gradient-to-tr from-red-600 to-rose-800 items-center justify-center custom-outer-border-red '>
+      <section className='md:border-b-8 border-red-600 bg-gradient-to-tr from-red-600 to-rose-800 items-center justify-center custom-outer-border-red slide-left-hero'>
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
               <div className=" text-start md:text-left items-center mx-auto px-0 lg:px-7 xl:px-16">
@@ -250,9 +303,9 @@ const Desenvolvimento_Site = () => {
 
 
  
-      <section className="m-3 px-6 mx-auto">
+      <section className="m-3 px-6 mx-auto mt-10">
           <div className="xl:flex xl:items-center xL:-mx-4">
-              <div className="xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left">
+              <div ref={targetRef1} className="xl:w-1/2 xl:mx-4  md:p-2 xl:p-4 mt-3 xl:mt-3  rounded-lg font-semibold text-left opacity-0">
                   <h1 className="text-2xl font-semibold capitalize lg:text-3xl text-white ">Potencialize seus negócios:<br /> com  <span className="underline decoration-red-500">dashboards</span> </h1>
        
                   <p className=" mt-4 xl:mt-6 text-gray-300">
@@ -261,7 +314,7 @@ const Desenvolvimento_Site = () => {
                   </p>
                   </div>
 
-              <div className="grid grid-cols-1 gap-8 md:mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2  ">
+              <div ref={targetRef2} className="grid grid-cols-1 gap-8 md:mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2 opacity-0 ">
                 <div className="relative h-96 rounded-xl border border-zinc-950 shadow-md overflow-hidden justify-center items-center text-center">
                   <div className="bg-black absolute inset-0 opacity-40"></div>
                   <Image

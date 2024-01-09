@@ -64,15 +64,13 @@ background-color: white;
     animation: slide-left-animation 1s ease-in alternate;
   }
   
-  @media (min-width: 640px) {
+  @media (min-width: 811px) {
     .slide-left-hero {
       -webkit-animation: slide-left-animation 1s ease-in alternate;
       animation: slide-left-animation 1s ease-in alternate;
     }
   }
-  
-  
-
+  /*   Slide Right */
   .slide-right {
     -webkit-animation: slide-right 1s ease-in alternate;
     animation: slide-right 1s ease-in alternate;
