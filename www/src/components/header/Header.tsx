@@ -134,6 +134,7 @@ const Navigation = () => {
                 }`}
                 onClick={() => {
                   setIsOpen(false);
+                  setMostrarLista(false);
                 }}
               >
                 Sobre Nós
@@ -149,6 +150,7 @@ const Navigation = () => {
                 }`}
                 onClick={() => {
                   setIsOpen(false);
+                  setMostrarLista(false);
                 }}
               >
                 Nossos Planos
@@ -235,6 +237,7 @@ const Navigation = () => {
                 }`}
                 onClick={() => {
                   setIsOpen(false);
+                  setMostrarLista(false);
                 }}
               >
                 Solicite um orçamento
@@ -255,6 +258,7 @@ const Navigation = () => {
                 }`}
                 onClick={() => {
                   setIsOpen(false);
+                  setMostrarLista(false);
                 }}
               >
                 Login
