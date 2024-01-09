@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
                   <p className="font-semibold text-white">Links Importantes</p>
                   <div className="flex flex-col items-start mt-5 space-y-2">
                       <Link href="/" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Página Inicial</Link>
-                      <Link href="/#sobre" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Sobre Nós</Link>
+                      <Link href="/sobre/sonnen_software" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Sobre Nós</Link>
                       <Link href="/contato" className="text-gray-300 transition-colors duration-300 hover:underline hover:text-red-900">Orçamento</Link>
                   </div>
               </div>
