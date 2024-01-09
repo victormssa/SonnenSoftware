@@ -14,13 +14,13 @@ const AboutSonnen: React.FC = () => {
   return (
     <>
       <section className="bg-zinc-900 flex flex-col items-center align-middle">
-        <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
+        <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto mb-4">
           Mais Sobre Nós
         </h1>
-        <div className="container px-6 py-10 mx-auto">
+        <div className="px-10 pt-5 pb-10 mx-auto border-gray-700 border rounded-xl mb-10">
           <div className="lg:-mx-6 lg:flex lg:items-center">
 
-            <div className="mt-4 lg:w-full lg:px-6 lg:mt-0f flex flex-col items-center justify-center align-middle">
+            <div className="lg:w-full lg:px-6 flex flex-col items-center justify-center align-middle">
               <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
                 O que é a{" "}
                 <span className="underline decoration-red-600">
@@ -80,7 +80,16 @@ const AboutSonnen: React.FC = () => {
                     excelência nos orienta a implementar as mais avançadas
                     tecnologias disponíveis, garantindo não apenas eficiência,
                     mas também uma qualidade excepcional em cada aspecto do
-                    processo de desenvolvimento. `}
+                    processo de desenvolvimento.
+                    `}
+                    <br /><br />
+                    {`
+                    O que nos distingue é a capacidade de proporcionar essas
+                    inovações a um preço notavelmente confortável, tornando-as
+                    acessíveis a uma ampla gama de empreendimentos. Na Sonnen
+                    Software, estamos comprometidos não apenas em simplificar,
+                    mas em elevar a experiência de desenvolvimento, catalisando
+                    o progresso tecnológico com uma abordagem distintamente`}
                     {/* Adicione um botão "Leia Mais" */}
                     <button
                       onClick={toggleFullText}
