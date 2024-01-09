@@ -8,7 +8,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Image from "next/image";
 import headerLogoBlack from "./../../../public/assets/images/logoSonnen.png";
-import headerLogoWhite from "./../../../public/assets/images/logoSonnen_wBg.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +40,7 @@ const Navigation = () => {
   const specialPages = ["/login", "/contato", "/politicas/privacidade"];
   const isSpecialPage = specialPages.includes(pathname);
   const isActive = (path: string) => {
-    return pathname === path ? " text-red-300" : "text-white";
+    return pathname === path ? " text-red-300" : "";
   };
 
   const isActive2 = (path: string) => {
@@ -52,10 +51,10 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed w-full z-20 transition-all ${
+      className={`fixed w-full z-20 transition-all  ${
         isTop && !isSpecialPage && !isOpen
           ? "bg-transparent"
-          : "shadow bg-gradient-to-tr from-red-600 to-rose-800"
+          : "shadow-2xl bg-gradient-to-tr from-red-600 to-rose-800"
       }`}
     >
       <div className=" px-6 py-4 mx-auto">
@@ -117,16 +116,16 @@ const Navigation = () => {
 
           {/* Mobile Menu open: "block", Menu closed: "hidden" */}
           <div
-            className={`absolute inset-x-0 z-20 w-full h-auto px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${
+            className={`absolute inset-x-0 z-20 w-full h-auto px-6 py-0 bg-white mt-4 lg:h-auto lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center transition-transform duration-300 ease-in-out transform ${
               isOpen
                 ? "translate-x-0 opacity-100 bg-gradient-to-tr from-red-600 to-rose-800"
-                : "opacity-0 -translate-x-full "
+                : " -translate-x-full"
             }`}
           >
             <div className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
             <Link
                 href="/sobre/sonnen_software"
-                className={`px-3 py-2 duration-200 hover:text-black  font-semibold mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-center ${isActive(
+                className={`px-3 py-2 duration-200 text-white hover:text-black border-rose-800 font-semibold mr-4 lg:border-y-0 border-b lg:w-auto w-screen text-center ${isActive(
                   "/sobre/sonnen_software"
                 )} ${
                   isTop && !isSpecialPage
@@ -138,7 +137,7 @@ const Navigation = () => {
               </Link>
               <Link
                 href="/#planos"
-                className={`px-3 py-2 duration-200 hover:text-black font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen text-center ${isActive(
+                className={`px-3 py-2 duration-200 text-white hover:text-black border-rose-800 font-semibold mr-4 lg:border-y-0 border-b lg:w-auto w-screen text-center ${isActive(
                   "/#planos"
                 )} ${
                   isTop && !isSpecialPage
@@ -150,7 +149,7 @@ const Navigation = () => {
               </Link>
               <div className="flex flex-col">
                 <button
-                  className={`px-3 py-2 duration-200 hover:text-black  font-semibold mr-4 lg:border-y-0 border-b-2 lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
+                  className={`px-3 py-2 duration-200 text-white hover:text-black border-rose-800 font-semibold mr-4 lg:border-y-0 border-b lg:w-auto w-screen flex items-center gap-1 justify-center ${isActive(
                     "/#planos"
                   )} ${
                     isTop && !isSpecialPage
@@ -221,12 +220,12 @@ const Navigation = () => {
               </div>
               <Link
                 href="/contato"
-                className={`px-3 py-2 duration-200 text-white hover:text-black font-semibold lg:border-2 border-b-2 lg:w-auto w-screen mr-4 text-center ${isActive2(
+                className={`px-3 py-2 duration-200 text-white hover:text-black border-rose-800 font-semibold lg:border-2 border-b lg:w-auto w-screen mr-4 text-center ${isActive2(
                   "/contato"
                 )} ${
                   isTop && !isSpecialPage
                     ? "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300"
-                    : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
+                    : "lg:border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
               >
                 Solicite um orçamento
@@ -238,7 +237,7 @@ const Navigation = () => {
               ></div>
               <Link
                 href="/login"
-                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 border-b-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
+                className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 border-b-0 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
                   "/login"
                 )} ${
                   isTop && !isSpecialPage
@@ -248,6 +247,7 @@ const Navigation = () => {
               >
                 Login
               </Link>
+              <span className="lg:hidden flex w-full h-20 shadow-inner bg-red-600" />
             </div>
             <p
               className={`lg:text-2xl px-3 py-2 duration-200 font-medium mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-white lg:ml-20 lg:flex items-center gap-2  hidden`}

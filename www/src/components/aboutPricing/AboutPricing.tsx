@@ -21,10 +21,10 @@ const AboutPricing: React.FC = () => {
               e benefícios exclusivos.
             </p>
 
-            <div className="grid grid-cols-1 gap-8 w-auto mt-6  md:grid-cols-2 lg:grid-cols-3">
+            <section className="grid grid-cols-1 gap-8 w-auto mt-6  md:grid-cols-2 lg:grid-cols-3">
 
 
-              <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
+              <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700 hover:transform hover:scale-105 transition-transform duration-300">
               <div className="bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="text-white font-semibold flex align-middle items-center ">OFERTA QUENTE <RiFireLine className="mr-1" size={"1.2rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
@@ -220,7 +220,7 @@ const AboutPricing: React.FC = () => {
                 
               </div>
               
-              <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
+              <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700 hover:transform hover:scale-105 transition-transform duration-300">
               <div className="text-white bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="font-semibold flex align-middle items-center ">MELHOR OFERTA <RiVipDiamondLine className="mx-[0.3rem]" size={"1.1rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
@@ -416,7 +416,7 @@ const AboutPricing: React.FC = () => {
                 
               </div>
               
-              <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
+              <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700 hover:transform hover:scale-105 transition-transform duration-300">
               <div className="bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="text-white font-semibold flex align-middle items-center ">OFERTA QUENTE <RiFireLine className="mr-1" size={"1.2rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
@@ -610,7 +610,7 @@ const AboutPricing: React.FC = () => {
                 </div>
                 
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </section>
