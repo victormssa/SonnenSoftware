@@ -19,13 +19,8 @@ const AboutSonnen: React.FC = () => {
         </h1>
         <div className="container px-6 py-10 mx-auto">
           <div className="lg:-mx-6 lg:flex lg:items-center">
-            <Image
-              className="lg:flex hidden object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[35rem]"
-              src={logo}
-              alt=""
-            />
 
-            <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+            <div className="mt-4 lg:w-1/2 lg:px-6 lg:mt-0">
               <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
                 O que é a{" "}
                 <span className="underline decoration-red-600">

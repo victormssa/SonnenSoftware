@@ -25,7 +25,7 @@ const AboutPricing: React.FC = () => {
 
 
               <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
-              <div className="bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="text-white font-semibold flex align-middle items-center ">HOT <RiFireLine className="mr-1" size={"1.2rem"}/>| 20% OFF</p></div>
+              <div className="bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="text-white font-semibold flex align-middle items-center ">Oferta Quente <RiFireLine className="mr-1" size={"1.2rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
                     Essencial & Simples
@@ -417,7 +417,7 @@ const AboutPricing: React.FC = () => {
               </div>
               
               <div className="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
-              <div className="bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="text-white font-semibold flex align-middle items-center ">HOT <RiFireLine className="mr-1" size={"1.2rem"}/>| 20% OFF</p></div>
+              <div className="bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="text-white font-semibold flex align-middle items-center ">Oferta Quente <RiFireLine className="mr-1" size={"1.2rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
                     À Sua Medida
