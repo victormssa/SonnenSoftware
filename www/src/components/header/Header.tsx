@@ -132,6 +132,9 @@ const Navigation = () => {
                     ? "lg:hover:text-red-600 hover:text-rose-300 "
                     : " hover:text-rose-300"
                 }`}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
               >
                 Sobre Nós
               </Link>
@@ -144,6 +147,9 @@ const Navigation = () => {
                     ? "lg:hover:text-red-600 hover:text-rose-300 "
                     : " hover:text-rose-300"
                 }`}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
               >
                 Nossos Planos
               </Link>
@@ -227,6 +233,9 @@ const Navigation = () => {
                     ? "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300"
                     : "lg:border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
               >
                 Solicite um orçamento
               </Link>
@@ -244,6 +253,9 @@ const Navigation = () => {
                     ? "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300"
                     : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
                 }`}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
               >
                 Login
               </Link>
