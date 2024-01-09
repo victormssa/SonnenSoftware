@@ -3,11 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CSSTransition } from "react-transition-group";
-import storeImage from "./../../../public/assets/images/storeImage.jpg";
-import optimizationImage from "./../../../public/assets/images/optimizationImage.jpg";
-import solutionImage from "./../../../public/assets/images/solutionImage.jpg";
-import appImage from "./../../../public/assets/images/appImage.jpg";
 import { AiFillHtml5 } from "react-icons/ai";
 import {PiAppWindowFill} from "react-icons/pi";
 import {FaWrench} from "react-icons/fa";
@@ -80,14 +75,14 @@ const HeroMain = () => {
             </section>
             <section className="z-10 w-full">
               <div className="w-full py-10 mx-auto">
-                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white lg:ml-40 ml-2">
+                <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white lg:ml-40 ml-2 slide-right">
                   <span className="font-bold text-4xl">Bem vindo,</span> <br/>o que podemos fazer por <span className="text-red-600">você </span>?
                 </h3>
 
                 <div className="mt-4 xl:mt-4 lg:flex lg:items-center w-full border-y-2 border-red-600 p-4 backdrop-blur-md bg-red-900/20 shadow-xl">
                   <div className="grid w-full grid-cols-1 gap-8 xl:gap-16 md:grid-cols-4 lg:px-20 px-0">
                     <Link
-                      className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] bg-[url('/assets/images/storeImage.jpg')] transition-all duration-150"
+                      className="w-full bg-center bg-[length:350px_250px] h-full rounded-md filter hover:bg-[length:400px_300px] bg-[url('/assets/images/storeImage.jpg')] transition-all hover:transform hover:scale-105 duration-300"
                       href="/sobre/desenvolvimento_sites"
                     >
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
@@ -118,7 +113,7 @@ const HeroMain = () => {
                       </div>
                     </Link>
         
-                    <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] bg-[url('/assets/images/appImage.jpg')] transition-all duration-150" href="/sobre/desenvolvimento_apps">
+                    <Link className=" w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] bg-[url('/assets/images/appImage.jpg')] transition-all hover:transform hover:scale-105 duration-300" href="/sobre/desenvolvimento_apps">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3 rounded-xl text-white bg-red-600">
                       <PiAppWindowFill size='1.5em'/>
@@ -148,7 +143,7 @@ const HeroMain = () => {
                     </div>
                     </Link>
         
-                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter  hover:bg-[length:500px_350px] bg-[url('/assets/images/optimizationImage.jpg')] transition-all duration-150" href="/sobre/otimizacao_sistemas">
+                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter  hover:bg-[length:500px_350px] bg-[url('/assets/images/optimizationImage.jpg')] transition-all hover:transform hover:scale-105 duration-300" href="/sobre/otimizacao_sistemas">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3  rounded-xl text-white bg-red-600">
                       <FaWrench size='1.5em'/>
@@ -177,7 +172,7 @@ const HeroMain = () => {
                     </span>
                     </div>
                     </Link>
-                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] bg-[url('/assets/images/solutionImage.jpg')] transition-all duration-150 bg-no-repeat" href="/sobre/solucoes_personalizadas">
+                    <Link className="w-full bg-center bg-[length:450px_300px] h-full rounded-md filter hover:bg-[length:500px_350px] bg-[url('/assets/images/solutionImage.jpg')] transition-all hover:transform hover:scale-105 duration-300 bg-no-repeat" href="/sobre/solucoes_personalizadas">
                     <div className="space-y-3 w-full h-full px-2 py-2 rounded-md bg-[#000000]/80">
                       <span className="inline-block p-3  rounded-xl text-white bg-red-600">
                       <BsBagPlusFill size='1.5em'/>
