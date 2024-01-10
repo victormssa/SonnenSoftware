@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import smartphone from "./../../../public/assets/images/smartphoneImage.png"
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiFillHtml5 } from "react-icons/ai";

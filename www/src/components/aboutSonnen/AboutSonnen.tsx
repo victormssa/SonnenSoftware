@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "./../../../public/assets/images/openGraph.png";
+import SonnenLogo from '../../../public/assets/images/logoSonnen.png';
 
 const AboutSonnen: React.FC = () => {
   const [showFullText1, setShowFullText1] = useState(false);
@@ -181,6 +181,15 @@ const AboutSonnen: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className="justify-center text-center flex flex-col items-center mt-20 pb-28">
+        <figure >
+            <Image src={SonnenLogo} alt="Sonnen Software Logo" className={`w-60 h-auto`} />
+        </figure>
+        <Link href='/contato' rel="noopener noreferrer">
+          <button className="px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold">Solicite um Orçamento
+          </button>
+        </Link>
+      </div>
       </section>
     </>
   );
