@@ -105,7 +105,7 @@ const AboutSonnen: React.FC = () => {
           </div>
         </div>
         <h2 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto py-10 px-5"><span className="text-red-600">“</span>A ideia veio ao querer criar um farol, para guiar as pessoas pela tempestade.<span className="text-red-600">”</span> </h2>
-        <div className="px-10 pt-5 pb-10 mx-auto rounded-xl mb-10">
+        <div className="px-10 pt-5 pb-10 mx-auto rounded-xl">
           <div className="lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:w-full lg:px-6 flex flex-col items-center justify-center align-middle">
               <h1 className="text-2xl font-semibold text-white lg:text-3xl lg:w-auto">
@@ -182,7 +182,7 @@ const AboutSonnen: React.FC = () => {
           </div>
         </div>
         
-      <div className="justify-center text-center flex flex-col items-center py-40">
+      <div className="justify-center text-center flex flex-col items-center pb-40 pt-32">
         <figure >
             <Image src={SonnenLogo} alt="Sonnen Software Logo" className={`w-60 h-auto`} />
         </figure>
