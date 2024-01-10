@@ -78,7 +78,7 @@ const HeroMain = () => {
             <section className="z-10 w-full">
               <div className="w-full py-10 mx-auto">
                 <h3 className="text-xl font-semibold md:text-3xl lg:text-3xl text-white lg:ml-40 ml-2 slide-right">
-                  <span className="font-bold text-4xl">Bem vindo,</span> <br/>o que podemos fazer por <span className="text-red-600">você </span>?
+                  <span className="font-bold text-4xl">Bem vindo,</span> <br/>o que podemos fazer por <span className="text-red-600">você</span>?
                 </h3>
 
                 <div className="mt-4 xl:mt-4 lg:flex lg:items-center w-full border-y-2 border-red-600 p-4 backdrop-blur-md bg-red-900/20 shadow-xl">

@@ -268,7 +268,7 @@ const Navigation = () => {
               className={`lg:text-2xl px-3 py-2 duration-200 font-medium mr-4 lg:border-y-0 border-y-2 lg:w-auto w-screen text-white lg:ml-20 lg:flex items-center gap-2  hidden`}
             >
               <BiSolidPhoneCall />
-              (71) 9961-84966
+              (71) 99618-4966
             </p>
           </div>
         </div>
