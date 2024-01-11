@@ -7,7 +7,7 @@ import { RiVipDiamondLine } from "react-icons/ri";
 const AboutPricing: React.FC = () => {
   return (
     <>
-      <section className="bg-zinc-900" id="planos">
+      <section className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 to-zinc-950" id="planos">
         <div className="">
           <div className="container flex flex-col px-6 py-8 mx-auto justify-center items-center align-middle">
             <h1 className="text-2xl font-semibold text-center text-white lg:text-3xl">

@@ -18,7 +18,7 @@ const AboutSonnen: React.FC = () => {
 
   return (
     <>
-      <section className="bg-zinc-900 flex flex-col items-center align-middle">
+      <section className="flex flex-col items-center align-middle">
         <div className="px-10 pt-5 mx-auto rounded-xl mb-10">
           <div className="lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:w-full lg:px-6 flex flex-col items-center justify-center align-middle">

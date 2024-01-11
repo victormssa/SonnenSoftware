@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import testeSvg from "../../../../public/assets/images/teste.svg";
+import testeSvg from "../../../../../public/assets/images/teste.svg";
 import { Metadata } from "next";
 import { MdOutlineSecurity } from "react-icons/md";
 import { BsFillClipboard2DataFill } from "react-icons/bs";
@@ -70,8 +70,8 @@ const SolucoesPersonalizadas = () => {
     },
   ];
   return (
-    <main>
-      <section className=" bg-zinc-900">
+    <main className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800 to-zinc-950">
+      <section className=" ">
         <div className="container px-6 pt-16 mx-auto">
           <div className="items-center lg:flex">
             <div className="w-full lg:w-1/2">
@@ -112,7 +112,7 @@ const SolucoesPersonalizadas = () => {
         </div>
       </section>
 
-      <section className="bg-zinc-900 flex flex-col align-middle items-center pb-10">
+      <section className="flex flex-col align-middle items-center pb-10">
         <div className="container px-6 pb-10 mx-auto">
           <h1 className="text-2xl font-semibold capitalize lg:text-3xl text-white">
             Explore os nossos <br /> Incríveis{" "}
