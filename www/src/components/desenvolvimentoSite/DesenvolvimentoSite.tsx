@@ -7,6 +7,8 @@ import android from '../../../public/assets/images/img__android.png';
 import googlePlay from '../../../public/assets/images/img__google_play.png';
 import googleAds from '../../../public/assets/images/img__google__ads.png';
 import elysia from '../../../public/assets/images/elysia.png';
+import flutter from '../../../public/assets/images/flutterLogo.png';
+import htmx from '../../../public/assets/images/htmxLogo.png';
 import fastfyLogo from '../../../public/assets/images/fastfyLogo.png';
 import postgresql from '../../../public/assets/images/postgresql.png';
 import analytics from '../../../public/assets/images/google-analytics.png';
@@ -14,7 +16,8 @@ import nextJS from '../../../public/assets/images/nextLogo.png';
 import SonnenLogo from '../../../public/assets/images/logoSonnen.png';
 import awslogo from '../../../public/assets/images/AWSLogo.png';
 import dashboard from '../../../public/assets/images/digital-tablet-online-learning.png';
-import design from '../../../public/assets/images/img__designgrafico.png';
+import design from '../../../public/assets/images/website.svg';
+import react from '../../../public/assets/images/reactLogo.png';
 import {Tilt} from 'react-tilt';
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { GrAchievement } from "react-icons/gr";
@@ -31,21 +34,21 @@ interface Card {
 
 const Desenvolvimento_Site = () => {
   const items = [
-    { id: 1, icon: <Image src={android} alt="Logo Android" className={` w-12 md:w-24 h-auto`} />, text: "Android", link: "https://www.android.com/intl/pt_br/" },
+    { id: 1, icon: <Image src={htmx} alt="Logo htmx" className={`w-16 md:w-28 h-auto`} />, text: "Htmx", link: "https://htmx.org/" },
 
-    { id: 2, icon: <Image src={googlePlay} alt="Logo Google Play" className={` w-12 md:w-24 h-auto`} />, text: "Google Play", link: "https://play.google.com/store/apps" },
+    { id: 2, icon: <Image src={react} alt="Logo React" className={` w-16 md:w-24 h-auto`} />, text: "React", link: "https://react.dev/" },
     
-    { id: 3, icon: <Image src={googleAds} alt="Logo Google Ads" className={`w-12 md:w-24 h-auto`} />, text: "Google Ads", link: "https://ads.google.com/intl/pt-BR_br/start/overview-ha/?subid=br-pt-ha-awa-bk-c-scru!o3~Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB~140965879609~aud-780873439152:kwd-94527731~17334788550~664803803888&gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB&gclsrc=aw.ds"  },
+    { id: 3, icon: <Image src={googleAds} alt="Logo Google Ads" className={`w-16 md:w-20 h-auto`} />, text: "Google Ads", link: "https://ads.google.com/intl/pt-BR_br/start/overview-ha/?subid=br-pt-ha-awa-bk-c-scru!o3~Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB~140965879609~aud-780873439152:kwd-94527731~17334788550~664803803888&gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A8OXwlluCyA0LJy8l0FKfxdWVWsXbjDhLKv6uK3iwDI41SVdOIGgzEaApc0EALw_wcB&gclsrc=aw.ds"  },
 
-    { id: 4, icon: <Image src={awslogo} alt="Logo AWS" className={`w-12 md:w-24 h-auto`} />, text: "AWS", link: "https://aws.amazon.com/pt" },
+    { id: 4, icon: <Image src={awslogo} alt="Logo AWS" className={`w-16 md:w-24 h-auto`} />, text: "AWS", link: "https://aws.amazon.com/pt" },
 
-    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-12 md:w-24 h-auto`} />, text: "Next.js", link: "https://nextjs.org/showcase" },
+    { id: 5, icon: <Image src={nextJS} alt="Logo Next.JS" className={`w-16 md:w-24 h-auto`} />, text: "Next.js", link: "https://nextjs.org/showcase" },
 
-    { id: 5, icon: <Image src={fastfyLogo} alt="Logo Fastfy" className={`w-16 md:w-36 h-auto`} />, text: "Fastify", link: "https://fastify.dev/" },
+    { id: 5, icon: <Image src={fastfyLogo} alt="Logo Fastfy" className={`w-20 md:w-36 h-auto`} />, text: "Fastify", link: "https://fastify.dev/" },
 
-    { id: 6, icon: <Image src={postgresql} alt="Logo Postgresql" className={`w-12 md:w-24 h-auto`} />, text: "Postgresql", link: "https://www.postgresql.org" },
+    { id: 6, icon: <Image src={postgresql} alt="Logo Postgresql" className={`w-16 md:w-20 h-auto`} />, text: "Postgresql", link: "https://www.postgresql.org" },
     
-    { id: 7, icon: <Image src={analytics} alt="Logo Google Analytics" className={`w-12 md:w-24 h-auto`} />, text: "Google Analytics", link: "https://analytics.google.com/analytics/academy/" },
+    { id: 7, icon: <Image src={analytics} alt="Logo Google Analytics" className={`w-16 md:w-20 h-auto`} />, text: "Google Analytics", link: "https://analytics.google.com/analytics/academy/" },
      
   ];
 
@@ -56,7 +59,7 @@ const Desenvolvimento_Site = () => {
           {item.icon}
         </div>
       </div>
-      <a href={item.link} className=" line text-white pb-4 line border-b-2 border-transparent hover:border-red-600 whitespace-nowrap text-sm md:text-base lg:text-base xl:text-xl" target="_blank">
+      <a href={item.link} className=" line text-white pb-4 line border-b-2 border-transparent hover:border-red-600 whitespace-nowrap text-sm md:text-base lg:text-2xl font-semibold " target="_blank">
         {item.text}
       </a>
     </div>
@@ -301,7 +304,7 @@ const Desenvolvimento_Site = () => {
                 <Link
                 href={'/sobre/solucoes_personalizadas'}
                 rel="noopener noreferrer"
-                className="inline-flex items-center -mx-1 text-sm capitalize transition-colors duration-300 transform text-red-400 hover:underline hover:text-red-500"
+                className="inline-flex items-center -mx-1 mb-6 text-sm capitalize transition-colors duration-300 transform text-red-400 hover:underline hover:text-red-500"
               >
                 <span className="mx-1">Saiba mais</span>
                 <svg
@@ -354,14 +357,16 @@ const Desenvolvimento_Site = () => {
 
     <section className="mt-12 ">
       <div  className=" pt-1 mx-4 text-start  bg-gradient-to-l  from-red-600 via-zinc-900 to-red-800 rounded-xl">
+
           <div className="xl:flex xl:items-center bg-zinc-900 h-full rounded-lg pt-4">
           <div className="md:w-full xl:w-1/3 mx-4 md:p-2 xl:p-4 mt-3 xl:mt-3 rounded-lg font-semibold text-center" >
-            
+            <h1 className="text-4xl font-extrabold text-center">Veja como é fácil e rápido</h1>
+            <p className="text-2xl font-semibold text-center py-4">Descubra nossa abordagem de <span className="text-red-600">trabalho</span>.</p>
           <figure className="pt-4">
             <Image 
               src={design} 
               alt="Como funciona?"
-              className=" rounded mx-auto" />
+              className=" rounded mx-auto -skew-x-6 " />
           </figure>
           </div>
             <div className="xl:w-1/2 md:p-2  font-semibold space-y-10 text-start rounded-full px-2 md:px-10 mx-auto">
@@ -405,11 +410,11 @@ const Desenvolvimento_Site = () => {
           </div>
       </div>
 
-      <div className=" md:mt-10">
+      <div className="md:mt-10">
       <div className="px-6 py-10 mx-auto text-center">
         <h1 className="text-4xl font-extrabold text-center">Tenha Seu Site Totalmente Integrado</h1>
         <p className="text-2xl font-semibold text-center py-4">Explore o potencial máximo com as mais avançadas <span className="text-red-600">tecnologias</span> disponíveis.</p>
-        <div className=" mt-8 w-auto   border-b-2 pb-2 rounded-xl border-red-600 ">
+        <div className=" mt-8 w-auto border-b-2 pb-2 rounded-xl border-red-600 ">
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  items-center align-middle  justify-evenly">
             {renderedItems}

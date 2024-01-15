@@ -23,6 +23,7 @@ background-color: white;
     transition: opacity 300ms ease-in-out;
   }
   
+  /* BORDERS */
   .custom-outer-border-red {
     @media (min-width: 768px) and (max-width: 767.98px), (min-width: 820.2px) {
       border-top-left-radius: 0% 100%;
@@ -52,12 +53,12 @@ background-color: white;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
   }  
 
-  /* styles.css ou seu arquivo CSS personalizado */
-
 .border-gradient-linear-red-to-zinc-900 {
   border-image: linear-gradient(to right, #dc2626, #18181B, #dc2626);
   border-image-slice: 1;
 }
+
+ /* END BORDERS */
 
   /*** ANIMATIONS ***/
   @keyframes slide-left-animation {
@@ -110,7 +111,7 @@ background-color: white;
     }
   }
 
-  /*** ANIMATIONS ***/
+  /*** END ANIMATIONS ***/
   
   
   
