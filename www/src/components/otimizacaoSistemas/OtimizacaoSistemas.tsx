@@ -318,8 +318,8 @@ const OtimizacaoSistemas = () => {
 
       <div className="md:mt-10">
       <div className="px-6 py-10 mx-auto text-center">
-        <h1 className="text-4xl font-extrabold text-center">Tenha Seu Site Totalmente Integrado</h1>
-        <p className="text-2xl font-semibold text-center py-4">Explore o potencial máximo com as mais avançadas <span className="text-red-600">tecnologias</span> disponíveis.</p>
+        <h1 className="text-4xl font-extrabold text-center">Otimize seus sistema</h1>
+        <p className="text-2xl font-semibold text-center py-4">Conheça nossas<span className="text-red-600">tecnologias</span> disponíveis.</p>
         <div className=" mt-8 w-auto border-b-2 pb-2 rounded-xl border-red-600 ">
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  items-center align-middle  justify-evenly">
