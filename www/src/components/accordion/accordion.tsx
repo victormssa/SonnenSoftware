@@ -1,14 +1,13 @@
 
-import arrowDownImage from '../../../public/assets/images/arrow-down-sign-navigate.png';
+import { GoArrowDownRight } from "react-icons/go";
 import React, { useState } from 'react';
-import Image from 'next/image';
 
 interface Question {
     question: string;
     answer: string;
   }
   
-  // Use a different name for the component
+
   interface AccordionProps {
     questions: Question[];
   }
@@ -30,14 +29,14 @@ interface Question {
             >
               <h2 className="text-lg font-semibold">{q.question}</h2>
               <div className="ml-auto lg:me-4">
-                <Image src={arrowDownImage} alt="Arrow Down" />
+                <GoArrowDownRight size='2rem' className={`arrow ${activeIndex === index ? 'transform rotate-180' : ''}`}/>
               </div>
               <div
                 className={`arrow ${activeIndex === index ? 'transform rotate-180' : ''}`}
               ></div>
             </div>
             {activeIndex === index && (
-              <div className="answer bg-gray-100 p-3 mt-3 rounded">
+              <div className="answer text-black bg-white p-3 mt-3 rounded text-left font-serif font-semibold">
                 <p>{q.answer}</p>
               </div>
             )}

@@ -65,7 +65,7 @@ const HeroMain = () => {
                 conosco.
               </h3>
                 <h2 className="text-md font-semibold text-white md:text-lg lg:text-lg mb-5 px-10 w-auto">
-                  Solicite um orçamento, <span className="underline decoration-red-600">sem compromisso</span>.
+                  Solicite um orçamento, <span className="text-red-600">sem compromisso</span>.
                 </h2>
                 <Link
                   href="/contato"

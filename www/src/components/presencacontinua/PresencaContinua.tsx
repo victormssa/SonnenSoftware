@@ -17,10 +17,10 @@ import { DiResponsive } from "react-icons/di";
 import { TbSeo } from "react-icons/tb";
 import { AnimatePresence, motion } from "framer-motion";
 
-import Accordion from '../accordion/accordion';
+import Accordion from '@/components/accordion/accordion';
 
 
-const questionsPage2 = [
+const questionsPage3 = [
   { question: 'O que oferece o plano Presença Online contínua?', answer: 'Com o Plano "Presença Online Contínua", proporcionamos uma solução de serviço contínuo. Cuidamos de todo o ciclo de vida do seu site, desde o desenvolvimento até o gerenciamento e manutenção contínua. Ao pagar uma mensalidade, seu site permanece online, atualizado e sob nossa gestão, garantindo uma presença digital eficiente.' },
   { question: 'É possivel adicionar funcionalidades ao meu site nesse plano?', answer: 'Sim, no Plano Presença Online Contínua, damos a você a flexibilidade de adicionar quantas funcionalidadesdesejar. Explore nossos módulos adicionais para personalizar seu site e atender às necessidades específicas do seu negócio, proporcionando uma presença online única e eficiente.' },
   { question: 'Como o valor mensal é sempre fixo?', answer: 'O valor mensal é fixo para o pacote completo, que inclui os módulos padrões essenciais. No entanto, caso deseje adicionar módulos extras para aprimorar a funcionalidade do seu site, os valores finais podem ser ajustados. Mantemos total transparência para que você possa personalizar seu plano de acordo com suas necessidades.' },
@@ -198,9 +198,9 @@ const PresencaContinua = () => {
             <section className='w-screen bottom-0 h-auto text-gray-600 body-font border-t-[0.08rem] border-[#0000002e] bg-gradient-to-tr from-red-600 to-rose-800'>
               <h3 className='text-start text-white text-3xl font-semibold ms-3 mt-1'>FAQ</h3>
               <div className=' mt-1'>
-              <Accordion questions={questionsPage2} />
+              <Accordion questions={questionsPage3} />
               </div>
-          </section>
+      </section>
     </div>
   )
 }

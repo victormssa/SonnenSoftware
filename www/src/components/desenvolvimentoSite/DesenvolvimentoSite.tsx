@@ -3,11 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
 import Link from "next/link";
 import modulo from '../../../public/assets/images/sitemodulo.svg'
-import android from '../../../public/assets/images/img__android.png';
-import googlePlay from '../../../public/assets/images/img__google_play.png';
 import googleAds from '../../../public/assets/images/img__google__ads.png';
-import elysia from '../../../public/assets/images/elysia.png';
-import flutter from '../../../public/assets/images/flutterLogo.png';
 import htmx from '../../../public/assets/images/htmxLogo.png';
 import fastfyLogo from '../../../public/assets/images/fastfyLogo.png';
 import postgresql from '../../../public/assets/images/postgresql.png';
@@ -24,6 +20,18 @@ import { GrAchievement } from "react-icons/gr";
 import { LuPackage } from "react-icons/lu";
 import { LuClipboardSignature } from "react-icons/lu";
 import { LiaTelegramPlane } from "react-icons/lia";
+import Accordion from '../accordion/accordion';
+
+const questionsPage3 = [
+  { question: 'Quais as vantagem do Plano Essencial & Simples?', answer: 'Explore nosso plano acessível, uma opção ideal para quem busca um excepcional custo-benefício. Os sites estáticos deste plano apresentam conteúdo pré-definido, permanecendo inalterados para proporcionar uma experiência consistente aos visitantes. Oferecemos um design moderno e ao mesmo tempo simplificado, garantindo facilidade de manutenção a um custo acessível. Ideal para usuários que procuram uma solução rápida e eficiente, sem a necessidade de um projeto completo, proporcionando uma presença online impactante sem comprometer seu orçamento.' },
+  { question: 'Quais as vantagem do Plano Presença Online Contínua?', answer: 'O Plano "Presença Online Contínua", proporcionamos uma solução de serviço contínuo. Cuidamos de todo o ciclo de vida do seu site, desde o desenvolvimento até o gerenciamento e manutenção contínua. Ao pagar uma mensalidade, seu site permanece online, atualizado e sob nossa gestão, garantindo uma presença digital eficiente.' },
+  { question: 'Quais as vantagem do Plano À Sua Medida?', answer: 'O Plano "Site à Sua Medida" oferece a criação de um site personalizado, proporcionando total autonomia ao cliente para deploy, gerenciamento e manutenção após a entrega.' },
+  { question: 'O que são os módulos de funcionalidades/serviços?', answer: 'São componentes adicionais, como sistema de autenticação, que podem ser incluídos separadamente para personalizar o sistema de acordo com as necessidades específicas do cliente.' },
+  { question: 'Existe algum pagamento mensal a ser feito?', answer: 'Se o seu plano não inclui nenhum pagamento mensal como O Essencial & Simples e o À sua Medida, não ! No entanto, é importante observar que, além do valor do plano, há outros aspectos a serem considerados, como despesas relacionadas à hospedagem e domínio.' },
+  { question: 'Manutenção está incluida no pacote?', answer: 'Se você optar pelo o Plano Presença Online Contínua, você elimina preocupações com a manutenção do seu site. Nossa equipe especializada garantirá que seu site permaneça sempre atualizado, seguro e receba suporte técnico prioritário, proporcionando uma presença online contínua, confiável e de alto desempenho.Caso necessite de manutenção, oferecemos serviços adicionais. Entre em contato conosco para mais informações.' },
+  { question: 'No plano Presença Online Contínua o que acontece ao não pagar as mensalidades?', answer: 'No "Plano Presença Online Contínua", o site permanece sob nossa propriedade durante o período de prestação de serviços. O não pagamento das mensalidades pode resultar no encerramento temporário do site. A regularidade dos pagamentos é crucial para garantir a continuidade dos serviços, sustentabilidade do serviço e manter a qualidade do suporte, hospedagem e atualizações fornecidas pela Sonnen Software.' },
+  
+];
 
 
 interface Card {
@@ -167,7 +175,6 @@ const Desenvolvimento_Site = () => {
 
   return (
     <div className='w-screen  text-white bg-zinc-900 bg-center'>
-
       <section className='md:border-b-8 border-red-600 bg-gradient-to-tr from-red-600 to-rose-800 items-center justify-center custom-outer-border-red slide-left-hero'>
           <div className="flex flex-col lg:flex-row ">
            <div className="w-full lg:w-1/2 pt-28 ">
@@ -179,15 +186,11 @@ const Desenvolvimento_Site = () => {
                   Entre em Contato
               </button>
               </Link>
-
-
                 <div className=" md:p-2 xl:p-4 rounded-lg font-semibold md:mx-6  xl:pl-0 mt-3 md:mt-0 text-white text-left">
                   <p className="max-w-4xl text-lg px-6 md:px-0 md:text-sm xl:text-lg leading-7 sm:mt-6 md:mt-0 mb-6 ">
                     Seu negócio precisa garantir sua presença online! Com a Sonnen você pode desfrutar de uma loja virtual ideal para aumentar suas vendas, 100% personalizado e construido do zero, pensando nas suas nescessidades. Não sabe por onde começar? Faça um orçamento com a Sonnen
                   </p>
-
                 </div>
-
               </div>
             </div>
 
@@ -316,7 +319,7 @@ const Desenvolvimento_Site = () => {
                   <path
                     fill-rule="evenodd"
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
               </Link>
@@ -423,10 +426,8 @@ const Desenvolvimento_Site = () => {
       </div>
     </div>
     </section>
-  
 
-
-    <div className="justify-center text-center flex flex-col items-center mt-20 pb-28">
+    <div className="justify-center text-center flex flex-col items-center mt-20 ">
       <figure >
           <Image src={SonnenLogo} alt="Sonnen Software Logo" className={`w-60 h-auto`} />
       </figure>
@@ -434,8 +435,15 @@ const Desenvolvimento_Site = () => {
         <button className="px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-80 font-semibold">Solicite um Orçamento
         </button>
       </Link>
+          {/*SECTION FAQ */}
+    <section className='w-screen h-full mt-12 text-gray-600 body-font border-t-[0.08rem] border-[#0000002e] bg-gradient-to-tr from-red-600 to-rose-800'>
+      <h3 className='text-start text-white text-3xl font-semibold ms-3 mt-1'>FAQ</h3>
+      <div className=' mt-1'>
+        <Accordion questions={questionsPage3} />
+      </div>
+    </section>
     </div>
-      
+
 
     </div>
   );

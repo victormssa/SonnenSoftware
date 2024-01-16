@@ -3,7 +3,7 @@ import AboutPricing from "@/components/aboutPricing/AboutPricing";
 
 const Home: React.FC = () => {
   return (
-    <main className="w-screen h-auto">
+    <main className="w-full h-auto">
       <HeroMain />
       
       
