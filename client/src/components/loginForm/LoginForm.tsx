@@ -1,11 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Link from "next/link";
-
-
-
+import Cookies from 'js-cookie';
+import jwt from 'jsonwebtoken';
 
 interface Credentials {
   username: string;
@@ -13,10 +11,66 @@ interface Credentials {
 }
 
 const LoginForm: React.FC = () => {
-  const router = useRouter()
-  const tryLogging = () => {
-    router.push(`/perfil/00`)
-  }
+  const router = useRouter();
+  const [credentials, setCredentials] = useState<Credentials>({
+    username: "",
+    password: "",
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setCredentials((prevCredentials) => ({
+      ...prevCredentials,
+      [name]: value,
+    }));
+  };
+
+  const tryLogging = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("https://midgard-sonnen.vercel.app/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(credentials),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+
+        var existingCookies = Cookies.get();
+
+        // Verifica se já existe um 'session_info'
+        if ('session_info' in existingCookies) {
+          // Se existir, atualiza apenas o campo 'tk'
+          var sessionInfo = JSON.parse(existingCookies['session_info']);
+          sessionInfo.tk = data.token;
+
+          // Atualiza o cookie 'session_info' com o novo valor
+          Cookies.set('session_info', JSON.stringify(sessionInfo), { expires: 1, secure: true });
+        } else {
+          // Se não existir, cria um novo cookie 'session_info'
+          Cookies.set('session_info', JSON.stringify({ tk: data.token }), { expires: 1, secure: true });
+        }
+
+        // Redirecionar para a rota "perfil/{id}" com base no ID obtido da resposta do backend
+        router.push(`/perfil/${data.userId}`);
+      } else {
+        const error = new Error(response.statusText) as Error;
+        console.error("Erro no login:", error.message);
+        // Tratar erro de login aqui, exibir mensagem, etc.
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error("Erro:", error.message);
+        // Tratar erros de rede, etc.
+      } else {
+        console.error("Erro desconhecido:", error);
+      }
+    }
+  };
 
   return (
     <>
@@ -66,30 +120,33 @@ const LoginForm: React.FC = () => {
                     <input type="text"
                       name="username"
                       id="username"
+                      onChange={handleInputChange}
                       required className="block w-full py-3  border rounded-lg px-11 bg-transparent text-gray-300 border-gray-600 focus:border-red-600  focus:ring-red-600 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Nome de Usúario" />
                   </div>
 
 
                   <div className="mt-3">
-                  <p className="text-sm text-right text-gray-400">
-                  {" "}
-                  <Link
-                    href="#"
-                    className="hover:text-red-500 focus:outline-none focus:underline hover:underline cursor-not-allowed"
-                  >
-                    Esqueci minha senha
-                  </Link>
-                </p>
+                    <p className="text-sm text-right text-gray-400">
+                      {" "}
+                      <Link
+                        href="#"
+                        className="hover:text-red-500 focus:outline-none focus:underline hover:underline cursor-not-allowed"
+                      >
+                        Esqueci minha senha
+                      </Link>
+                    </p>
                     <div className="relative flex items-center mt-3">
                       <span className="absolute">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                         </svg>
                       </span>
-                      
+
                       <input type="password"
                         name="password"
-                        id="password" className="block w-full px-10 py-3 border rounded-lg bg-transparent text-gray-300 border-gray-600 focus:border-red-600 focus:ring-red-600 focus:outline-none focus:ring focus:ring-opacity-40" placeholder=" Senha" />
+                        id="password"
+                        onChange={handleInputChange}
+                        className="block w-full px-10 py-3 border rounded-lg bg-transparent text-gray-300 border-gray-600 focus:border-red-600 focus:ring-red-600 focus:outline-none focus:ring focus:ring-opacity-40" placeholder=" Senha" />
                     </div>
 
                     <div className="flex items-start mt-3 ">
@@ -112,14 +169,14 @@ const LoginForm: React.FC = () => {
                   <div className="mt-4">
                     <button
                       type="submit"
-                      
+
                       className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-red-600 rounded-lg hover:bg-red-500 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-50"
                     >
                       Entrar
                     </button>
                   </div>
                 </form>
-                
+
                 <div className="flex flex-col justify-center items-center">
                   <p className="mt-6 text-sm text-center text-white">
                     Tem interesse em uma vaga?

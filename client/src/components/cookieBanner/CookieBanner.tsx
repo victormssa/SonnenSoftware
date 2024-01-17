@@ -6,14 +6,21 @@ const CookieBanner: React.FC = () => {
 
   useEffect(() => {
     const cookieValue = document.cookie
-      .split('; ')
-      .find((row) => row.startsWith('session_info='))
-      ?.split('=')[1];
-
-    const isCookieAccepted = cookieValue ? JSON.parse(decodeURIComponent(cookieValue)).cc === true : false;
-
-    const localStorageValue = localStorage.getItem('session_info') || '{}';
-    const isLocalStorageAccepted = JSON.parse(localStorageValue).cc === true;
+    ?.split('; ')
+    .find((row) => row.startsWith('session_info'))
+    ?.split('=')[1];
+  
+  let isCookieAccepted = false;
+  
+  try {
+    const parsedCookieValue = cookieValue ? JSON.parse(decodeURIComponent(cookieValue)) : {};
+    isCookieAccepted = parsedCookieValue.cc === true;
+  } catch (error) {
+    console.error("Erro ao fazer parse do cookie:", error);
+  }
+  
+  const localStorageValue = localStorage.getItem('session_info') || '{}';
+  const isLocalStorageAccepted = JSON.parse(localStorageValue).cc === true;
 
     if (!isCookieAccepted && !isLocalStorageAccepted) {
       setShowBanner(true);
