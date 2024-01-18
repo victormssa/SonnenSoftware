@@ -19,6 +19,10 @@ import { GrAchievement } from "react-icons/gr";
 import { LuPackage } from "react-icons/lu";
 import { LuClipboardSignature } from "react-icons/lu";
 import { LiaTelegramPlane } from "react-icons/lia";
+import { GiVideoConference } from "react-icons/gi";
+import { CiChat2 } from "react-icons/ci";
+import { TfiCalendar } from "react-icons/tfi";
+import { IoMdArrowDropright } from "react-icons/io";
 import Accordion from "../accordion/accordion";
 
 
@@ -263,7 +267,6 @@ const OtimizacaoSistemas = () => {
 
     <section className="mt-12 ">
       <div  className=" pt-1 mx-4 text-start  bg-gradient-to-l  from-red-600 via-zinc-900 to-red-800 rounded-xl">
-
           <div className="xl:flex xl:items-center bg-zinc-900 h-full rounded-lg pt-4">
           <div className="md:w-full xl:w-1/3 mx-4 md:p-2 xl:p-4 mt-3 xl:mt-3 rounded-lg font-semibold text-center" >
             <h1 className="text-4xl font-extrabold text-center">Veja como é fácil e rápido</h1>
@@ -316,12 +319,50 @@ const OtimizacaoSistemas = () => {
           </div>
       </div>
 
+      <section className="w-full  mt-20  justify-center items-center justify-items-center  p-6 rounded-sm bg-zinc-800/10">
+          <div className="flex flex-col sm:w-full md:w-1/2 py-10 mx-auto text-left md:text-center">
+            <div className="flex flex-rol text-center justify-center">
+            <IoMdArrowDropright  className='text-red-600' size='2.5rem'/>
+            <h1 className="text-2xl font-semibold capitalize lg:text-3xl mb-4 "> Descubra a Eficiência da Metodologia <span className="underline decoration-red-500">Scrum</span></h1>
+            </div>
+            <p className="text-base font-semibold py-4 sm:block hidden ">A metodologia Scrum, é uma estrutura baseada em ciclos iterativos e reuniões regulares, promove a comunicação aberta, a cooperação entre os membros da equipe e a capacidade de ajustar estratégias conforme necessário, o Scrum se torna uma ferramenta fundamental para impulsionar o sucesso do seu projeto.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center mt-6  ">                          
+            <div className="flex flex-col items-center justify-center rounded-full space-y-6  mx-0 md:mx-6 mt-2">
+              <span className="p-2 rounded-full border-2 custom-list-border bg-gradient-to-br from-red-400 to-rose-700">
+                <CiChat2 size='2em'/>
+              </span>
+              <div className="flex-row text-center">                
+                <h3 className="md:px-8 p-4 text-1xl font-bold rounded-full">Scrum Diário</h3>
+                <p className="md:px-6 font-sm my-2">Realizamos reuniões diárias para que nossa equipe possa rapidamente compartilhar o progresso, identificar desvios e prever complicações antes mesmo de surgirem.</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-full space-y-6  mx-0 md:mx-6 mt-2">
+              <span className="p-2 rounded-full border-2 custom-list-border bg-gradient-to-br from-red-400 to-rose-700">
+                <GiVideoConference size='2em'/>
+              </span>
+              <div className="flex-row text-center">                
+                <h3 className="px-8 p-4 text-1xl font-bold rounded-full">Sprint</h3>
+                <p className=" font-sm my-2">A Sprint, um ciclo de duas semanas, termina com o Scrum Master revisando as tarefas programadas. Este processo culmina na preparação para uma nova Sprint.</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-full space-y-6  mx-0 md:mx-6 mt-2">
+              <span className="p-2 rounded-full border-2 custom-list-border bg-gradient-to-br from-red-400 to-rose-700">
+                <TfiCalendar size='2em'/>
+              </span>
+              <div className="flex-row text-center">                
+                <h3 className="px-8 p-4 text-1xl font-bold rounded-full">Revisão Final</h3>
+                <p className=" font-sm mt-2 ">A fase final do Scrum é marcada pela Revisão da Sprint e pela Retrospectiva. Apresentando o trabalho concluído ao cliente.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       <div className="md:mt-10">
       <div className="px-6 py-10 mx-auto text-center">
         <h1 className="text-4xl font-extrabold text-center">Otimize seus sistema</h1>
         <p className="text-2xl font-semibold text-center py-4">Conheça nossas<span className="text-red-600">tecnologias</span> disponíveis.</p>
         <div className=" mt-8 w-auto border-b-2 pb-2 rounded-xl border-red-600 ">
-
           <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  items-center align-middle  justify-evenly">
             {renderedItems}
           </div>
