@@ -15,6 +15,7 @@
     "@types/jsonwebtoken": "^9.0.5",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
+    "dotenv": "^16.3.1",
     "emailjs": "^4.0.3",
     "framer-motion": "^10.16.16",
     "js-cookie": "^3.0.5",

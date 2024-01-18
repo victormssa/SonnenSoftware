@@ -7,11 +7,14 @@ import { IoMdArrowDropup } from "react-icons/io";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Image from "next/image";
 import headerLogoBlack from "./../../../public/assets/images/logoSonnen.png";
+import { useAuth } from "../authContext/AuthContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [mostrarLista, setMostrarLista] = useState(false);
+  const { logout, isLoggedIn } = useAuth();
+
 
   const toggleLista = () => {
     setMostrarLista(!mostrarLista);
@@ -246,6 +249,31 @@ const Navigation = () => {
                     ml-10 w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4 lg:border-2 border-red-500  rounded-full
                 `}
               ></div>
+              {isLoggedIn ? (
+                <div className="ml-10 flex w-auto">
+                  <div className="relative mr-5">
+                  <img className="object-cover w-16 h-16 rounded-full ring ring-white" src="https://api.dicebear.com/7.x/thumbs/svg?seed=Kiki" width={500} height={500} alt=""/>
+                  <span className="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-emerald-500 animate-ping"></span>
+                  <span className="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-emerald-500 ring-0 ring-white"></span>
+                              </div>
+                               <button
+                               className={` px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
+                                 "/login"
+                               )} ${
+                                 isTop && !isSpecialPage
+                   ? "lg:hover:bg-red-600 lg:border-red-600 lg:hover:text-black hover:text-rose-300"
+                   : "border-white lg:hover:bg-white lg:hover:text-red-600 hover:text-rose-300"
+                               }`}
+                               onClick={() => {
+                                 setIsOpen(false);
+                                 setMostrarLista(false);
+                                 logout();
+                               }}
+                             >
+                               Logout
+                             </button>
+                </div>
+          ) : (
               <Link
                 href="/login"
                 className={`px-3 py-2 duration-200 sm:hover:bg-none text-white hover:text-black font-semibold lg:border-2 lg:rounded-lg rounded-none lg:border-b-2 lg:w-auto w-screen text-center ${isActive2(
@@ -261,7 +289,7 @@ const Navigation = () => {
                 }}
               >
                 Login
-              </Link>
+              </Link>)}
               <span className="lg:hidden flex w-full h-20 shadow-2xl bg-gradient-to-br from-red-600 to-rose-800" />
             </div>
             <p

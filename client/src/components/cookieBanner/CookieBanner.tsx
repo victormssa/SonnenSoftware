@@ -28,9 +28,26 @@ const CookieBanner: React.FC = () => {
   }, []);
 
   const handleAccept = () => {
-    document.cookie = 'session_info=' + encodeURIComponent(JSON.stringify({ cc: true })) + '; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+    const existingCookie = document.cookie.replace(/(?:(?:^|.*;\s*)session_info\s*=\s*([^;]*).*$)|^.*$/, '$1');
+    let mergedData = {};
+
+    // Se o cookie já existir, salve seus dados
+    if (existingCookie) {
+        try {
+            const existingData = JSON.parse(decodeURIComponent(existingCookie));
+            mergedData = { ...existingData, cc: true };
+        } catch (error) {
+            console.error('Erro ao analisar o cookie existente:', error);
+        }
+
+        // Remova o cookie anterior
+        document.cookie = 'session_info=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+    }
+
+    // Defina o novo cookie combinando dados antigos e novos
+    document.cookie = 'session_info=' + encodeURIComponent(JSON.stringify(mergedData)) + '; path=/; secure=true; httpOnly=true; sameSite=strict';
     setShowBanner(false);
-  };
+};
 
   const handleDecline = () => {
     localStorage.setItem('session_info', JSON.stringify({ cc: false }));

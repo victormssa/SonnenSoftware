@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Link from "next/link";
 import Cookies from 'js-cookie';
+import { useAuth } from '../authContext/AuthContext';
 import jwt from 'jsonwebtoken';
 
 interface Credentials {
@@ -11,6 +12,7 @@ interface Credentials {
 }
 
 const LoginForm: React.FC = () => {
+  const { login } = useAuth();
   const router = useRouter();
   const [credentials, setCredentials] = useState<Credentials>({
     username: "",
@@ -39,24 +41,8 @@ const LoginForm: React.FC = () => {
 
       if (response.ok) {
         const data = await response.json();
-
-        var existingCookies = Cookies.get();
-
-        // Verifica se já existe um 'session_info'
-        if ('session_info' in existingCookies) {
-          // Se existir, atualiza apenas o campo 'tk'
-          var sessionInfo = JSON.parse(existingCookies['session_info']);
-          sessionInfo.tk = data.token;
-
-          // Atualiza o cookie 'session_info' com o novo valor
-          Cookies.set('session_info', JSON.stringify(sessionInfo), { expires: 1, secure: true });
-        } else {
-          // Se não existir, cria um novo cookie 'session_info'
-          Cookies.set('session_info', JSON.stringify({ tk: data.token }), { expires: 1, secure: true });
-        }
-
-        // Redirecionar para a rota "perfil/{id}" com base no ID obtido da resposta do backend
-        router.push(`/perfil/${data.userId}`);
+        // Chama a função de login do contexto, que agora inclui a lógica de salvar no cookie
+        login(data.token);
       } else {
         const error = new Error(response.statusText) as Error;
         console.error("Erro no login:", error.message);
