@@ -8,11 +8,13 @@ import Cookies from 'js-cookie';
 interface AuthContextProps {
   isLoggedIn: boolean;
   login: (token: string) => void;
+  userId: string | null;
   logout: () => void;
 }
 
 const AuthContext = createContext<AuthContextProps>({
   isLoggedIn: false,
+  userId: null,
   login: () => {},
   logout: () => {},
 });
@@ -46,6 +48,7 @@ const verifyToken = (token: string) => {
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userId, setUserId] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -64,8 +67,8 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           if (decodedToken && typeof decodedToken === 'object' && 'id' in decodedToken) {
             // Token válido, define o estado de isLoggedIn como true
             setIsLoggedIn(true);
-            const userId = decodedToken.userId;
-            router.push(`/perfil/${userId}`);
+            const userId = decodedToken.id;
+            setUserId(userId)
           }
         }
       } catch (error) {
@@ -80,15 +83,16 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     console.log('Token decodificado:', decodedToken);
     if (decodedToken && typeof decodedToken === 'object' && 'id' in decodedToken) {
       setIsLoggedIn(true);
-      const userId = decodedToken.userId;
+      const userId = decodedToken.id;
+      setUserId(userId);
 
       var existingCookies = Cookies.get();
       if ('session_info' in existingCookies) {
         var sessionInfo = JSON.parse(existingCookies['session_info']);
         sessionInfo.tk = token;
-        Cookies.set('session_info', JSON.stringify(sessionInfo), {  secure: true, httpOnly: true, sameSite: 'strict', });
+        Cookies.set('session_info', JSON.stringify(sessionInfo));
       } else {
-        Cookies.set('session_info', JSON.stringify({ tk: token }), {  secure: true, httpOnly: true, sameSite: 'strict', });
+        Cookies.set('session_info', JSON.stringify({ tk: token }));
       }
 
       router.push(`/perfil/${userId}`);
@@ -104,7 +108,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, login, logout }}>
+    <AuthContext.Provider value={{ isLoggedIn, login, logout, userId }}>
       {children}
     </AuthContext.Provider>
   );

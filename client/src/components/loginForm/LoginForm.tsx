@@ -1,10 +1,7 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from 'next/navigation';
 import Link from "next/link";
-import Cookies from 'js-cookie';
 import { useAuth } from '../authContext/AuthContext';
-import jwt from 'jsonwebtoken';
 
 interface Credentials {
   username: string;
@@ -13,7 +10,6 @@ interface Credentials {
 
 const LoginForm: React.FC = () => {
   const { login } = useAuth();
-  const router = useRouter();
   const [credentials, setCredentials] = useState<Credentials>({
     username: "",
     password: "",
@@ -135,21 +131,7 @@ const LoginForm: React.FC = () => {
                         className="block w-full px-10 py-3 border rounded-lg bg-transparent text-gray-300 border-gray-600 focus:border-red-600 focus:ring-red-600 focus:outline-none focus:ring focus:ring-opacity-40" placeholder=" Senha" />
                     </div>
 
-                    <div className="flex items-start mt-3 ">
-                      <div className="flex items-center h-5">
-                        <input
-                          id="remember"
-                          aria-describedby="remember"
-                          type="checkbox"
-                          className="w-4 h-4 border border-gray-300 rounded focus:bg-red-400 focus:ring-3 focus:ring-primary-300 accent-red-600 cursor-pointer"
-                        ></input>
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label htmlFor="remember" className="text-gray-400 cursor-pointer">
-                          Lembre-se de mim
-                        </label>
-                      </div>
-                    </div>
+                    
                   </div>
 
                   <div className="mt-4">
@@ -176,9 +158,6 @@ const LoginForm: React.FC = () => {
                   </Link>
                 </div>
 
-              </div>
-              <div className="flex gap-1 mt-4">
-                <p className="text-white">Protected by Next Auth V5</p>
               </div>
             </div>
 

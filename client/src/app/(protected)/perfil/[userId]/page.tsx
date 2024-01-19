@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import UserProfile from '@/components/userProfile/UserProfile';
 export const metadata: Metadata = {
-  title: 'Perfil | Sonnen Software'
+  title: 'Perfil'
 }
 const Perfil: React.FC = () => {
   return (
