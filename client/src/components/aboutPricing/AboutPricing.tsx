@@ -17,8 +17,8 @@ const AboutPricing: React.FC = () => {
             <p className="max-w-4xl mx-auto mt-4 text-center text-gray-100 xl:mt-6 z-10">
               Descubra a excelência da Sonnen Software com nossos planos
               exclusivos. Oferecemos opções personalizadas para atender às suas
-              necessidades, com tecnologias modernas e com preços transparentes
-              e benefícios exclusivos.
+              necessidades, com tecnologias modernas, preços transparentes
+              além de benefícios exclusivos.
             </p>
 
             <section className="grid grid-cols-1 gap-8 w-auto mt-6  md:grid-cols-2 lg:grid-cols-3">
@@ -224,11 +224,11 @@ const AboutPricing: React.FC = () => {
               <div className="text-white bg-red-600 rounded-t-lg flex items-center justify-center py-2"><p className="font-semibold flex align-middle items-center ">MELHOR OFERTA <RiVipDiamondLine className="mx-[0.3rem]" size={"1.1rem"}/>| 20% OFF</p></div>
                 <div className="p-6">
                   <h1 className="text-xl font-medium  capitalize lg:text-2xl text-white">
-                    Presença Online Continua
+                    Presença Online Contínua
                   </h1>
 
                   <p className="mt-4 lg:h-40 text-gray-300">
-                  Nosso Plano Presença Online Continua é ideal para quem almeja uma experiência completa, sem precisar se preocupar. A Sonnen Software cuida de tudo para você poder desfrutar, com acesso à diversos módulos para enriquecer seu site.
+                  Nosso Plano Presença Online Contínua é ideal para quem almeja uma experiência completa, sem precisar se preocupar. A Sonnen Software cuida de tudo para você poder desfrutar, com acesso à diversos módulos para enriquecer seu site.
                   </p>
 
                   
