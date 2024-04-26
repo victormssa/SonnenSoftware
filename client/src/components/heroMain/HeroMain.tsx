@@ -18,7 +18,7 @@ const HeroMain = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const items = [
-    { id: 1, icon: <Image src={perfiCont} alt="Logo Flutter" className={`w-[30rem] h-auto`} />, text: "Perfi Cont", link: "https://www.perficont.com.br" },
+    { id: 1, icon: <Image src={perfiCont} alt="Logo Flutter" className={`w-[20rem] md:w-[30rem] h-auto`} />, text: "Perfi Cont", link: "https://www.perficont.com.br" },
      
   ];
 
@@ -226,11 +226,11 @@ const HeroMain = () => {
           </div>
         </section>
         <div className="md:mt-10 text-white">
-          <h2 className="text-4xl font-semibold text-center"><span className="text-red-600">Parceiros </span>da Sonnen Software</h2>
+          <h2 className="text-xl mt-2 md:text-4xl md:mt-0 font-semibold text-center"><span className="text-red-600">Parceiros </span>da Sonnen Software</h2>
         <div className="px-0 py-10 mx-auto text-center">
-          <div className=" mt-8 w-auto border-b-2 pb-2 border-red-600 ">
+          <div className="mt-0  md:mt-5 w-auto border-b-2 pb-2 border-red-600 ">
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  items-center align-middle  justify-evenly">
+            <div className=" flex items-center align-middle justify-evenly">
               {renderedItems}
             </div>
           </div>
