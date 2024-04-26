@@ -5,8 +5,6 @@ const Home: React.FC = () => {
   return (
     <main className="w-full h-auto">
       <HeroMain />
-      
-      
       <AboutPricing/>
     </main>
   );

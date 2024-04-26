@@ -8,6 +8,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import {PiAppWindowFill} from "react-icons/pi";
 import {FaWrench} from "react-icons/fa";
 import {BsBagPlusFill} from "react-icons/bs";
+import perfiCont from './../../../public/assets/images/PerfiCont_LogoWhite.png';
 
 
 
@@ -15,6 +16,21 @@ const HeroMain = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const texts = ["Website", "Aplicativo", "Sistema", "Futuro"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  const items = [
+    { id: 1, icon: <Image src={perfiCont} alt="Logo Flutter" className={`w-[30rem] h-auto`} />, text: "Perfi Cont", link: "https://www.perficont.com.br" },
+     
+  ];
+
+  const renderedItems = items.map((item, index) => (
+    <div key={item.id} className="flex flex-col items-center mt-6 ">
+      <div className="w-auto md:h-48 flex items-center justify-center mb-4">
+        <Link href={item.link} className="w-auto h-auto">
+          {item.icon}
+        </Link>
+      </div>
+    </div>
+  ));
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -29,7 +45,7 @@ const HeroMain = () => {
   };
   return (
 
-      <section className="bg-zinc-900">
+      <section className="bg-zinc-900 -mb-10">
       <Image
         src="/assets/images/background_red.png"
         alt="Preload"
@@ -209,7 +225,19 @@ const HeroMain = () => {
             </section>
           </div>
         </section>
+        <div className="md:mt-10 text-white">
+          <h2 className="text-4xl font-semibold text-center"><span className="text-red-600">Parceiros </span>da Sonnen Software</h2>
+        <div className="px-0 py-10 mx-auto text-center">
+          <div className=" mt-8 w-auto border-b-2 pb-2 border-red-600 ">
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  items-center align-middle  justify-evenly">
+              {renderedItems}
+            </div>
+          </div>
+        </div>
+    </div>
       </section>
+      
   );
 };
 

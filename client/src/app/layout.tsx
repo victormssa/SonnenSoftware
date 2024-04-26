@@ -20,16 +20,16 @@ export const metadata: Metadata = {
       default: 'Sonnen Software',
       template: '%s | Sonnen Software'
     },
-    description: 'Sonnen Software - Desenvolvendo Soluções Digitais! 🚀🌐 Inovação, elegância e funcionalidade para marcar sua presença online. 💻✨',
+    description: 'Sonnen Software - Desenvolvendo Soluções Digitais! Inovação, elegância e funcionalidade para marcar sua presença online.',
     keywords: ['Desenvolvimento de Software', 'Software', 'Sonnen', 'React', 'Next.js', 'Mobile', 'Desktop'],
     openGraph: {
       title: 'Sonnen Software',
-      description: 'Sonnen Software - Desenvolvendo Soluções Digitais! 🚀🌐 Inovação, elegância e funcionalidade para marcar sua presença online. 💻✨',
-      url: 'https://sonnensoftware.com',
+      description: 'Sonnen Software - Desenvolvendo Soluções Digitais! Inovação, elegância e funcionalidade para marcar sua presença online.',
+      url: 'https://www.sonnensoftware.com',
       siteName: 'Sonnen Software',
       images: [
         {
-          url: 'https://raw.githubusercontent.com/victormssa/SonnenSoftware/main/www/public/assets/images/openGraph.png',
+          url: 'https://raw.githubusercontent.com/victormssa/images/main/openGraph.png',
           width: 1200,
           height: 630,
         }
