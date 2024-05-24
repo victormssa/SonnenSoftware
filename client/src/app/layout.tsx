@@ -9,6 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { GoogleAnalytics } from 'nextjs-google-analytics';
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -50,6 +51,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         </head>
         <body className={poppins.className}>
+        <GoogleAnalytics gaMeasurementId="G-QGCBMXKM97" />
           <CookieBanner />
           <Header />
           {children}
