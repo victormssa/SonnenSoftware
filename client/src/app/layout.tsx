@@ -9,7 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { GoogleAnalytics } from 'nextjs-google-analytics';
+import Script from 'next/script';
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -46,12 +46,23 @@ export default function RootLayout({
   return (
     <AuthProvider> 
       <html lang="pt-br">
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+      <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-QGCBMXKM97`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QGCBMXKM97');
+            `}
+          </Script>
         </head>
         <body className={poppins.className}>
-        <GoogleAnalytics gaMeasurementId="G-QGCBMXKM97" />
           <CookieBanner />
           <Header />
           {children}
