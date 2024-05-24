@@ -18,14 +18,14 @@ const HeroMain = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const items = [
-    { id: 1, icon: <Image src={perfiCont} alt="Logo Flutter" className={`w-[20rem] md:w-[30rem] h-auto`} />, text: "Perfi Cont", link: "https://www.perficont.com.br" },
+    { id: 1, icon: <Image src={perfiCont} alt="Logo Flutter" className={`w-[20rem] md:w-[25rem] h-auto`} />, text: "Perfi Cont", link: "https://www.perficont.com.br" },
      
   ];
 
   const renderedItems = items.map((item, index) => (
-    <div key={item.id} className="flex flex-col items-center mt-6 ">
+    <div key={item.id} className="flex flex-col items-center mt-0 ">
       <div className="w-auto md:h-48 flex items-center justify-center mb-4">
-        <Link href={item.link} className="w-auto h-auto">
+        <Link href={item.link} target="_blank" className="w-auto h-auto">
           {item.icon}
         </Link>
       </div>
