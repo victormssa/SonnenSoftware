@@ -17,26 +17,26 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: {
-      default: 'Sonnen Software',
-      template: '%s | Sonnen Software'
-    },
+  title: {
+    default: 'Sonnen Software',
+    template: '%s | Sonnen Software'
+  },
+  description: 'Sonnen Software - Desenvolvendo Soluções Digitais! Inovação, elegância e funcionalidade para marcar sua presença online.',
+  keywords: ['Desenvolvimento de Software', 'Software', 'Sonnen', 'React', 'Next.js', 'Mobile', 'Desktop'],
+  openGraph: {
+    title: 'Sonnen Software',
     description: 'Sonnen Software - Desenvolvendo Soluções Digitais! Inovação, elegância e funcionalidade para marcar sua presença online.',
-    keywords: ['Desenvolvimento de Software', 'Software', 'Sonnen', 'React', 'Next.js', 'Mobile', 'Desktop'],
-    openGraph: {
-      title: 'Sonnen Software',
-      description: 'Sonnen Software - Desenvolvendo Soluções Digitais! Inovação, elegância e funcionalidade para marcar sua presença online.',
-      url: 'https://www.sonnensoftware.com',
-      siteName: 'Sonnen Software',
-      images: [
-        {
-          url: 'https://raw.githubusercontent.com/victormssa/images/main/openGraph.png',
-          width: 1200,
-          height: 630,
-        }
-      ]
-    }
+    url: 'https://www.sonnensoftware.com',
+    siteName: 'Sonnen Software',
+    images: [
+      {
+        url: 'https://raw.githubusercontent.com/victormssa/images/main/openGraph.png',
+        width: 1200,
+        height: 630,
+      }
+    ]
   }
+}
 
 export default function RootLayout({
   children,
@@ -44,9 +44,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <AuthProvider> 
+    <AuthProvider>
       <html lang="pt-br">
-      <head>
+        <head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
           <link rel="icon" href="/favicon.ico" sizes="any" />
           <Script
@@ -60,6 +60,17 @@ export default function RootLayout({
               gtag('js', new Date());
               gtag('config', 'G-QGCBMXKM97');
             `}
+          </Script>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-XBQWCCGZ4V`}
+            strategy="afterInteractive"
+          />
+          <Script>
+            {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XBQWCCGZ4V');`}
           </Script>
         </head>
         <body className={poppins.className}>
