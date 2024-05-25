@@ -49,28 +49,33 @@ export default function RootLayout({
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
           <link rel="icon" href="/favicon.ico" sizes="any" />
+
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=G-QGCBMXKM97`}
             strategy="afterInteractive"
           />
-          <Script id="google-analytics" strategy="afterInteractive">
+
+          <Script id="google-analytics-1" strategy="afterInteractive">
             {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-QGCBMXKM97');
-            `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QGCBMXKM97');
+    `}
           </Script>
+
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=G-XBQWCCGZ4V`}
             strategy="afterInteractive"
           />
-          <Script>
-            {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-XBQWCCGZ4V');`}
+          <Script id="google-analytics-2" strategy="afterInteractive">
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XBQWCCGZ4V');
+    `}
           </Script>
         </head>
         <body className={poppins.className}>
