@@ -61,6 +61,7 @@ export default function RootLayout({
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"
           />
+          <meta name="google-adsense-account" content="ca-pub-7538236551068646"></meta>
           <link rel="icon" href="/favicon.ico" sizes="any" />
 
           {/* Google Tag Manager */}
@@ -76,7 +77,7 @@ export default function RootLayout({
           })(window, document, 'script', 'dataLayer', 'GTM-NNL5ZWDN');
         `}
           </Script>
-          <Script id="clarity-analytics" strategy="afterInteractive">
+         {/* <Script id="clarity-analytics" strategy="afterInteractive">
             {`
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -84,7 +85,7 @@ export default function RootLayout({
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "onevjwgns6");
         `}
-          </Script>
+          </Script>*/}
         </head>
         <body className={poppins.className}>
           {/* Google Tag Manager (noscript) */}
